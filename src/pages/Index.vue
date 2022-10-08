@@ -3,7 +3,10 @@
     <Layout>
       <v-content>
         <Hero />
-        <span>{{ $page.keynote1.edges[0].node.speaker }}</span>
+        <Keynotes />
+        <div style="height: 18px"></div>
+        <Tickets />
+        <div class="tickets"></div>
       </v-content>
     </Layout>
   </v-app>
@@ -11,13 +14,27 @@
 
 <script>
 import Hero from "@/components/Hero";
+import Keynotes from "@/components/Keynotes";
+import Tickets from "@/components/Tickets"
+
 
 export default {
   components: {
     Hero,
+    Keynotes,
+    Tickets
   },
 };
 </script>
+
+<style scoped>
+.tickets {
+  height: 50px; 
+  background: var(--v-secondary-base)
+}
+</style>
+
+
 
 
 <page-query>
