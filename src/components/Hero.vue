@@ -1,8 +1,5 @@
 <template>
-  <v-img
-    :src="require('@/assets/web/hero-image.png')"
-    max-height="700px"
-  >
+  <v-img :src="require('@/assets/web/hero-image.png')" max-height="700px">
     <v-row align="center" justify="center" style="height: 700px">
       <v-spacer></v-spacer>
       <v-col class="white--text" cols="auto" style="max-width: 700px">
@@ -24,5 +21,16 @@
       <v-spacer></v-spacer>
       <v-col cols="4"></v-col>
     </v-row>
+    <Break style="color: white; bottom: -1px" />
   </v-img>
 </template>
+
+<script>
+import Break from "@/components/icons/Break";
+
+export default {
+  components: {
+    Break,
+  },
+};
+</script>
