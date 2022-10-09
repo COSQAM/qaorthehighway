@@ -1,15 +1,18 @@
 <template>
   <v-app class="white">
     <Layout>
-      <v-main>
-        <SessionList :sessions="$page.session1" :favorites="favorites2022" />
-        <SessionList :sessions="$page.session2" :favorites="favorites2022" />
-        <SessionList :sessions="$page.session3" :favorites="favorites2022" />
-        <SessionList :sessions="$page.session4" :favorites="favorites2022" />
-        <SessionList :sessions="$page.session5" :favorites="favorites2022" />
-        <SessionList :sessions="$page.session6" :favorites="favorites2022" />
-        <SessionList :sessions="$page.session7" :favorites="favorites2022" />
-      </v-main>
+      <v-content>
+        <Header title="Schedule" />
+        <div class="max-center">
+          <SessionList :sessions="$page.session1" :favorites="favorites2022" />
+          <SessionList :sessions="$page.session2" :favorites="favorites2022" />
+          <SessionList :sessions="$page.session3" :favorites="favorites2022" />
+          <SessionList :sessions="$page.session4" :favorites="favorites2022" />
+          <SessionList :sessions="$page.session5" :favorites="favorites2022" />
+          <SessionList :sessions="$page.session6" :favorites="favorites2022" />
+          <SessionList :sessions="$page.session7" :favorites="favorites2022" />
+        </div>
+      </v-content>
     </Layout>
   </v-app>
 </template>
@@ -18,46 +21,33 @@
 import SessionList from "@/components/SessionList";
 import IndexNavbar from "@/components/IndexNavbar";
 import favorites2022 from "@/data/favorites.json";
+import Header from "@/components/Header";
 
 export default {
   components: {
     SessionList,
     IndexNavbar,
+    Header,
   },
   data: function () {
     return {
       favorites2022,
     };
   },
-
-  created() {
-    //This is to install the service worker. Change the directory if the website changes
-    if (process.isClient) {
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", function () {
-          navigator.serviceWorker
-            .register("/qaorthehwy2022/sw.js")
-            .then(function (registration) {
-              console.log(
-                "ServiceWorker registration successful with scope: ",
-                registration.scope
-              );
-            })
-            .catch(function (err) {
-              console.log("ServiceWorker registration failed: ", err);
-            });
-        });
-      }
-    }
-  },
   //This is checking if there is any information in local storage, compare and update to recent favorites list, and saving to favorites
   mounted() {
     if (localStorage.favorites2022) {
       console.log("mounted");
       const oldFavorites = JSON.parse(localStorage.favorites2022);
-      console.log(JSON.stringify(oldFavorites));
-      let speakers = new Set(oldFavorites.sessions.map(session => session.speaker))
-      let mergedSpeakers = [...oldFavorites.sessions, ...this.favorites2022.sessions.filter(session => !speakers.has(session.speaker))];
+      let speakers = new Set(
+        oldFavorites.sessions.map((session) => session.speaker)
+      );
+      let mergedSpeakers = [
+        ...oldFavorites.sessions,
+        ...this.favorites2022.sessions.filter(
+          (session) => !speakers.has(session.speaker)
+        ),
+      ];
       this.favorites2022.sessions = mergedSpeakers;
       localStorage.setItem("favorites2022", this.favorites2022);
     }
@@ -67,7 +57,10 @@ export default {
     favorites2022: {
       handler() {
         console.log("favorites changed");
-        localStorage.setItem("favorites2022", JSON.stringify(this.favorites2022));
+        localStorage.setItem(
+          "favorites2022",
+          JSON.stringify(this.favorites2022)
+        );
       },
       deep: true,
     },
@@ -198,4 +191,9 @@ query currentSessions {
 </page-query>
 
 <style scoped>
+.max-center {
+  max-width: 1600px;
+  margin: 0 auto;
+  float: none;
+}
 </style>
