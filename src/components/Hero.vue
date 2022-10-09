@@ -14,7 +14,7 @@
           world experience and thought leadership in quality assurance for the
           software industry
         </h4>
-        <v-btn block color="accent" class="black--text"
+        <v-btn block color="accent" class="black--text" x-large
           >Get Your Tickets Now</v-btn
         >
       </v-col>
