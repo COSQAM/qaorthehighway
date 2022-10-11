@@ -12,7 +12,7 @@
       <span class="pl-2 text-none">Join us on Slack</span>
     </v-btn>
     <v-spacer />
-    <div class="pr-2 caption">© Ryan Quellhorst</div>
+    <div class="pr-2 caption">Created by Ryan Quellhorst</div>
     <v-btn
       v-for="(site, index) in social"
       :key="index"

@@ -61,6 +61,11 @@ export default {
       return speakerList;
     },
   },
+  metaInfo() {
+    return {
+      title: "Speakers",
+    };
+  },
 };
 </script>
 
@@ -85,7 +90,7 @@ query currentSessions {
 
 <style scoped>
 .max-center {
-  max-width: 1600px;
+  max-width: 1200px;
   margin: 0 auto;
   float: none;
 }

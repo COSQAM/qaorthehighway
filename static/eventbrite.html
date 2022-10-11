@@ -1,0 +1,17 @@
+<div id="eventbrite-widget-container-129775290387"></div>
+
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log( 'Order complete!' );
+    };
+
+    window.EBWidgets.createWidget( {
+        widgetType: 'checkout',
+        eventId: '129775290387',
+        iframeContainerId: 'eventbrite-widget-container-129775290387',
+        iframeContainerHeight: 500, 
+        onOrderComplete: exampleCallback,
+    } );
+</script>
