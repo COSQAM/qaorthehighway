@@ -42,13 +42,13 @@ export default {
     return {
       drawer: false,
       links: [
-        { icon: "fa-chalkboard-teacher", title: "Speakers", path: "/speakers" },
-        { icon: "fa-list-alt", title: "Schedule", path: "/schedule" },
-        { icon: "fa-map-pin", title: "Venue", path: "/venue" },
-        { icon: "fa-question-circle", title: "FAQ", path: "/faq" },
-        { icon: "fa-users", title: "Committee", path: "/committee" },
-        { icon: "fa-at", title: "Contact", path: "/contact" },
-        { icon: "fa-history", title: "Archive", path: "/archive" },
+        { icon: "fa-chalkboard-teacher", title: "Speakers", path: "./speakers" },
+        { icon: "fa-list-alt", title: "Schedule", path: "./schedule" },
+        { icon: "fa-map-pin", title: "Venue", path: "./venue" },
+        { icon: "fa-question-circle", title: "FAQ", path: "./faq" },
+        { icon: "fa-users", title: "Committee", path: "./committee" },
+        { icon: "fa-at", title: "Contact", path: "./contact" },
+        { icon: "fa-history", title: "Archive", path: "./archive" },
       ],
     };
   },
