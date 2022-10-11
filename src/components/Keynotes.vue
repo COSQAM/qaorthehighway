@@ -3,24 +3,32 @@
     <v-row align="center" justify="center"
       ><h3 class="text-h5 font-weight-black">KEYNOTE SPEAKERS</h3></v-row
     >
-    <v-row align="center" justify="center">
-      <v-col cols="12" md="6" class="text-center">
-        <v-avatar size="300">
-          <img :src="findImage($page.keynote1.edges[0].node.speaker)" />
-        </v-avatar>
-        <h3>
-          {{ $page.keynote1.edges[0].node.speaker }}
-        </h3>
-      </v-col>
-      <v-col cols="12" sm="6" class="text-center">
-        <v-avatar size="300">
-          <img :src="findImage($page.keynote2.edges[0].node.speaker)" />
-        </v-avatar>
-        <h3>
-          {{ $page.keynote2.edges[0].node.speaker }}
-        </h3>
-      </v-col>
+    <div class="max-center">
+    <v-row align="center" justify="center" class="my-3">
+        <v-col sm="12" md="6" class="text-center text-h5">
+          <a :href="`./${removeSpaces($page.keynote1.edges[0].node.speaker)}`">
+            <v-avatar size="300">
+              <img :src="findImage($page.keynote1.edges[0].node.speaker)" />
+            </v-avatar>
+          </a>
+
+          <h3 class="text-h5 pt-3">
+            {{ $page.keynote1.edges[0].node.speaker }}
+          </h3>
+        </v-col>
+        <v-col sm="12" md="6" class="text-center text-h5">
+          <a :href="`./${removeSpaces($page.keynote2.edges[0].node.speaker)}`">
+            <v-avatar size="300">
+              <img :src="findImage($page.keynote2.edges[0].node.speaker)" />
+            </v-avatar>
+          </a>
+          <h3 class="text-h5 pt-3">
+            {{ $page.keynote2.edges[0].node.speaker }}
+          </h3>
+        </v-col>
     </v-row>
+    </div>
+
     <Break class="color" />
   </v-container>
 </template>
@@ -40,6 +48,9 @@ export default {
         return require("@/assets/images/generic-profile.png");
       }
     },
+    removeSpaces: function (text) {
+      return text.replace(/\s/g, "");
+    },
   },
 };
 </script>
@@ -48,5 +59,10 @@ export default {
 .color {
   color: var(--v-secondary-base);
   bottom: none;
+}
+.max-center {
+  max-width: 1000px;
+  margin: 0px auto;
+  float: none;
 }
 </style>

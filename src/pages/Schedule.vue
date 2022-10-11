@@ -4,13 +4,36 @@
       <v-content>
         <Header title="Schedule" />
         <div class="max-center">
-          <SessionList :sessions="$page.session1" :favorites="favorites2022" />
-          <SessionList :sessions="$page.session2" :favorites="favorites2022" />
-          <SessionList :sessions="$page.session3" :favorites="favorites2022" />
-          <SessionList :sessions="$page.session4" :favorites="favorites2022" />
-          <SessionList :sessions="$page.session5" :favorites="favorites2022" />
-          <SessionList :sessions="$page.session6" :favorites="favorites2022" />
-          <SessionList :sessions="$page.session7" :favorites="favorites2022" />
+          <div class="ma-3">
+            <SessionList
+              :sessions="$page.session1"
+              :favorites="favorites2022"
+            />
+            <SessionList
+              :sessions="$page.session2"
+              :favorites="favorites2022"
+            />
+            <SessionList
+              :sessions="$page.session3"
+              :favorites="favorites2022"
+            />
+            <SessionList
+              :sessions="$page.session4"
+              :favorites="favorites2022"
+            />
+            <SessionList
+              :sessions="$page.session5"
+              :favorites="favorites2022"
+            />
+            <SessionList
+              :sessions="$page.session6"
+              :favorites="favorites2022"
+            />
+            <SessionList
+              :sessions="$page.session7"
+              :favorites="favorites2022"
+            />
+          </div>
         </div>
       </v-content>
     </Layout>
@@ -192,8 +215,8 @@ query currentSessions {
 
 <style scoped>
 .max-center {
-  max-width: 1600px;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: 0px auto;
   float: none;
 }
 </style>

@@ -7,6 +7,9 @@
         <div style="height: 18px"></div>
         <Tickets />
         <div class="tickets"></div>
+        <Sponsors />
+        <div style="height: 18px"></div>
+        <PastConference />
       </v-content>
     </Layout>
   </v-app>
@@ -15,22 +18,30 @@
 <script>
 import Hero from "@/components/Hero";
 import Keynotes from "@/components/Keynotes";
-import Tickets from "@/components/Tickets"
-
+import Tickets from "@/components/Tickets";
+import Sponsors from "@/components/Sponsors";
+import PastConference from "@/components/PastConference";
 
 export default {
   components: {
     Hero,
     Keynotes,
-    Tickets
+    Tickets,
+    Sponsors,
+    PastConference,
+  },
+  metaInfo() {
+    return {
+      title: "Home",
+    };
   },
 };
 </script>
 
 <style scoped>
 .tickets {
-  height: 50px; 
-  background: var(--v-secondary-base)
+  height: 50px;
+  background: var(--v-secondary-base);
 }
 </style>
 

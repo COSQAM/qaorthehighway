@@ -1,8 +1,8 @@
 <template>
   <nav>
-    <v-app-bar flat app dark absolute color="primary">
+    <v-app-bar app dark fixed elevate-on-scroll color="primary">
         <v-col>
-            <a href="./"><v-icon size="250">$vuetify.icons.website</v-icon></a>
+            <a href="./"><v-icon size="250">$vuetify.icons.qalogo</v-icon></a>
         </v-col>
           <v-app-bar-title
             class="hidden-sm-and-down center"
@@ -11,8 +11,7 @@
           >
             <v-btn text :href="link.path">{{ link.title }}</v-btn>
           </v-app-bar-title>
-          <v-btn outlined href="./outline">Tickets</v-btn>
-          <v-spacer class="hidden-md-and-up" />
+          <v-btn color="accent" outlined href="./tickets">Tickets</v-btn>
           <v-app-bar-nav-icon
             @click="drawer = !drawer"
             class="hidden-md-and-up"

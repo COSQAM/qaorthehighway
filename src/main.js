@@ -15,6 +15,7 @@ import Twitter from "@/components/icons/Twitter"
 import ChevronLeft from "@/components/icons/ChevronLeft"
 import Youtube from "@/components/icons/Youtube"
 import Slack from "@/components/icons/Slack"
+import QALogo from "@/components/icons/QALogo"
 
 export default function (Vue, { appOptions, head }) {
   head.link.push({
@@ -80,6 +81,9 @@ export default function (Vue, { appOptions, head }) {
         },
         slack: {
           component: Slack
+        },
+        qalogo: {
+          component: QALogo
         }
       }
     }
