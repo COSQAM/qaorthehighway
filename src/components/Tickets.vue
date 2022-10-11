@@ -17,7 +17,7 @@
                 <li>{{ item }}</li>
               </ul>
             </v-card-text>
-            <v-btn block color="accent" class="black--text mt-3" href="/tickets" x-large
+            <v-btn block color="accent" class="black--text mt-3" href="./tickets" x-large
               >Buy Now</v-btn
             >
           </v-card>
