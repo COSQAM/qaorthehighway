@@ -27,7 +27,7 @@
             v-for="(member, index) in members"
             :key="index"
           >
-            <v-avatar size="300">
+            <v-avatar size="250">
               <img :src="findImage(member.name)" />
             </v-avatar>
             <div class="headline font-weight-bold pt-3">
@@ -104,21 +104,21 @@ export default {
   data() {
     return {
       members: [
-        { name: "Joe Beale", title: "President", bio: "", image: "" },
-        { name: "Jared Kiste", title: "Treasurer", bio: "", image: "" },
-        { name: "Barry Kuck", title: "", bio: "", image: "" },
-        { name: "Jenna Davis", title: "", bio: "", image: "" },
-        { name: "Krishna Bandarupalli", title: "", bio: "", image: "" },
-        { name: "Anna Heiermann", title: "", bio: "", image: "" },
-        { name: "Dave Sadlon", title: "", bio: "", image: "" },
-        { name: "Ryan Quellhorst", title: "", bio: "", image: "" },
+        { name: "Joe Beale", title: "President", bio: "" },
+        { name: "Jared Kiste", title: "Treasurer", bio: "" },
+        { name: "Barry Kuck", title: "", bio: "" },
+        { name: "Jenna Davis", title: "", bio: "" },
+        { name: "Krishna Bandarupalli", title: "", bio: "" },
+        { name: "Anna Heiermann", title: "", bio: "" },
+        { name: "Dave Sadlon", title: "", bio: "" },
+        { name: "Ryan Quellhorst", title: "", bio: "" },
       ],
     };
   },
   methods: {
     findImage: (speaker) => {
       try {
-        return require(`@/assets/images/${speaker.toLowerCase()}.webp`);
+        return require(`@/assets/images/cosqam/${speaker.toLowerCase()}.jpeg`);
       } catch (error) {
         return require("@/assets/images/generic-profile.png");
       }
