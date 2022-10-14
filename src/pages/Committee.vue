@@ -3,7 +3,7 @@
     <Layout>
       <v-content>
         <Header title="Committee" />
-        <h3 class="max-center-small font-weight-light pa-5">
+        <div class="max-center-small font-weight-light pa-5">
           <div class="pb-5">
             ​The QA or the Highway conference is organized by COSQAM (Central
             Ohio Software Quality Assurance & Management), which is backed by QA
@@ -18,7 +18,7 @@
             ​At COSQAM, we are dedicated to elevating the QA and Testing
             industry – for us, it is QA or the Highway!
           </div>
-        </h3>
+        </div>
         <v-row class="text-center max-center my-5">
           <v-col
             sm="12"
@@ -46,7 +46,7 @@
             <h3 class="text-h5 font-weight-black white--text text-center pb-5">
               COSQAM Cares
             </h3>
-            <h3 class="font-weight-light">
+            <div class="font-weight-light">
               <div class="pb-5">
                 At COSQAM, we like to provide support in multiple ways. This
                 includes offering monetary donations towards STEM-related
@@ -84,7 +84,7 @@
                 teaching, and continue to get students excited about their
                 learning.
               </div>
-            </h3>
+            </div>
           </div>
         </div>
       </v-content>

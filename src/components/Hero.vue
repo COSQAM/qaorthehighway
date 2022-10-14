@@ -1,5 +1,5 @@
 <template>
-  <v-img :src="require('@/assets/web/hero-image.png')" max-height="700px">
+  <v-img :src="require('@/assets/web/hero-image.png')" min-height="750px" max-height="800px">
     <v-row align="center" justify="center" style="height: 700px" :class="$vuetify.breakpoint.xsOnly ? 'ma-2' : ''">>
       <v-spacer></v-spacer>
       <v-col class="white--text" cols="auto" :class="$vuetify.breakpoint.xsOnly ? '' : 'small-style'">

@@ -3,16 +3,16 @@
     <Layout>
       <v-main>
         <Header title="Frequently Asked Questions" />
-        <div class="max-center">
+        <div class="max-center mb-5">
           <div
             v-for="(question, index) in questions"
             :key="index"
-            class="ma-3 preline"
+            class="mx-3 preline"
           >
-            <h3 class="text-h5 font-weight-bold mb-1 primary--text">
+            <div class="text-h6 font-weight-bold mb-1 primary--text">
               {{ question.q }}
-            </h3>
-            <h3 class="font-weight-light bottom-spacing">{{ question.a }}</h3>
+            </div>
+            <div class="font-weight-light">{{ question.a }}</div>
           </div>
         </div>
       </v-main>
@@ -82,9 +82,6 @@ export default {
   max-width: 1200px;
   margin: 0 auto;
   float: none;
-}
-.bottom-spacing {
-  margin-bottom: 40px;
 }
 .preline {
   white-space: pre-line;
