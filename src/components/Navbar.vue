@@ -1,8 +1,8 @@
 <template>
   <nav>
     <v-app-bar app dark fixed elevate-on-scroll color="primary">
-        <v-col>
-            <a href="./"><v-icon size="250">$vuetify.icons.qalogo</v-icon></a>
+        <v-col class="pa-0">
+            <a href="./"><v-icon :size="$vuetify.breakpoint.xsOnly ? 140 : 225">$vuetify.icons.qalogo</v-icon></a>
         </v-col>
           <v-app-bar-title
             class="hidden-sm-and-down center"

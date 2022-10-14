@@ -9,7 +9,7 @@
           <v-card class="text-left padding-y px-5">
             <v-card-title class="text-h3 font-weight-black">$85</v-card-title>
             <v-card-subtitle class="text-h5 font-weight-bold"
-              >Early Bird Pricing</v-card-subtitle
+              >Early Bird Pricing <span class="text-subtitle-1 font-weight-light pl-4">(Ends 02/30/2022)</span></v-card-subtitle
             >
             <div class="spacer" />
             <v-card-text class="text-subtitle-1">
@@ -22,7 +22,7 @@
             >
           </v-card>
         </v-col>
-        <v-col cols="12" sm="6" class="text-center">
+        <v-col cols="12" md="6" class="text-center">
           <v-card class="text-left padding-y px-5" color="primary" dark>
             <v-card-title class="text-h3 font-weight-black">$99</v-card-title>
             <v-card-subtitle class="text-h5 font-weight-bold"
@@ -56,11 +56,11 @@ export default {
     return {
       list: [
         "Access to 32 different talks given by world renowned speakers",
-        "Breakfast and Lunch provided",
+        "Breakfast and Lunch provided (vegan available by request)",
         "Conference t-shirt",
-        "Coffee, Water,and Tea provided between sessions",
+        "Coffee, Water, Soda, and Tea provided between sessions",
         "Conference and Sponsor Raffles",
-        "Parking covered in ticket",
+        "Parking covered with ticket",
       ],
     };
   },

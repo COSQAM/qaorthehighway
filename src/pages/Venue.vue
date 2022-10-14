@@ -6,36 +6,35 @@
         <div class="max-center">
           <div class="ma-3">
             <v-row align="center" justify="center"
-              ><h3 class="text-h5 font-weight-black primary--text py-5">
+              ><div class="text-h5 font-weight-black primary--text py-5">
                 THE OHIO UNION
-              </h3>
+              </div>
             </v-row>
             <v-divider></v-divider>
             <v-row justify="space-around" class="max-center my-5">
-              <v-col sm="12" md="6">
+              <v-col cols="12" md="6">
                 <img
                   :src="require(`@/assets/images/past/2019_4.webp`)"
                   width="100%"
                 />
               </v-col>
-              <v-col sm="12" md="6">
+              <v-col cols="12" md="6">
                 <div class="pl-5">
-                  <h3 class="font-weight-light">
-                    Located at 1739 N High St, Columbus, OH 43210, The Ohio
-                    Union is a 318,000 square foot facility built on a
+                  <div class="font-weight-light">
+                    The Ohio Union is a 318,000 square foot facility built on a
                     foundation of rich history and Buckeye spirit. Located on
                     The Ohio State University’s campus, the building has 34
                     unique meeting and event spaces and is near many on-campus
                     and off-campus dining and entertainment options.
-                  </h3>
-                  <h3 class="py-5 font-weight-light">
+                  </div>
+                  <div class="py-5 font-weight-light">
                     During the conference, breakfast, lunch, and snacks will be
                     provided. However, if you want other options, there are
                     several dining locations within the Ohio Union including the
                     Union Market, a fast-casual option offering grab-and-go food
                     choices, and Espress-OH, a coffee shop serving specialty
                     drinks, breakfast items, and gelato.
-                  </h3>
+                  </div>
                 </div>
               </v-col>
             </v-row>
@@ -63,8 +62,8 @@
             </v-row>
             <v-divider></v-divider>
             <v-row class="max-center my-5">
-              <v-col sm="12" md="6">
-                <h3 class="py-5 font-weight-light">
+              <v-col cols="12" md="6">
+                <div class="py-5 font-weight-light">
                   <div>
                     ​Upon arrival to the SOUTH Ohio Union parking garage (1759
                     North High Street), you must pull a ticket from the gate
@@ -79,9 +78,9 @@
                     ticket with that barcoded validation sticker adhered to the
                     ticket.
                   </div>
-                </h3>
+                </div>
               </v-col>
-              <v-col sm="12" md="6">
+              <v-col cols="12" md="6">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1640.443805156314!2d-83.00890542512437!3d39.997750204153256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x45c9ae82bfe978ce!2sOhio%20Union%20South%20Garage!5e0!3m2!1sen!2sus!4v1665515987150!5m2!1sen!2sus"
                   width="100%"
@@ -117,14 +116,13 @@
               justify="center"
               class="max-center my-5"
             >
-              <v-col sm="12" md="6">
-                <h3 class="py-5 font-weight-light">
-                  <div>
-                    {{ hotel.name }}
-                  </div>
-                </h3>
+              <v-col cols="12" md="6">
+                <div class="py-5 font-weight-light">
+                  <div class="font-weight-bold pb-5">{{ hotel.name }}</div>
+                  <div>{{ hotel.description }}</div>
+                </div>
               </v-col>
-              <v-col sm="12" md="6">
+              <v-col cols="12" md="6">
                 <iframe
                   :src="hotel.mapsUrl"
                   width="100%"
@@ -155,16 +153,19 @@ export default {
       hotels: [
         {
           name: "SpringHill Suites by Marriott",
+          description: "Located 1.5 miles from the Ohio Union, this hotel is a great and safe walk through Ohio State's campus to the Ohio Union. Also, it is conveniently located by The Ohio State University. Just minutes to Downtown Columbus and other Columbus attractions such as the Nationwide Arena District, Short North, Huntington Park, COSI and German Village.", 
           mapsUrl:
             "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.8746108070845!2d-83.02856388461704!3d39.98890737941711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388ef032010203%3A0x73b8944335921fbd!2sSpringHill%20Suites%20by%20Marriott%20Columbus%20OSU!5e0!3m2!1sen!2sus!4v1665517226610!5m2!1sen!2sus",
         },
         {
           name: "The Blackwell Inn",
+          description: "Located 0.8 miles from the Ohio Union, this hotel is a great and safe walk through Ohio State's campus to the Ohio Union and right accross the street from the Ohio Stadium (the horseshoe). The Blackwell Inn and Pfahl Conference Center is located in University District. The area's natural beauty can be seen at Chadwick Arboretum & Learning Gardens, while Billy Ireland Cartoon Library and Museum and Wexner Center for the Arts are cultural highlights.",
           mapsUrl:
             "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.165269855282!2d-83.01892018391231!3d40.00475578851412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388e97af90fd3d%3A0xe43dbd69e093c2c!2sThe%20Blackwell%20Inn%20%26%20Pfahl%20Conference%20Center!5e0!3m2!1sen!2sus!4v1665517681174!5m2!1sen!2sus",
         },
         {
           name: "Hilton Garden Inn",
+          description: "Located 2.8 miles from the Ohio Union, this hotel has shopping and restaurants close by along with sporting and entertainment venues. Suburbs of Upper Arlington, Grandview and Clintonville are located within two miles of the hotel.",
           mapsUrl:
             "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.18665243653!2d-83.02954926427311!3d40.02661192135342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388c2560a8c93f%3A0x964a5d09816f59a8!2sHilton%20Garden%20Inn%20Columbus-University%20Area!5e0!3m2!1sen!2sus!4v1665517800813!5m2!1sen!2sus",
         },
