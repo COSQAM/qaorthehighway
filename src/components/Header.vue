@@ -1,11 +1,11 @@
 <template>
   <div class="background">
     <div
-      class="text-h4 font-weight-black white--text text-center margin-top"
+      class="text-h4 font-weight-black white--text text-center padding"
     >
       {{ title }}
     </div>
-    <div style="height: 30px"></div>
+    <div style="min-height: 30px"></div>
     <Break class="color" />
   </div>
 </template>
@@ -24,15 +24,17 @@ export default {
 <style scoped>
 .background {
   background-color: var(--v-primary-base) !important;
-  height: 200px;
+  min-height: 200px;
+  position: relative;
 }
 
-.margin-top {
-  padding-top: 80px;
+.padding {
+  padding: 60px 60px
 }
 
 .color {
   color: white;
-  bottom: none;
+  bottom: 0;
+  position: absolute
 }
 </style>

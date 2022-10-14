@@ -1,42 +1,55 @@
 <template>
-  <v-app class="pre-formatted">
+  <v-app>
     <Layout>
-      <v-main class="my-1">
-        <v-container ma-0 pa-0 fluid align-center>
-          <v-layout ma-0 pa-0 row wrap justify-space-between fill-height>
-            <v-flex xs12 md8 pa-3>
-              <div class="headline font-weight-bold">{{ $page.session.title }}</div>
-              <v-divider class="my-2"/>
-              <div class="subheading pre-formatted text-color">{{ $page.session.abstract }}</div>
-            </v-flex>
-            <v-flex xs12 md4 pa-3>
-              <div class="headline font-weight-bold">Session Information</div>
-              <v-divider class="my-2"/>
-              <v-layout align-center justify-start>
-                <div class="pr-5 text-color">
-                  <div class="subheading">Time: {{ $page.session.time }}</div>
-                  <div class="subheading">Room: {{ $page.session.room }} <span>({{findFloor($page.session.room)}})</span></div>
-                </div>
-                <v-dialog
-                  v-model="dialog"
-                  hide-overlay
-                  transition="dialog-bottom-transition"
-                >
-                  <template v-slot:activator="{ on, attrs }">
-                    <v-btn outlined class="text-none" color="primary" v-bind="attrs" v-on="on">Map</v-btn>
-                  </template>
-                  <template v-slot:default="dialog">
-                    <v-card>
-                      <v-card-actions class="justify-end">
-                        <v-btn outlined class="text-none" @click="dialog.value = false">Close</v-btn>
-                      </v-card-actions>
-                      <img :src="findImage($page.session.room)" alt="">
-                    </v-card>
-                  </template>
-                </v-dialog>
-              </v-layout>
-            </v-flex>
-          </v-layout>
+      <v-main>
+        <Header :title="$page.session.title" />
+        <div class="max-center pt-5">
+          <v-row class="pb-5 ma-1">
+            <v-col cols="12" class="text-color">
+              <div class="pb-3">
+                <span class="pr-2"> <v-icon small>$clock</v-icon></span>
+                <span class="pr-5">{{ $page.session.time }} </span>
+                <span class="pr-2">
+                  <v-icon small :class="roomFiltered($page.session.room)"
+                    >$circlesolid</v-icon
+                  >
+                </span>
+                <span>{{ $page.session.room }}</span>
+                <span class="pl-2">
+                  <v-dialog
+                    v-model="dialog"
+                    transition="dialog-bottom-transition"
+                  >
+                    <template v-slot:activator="{ on, attrs }">
+                      <v-btn
+                        small
+                        outlined
+                        class="text-none"
+                        color="primary"
+                        v-bind="attrs"
+                        v-on="on"
+                        >Map</v-btn
+                      >
+                    </template>
+                    <template v-slot:default="dialog">
+                      <v-card>
+                        <v-card-actions class="justify-end">
+                          <v-btn
+                            outlined
+                            class="text-none"
+                            @click="dialog.value = false"
+                            >Close</v-btn
+                          >
+                        </v-card-actions>
+                        <img :src="findImage($page.session.room)" alt="" />
+                      </v-card>
+                    </template> </v-dialog
+                ></span>
+              </div>
+              <v-divider class="pt-3" />
+              <div>{{ $page.session.abstract }}</div>
+            </v-col>
+          </v-row>
           <SpeakerBio
             :speaker="$page.session.speaker"
             :bio="$page.session.bio"
@@ -44,6 +57,7 @@
             :twitUrl="$page.session.twitter"
             :webUrl="$page.session.website"
             :youtubeUrl="$page.session.youtube"
+            class="py-5"
           />
           <SpeakerBio
             v-if="$page.session.speaker2"
@@ -53,8 +67,9 @@
             :twitUrl="$page.session.twitter2"
             :webUrl="$page.session.website2"
             :youtubeUrl="$page.session.youtube2"
+            class="pb-5"
           />
-        </v-container>
+        </div>
       </v-main>
     </Layout>
   </v-app>
@@ -87,12 +102,14 @@ query Session ($path: String!) {
 import Layout from "@/layouts/Default";
 import SessionNavbar from "@/components/SessionNavbar";
 import SpeakerBio from "@/components/SpeakerBio";
+import Header from "@/components/Header";
 
 export default {
   components: {
     Layout,
     SessionNavbar,
     SpeakerBio,
+    Header,
   },
   metaInfo() {
     return {
@@ -100,10 +117,8 @@ export default {
     };
   },
   methods: {
-    roomFiltered: function(room) {
-      return room
-        .replace(/:|-| |&/g, "")
-        .toLowerCase();
+    roomFiltered: function (room) {
+      return room.replace(/:|-| |&/g, "").toLowerCase();
     },
     findFloor: function (room) {
       var floorfilter = this.roomFiltered(room);
@@ -125,21 +140,21 @@ export default {
       }
     },
     findImage: function (floor) {
-    var floorfilter = this.roomFiltered(floor)
+      var floorfilter = this.roomFiltered(floor);
       try {
         return require(`@/assets/images/rooms/${floorfilter}.png`);
       } catch (error) {
         return require("@/assets/images/generic-profile.png");
       }
-    }
-  }
+    },
+    roomFiltered: function (room) {
+      return room.replace(/:|-| |&/g, "").toLowerCase();
+    },
+  },
 };
 </script>
 
 <style scoped>
-.text-color {
-  color: rgba(0,0,0,.6);
-}
 .pre-formatted {
   white-space: pre-wrap;
 }
@@ -149,6 +164,35 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.max-center {
+  max-width: 1200px;
+  margin: 0 auto;
+  float: none;
+}
+.text-color {
+  color: rgba(0, 0, 0, 0.5);
+}
+.cartoonroom {
+  color: #90caf9;
+}
+.greathall12 {
+  color: #b39ddb;
+}
+.greathall3 {
+  color: #a5d6a7;
+}
+.interfaithroom {
+  color: #fff59d;
+}
+.studentalumniroom {
+  color: #ef9a9a;
+}
+.westballroom {
+  color: #ffcc80;
+}
+.eastballroom {
+  color: #80cbc4;
 }
 </style>
 

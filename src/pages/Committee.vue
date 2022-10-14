@@ -30,9 +30,9 @@
             <v-avatar size="300">
               <img :src="findImage(member.name)" />
             </v-avatar>
-            <h5 class="text-h5 pt-3">
+            <div class="headline font-weight-bold pt-3">
               {{ member.name }}
-            </h5>
+            </div>
             <p class="text-subtitle-1 grey--text">
               {{ member.title }}
             </p>
