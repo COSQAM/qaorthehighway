@@ -1,67 +1,72 @@
 <template>
-  <v-layout ma-0 pa-0 row wrap>
-    <v-flex xs12 md4 pa-3 justify-center align-center layout>
-      <v-avatar size="300">
+  <v-row class="ma-2">
+    <v-col cols="12" md="4" class="text-center">
+      <v-avatar size="250">
         <img :src="findImage()" :alt="speaker" />
       </v-avatar>
-    </v-flex>
-    <v-flex xs12 md8 pa-3>
-      <v-layout align-center>
-        <div class="headline font-weight-bold">{{ speaker }}</div>
+    </v-col>
+    <v-col cols="12" md="8">
+      <v-row align="center">
+        <v-col cols="auto">
+          <div class="headline font-weight-bold">{{ speaker }}</div>
+        </v-col>
         <v-spacer />
-        <v-btn
-          v-if="linkUrl"
-          text
-          icon
-          class="mx-1"
-          color="#0077B5"
-          target="_blank"
-          :href="linkUrl"
-          :title="`${speaker} LinkedIn`"
-        >
-          <v-icon>$vuetify.icons.linkedin</v-icon>
-        </v-btn>
-        <v-btn
-          v-if="twitUrl"
-          text
-          icon
-          class="mx-1"
-          color="#38A1F3"
-          target="_blank"
-          :href="twitUrl"
-          :title="`${speaker} Twitter`"
-        >
-          <v-icon>$vuetify.icons.twitter</v-icon>
-        </v-btn>
-        <v-btn
-          v-if="youtubeUrl"
-          text
-          icon
-          class="mx-1"
-          color="#FF0000"
-          target="_blank"
-          :href="youtubeUrl"
-          :title="`${speaker} Youtube`"
-        >
-          <v-icon>$vuetify.icons.youtube</v-icon>
-        </v-btn>
-        <v-btn
-          v-if="webUrl"
-          text
-          icon
-          class="mx-1"
-          color="#1b51aa"
-          target="_blank"
-          :href="webUrl"
-          :title="`${speaker} Website`"
-        >
-          <v-icon>$vuetify.icons.website</v-icon>
-        </v-btn>
-      </v-layout>
+        <v-col cols="auto">
+          <v-btn
+            v-if="linkUrl"
+            text
+            icon
+            class="mx-1"
+            color="#0077B5"
+            target="_blank"
+            :href="linkUrl"
+            :title="`${speaker} LinkedIn`"
+          >
+            <v-icon>$vuetify.icons.linkedin</v-icon>
+          </v-btn>
+          <v-btn
+            v-if="twitUrl"
+            text
+            icon
+            class="mx-1"
+            color="#38A1F3"
+            target="_blank"
+            :href="twitUrl"
+            :title="`${speaker} Twitter`"
+          >
+            <v-icon>$vuetify.icons.twitter</v-icon>
+          </v-btn>
+          <v-btn
+            v-if="youtubeUrl"
+            text
+            icon
+            class="mx-1"
+            color="#FF0000"
+            target="_blank"
+            :href="youtubeUrl"
+            :title="`${speaker} Youtube`"
+          >
+            <v-icon>$vuetify.icons.youtube</v-icon>
+          </v-btn>
+          <v-btn
+            v-if="webUrl"
+            text
+            icon
+            class="mx-1"
+            color="#1b51aa"
+            target="_blank"
+            :href="webUrl"
+            :title="`${speaker} Website`"
+          >
+            <v-icon>$vuetify.icons.website</v-icon>
+          </v-btn>
+        </v-col>
+      </v-row>
+
       <v-divider class="my-2" />
       <div class="subheading text-color">{{ bio }}</div>
-    </v-flex>
-  </v-layout>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
@@ -89,6 +94,6 @@ export default {
 
 <style scoped>
 .text-color {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.5);
 }
 </style>

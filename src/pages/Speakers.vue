@@ -12,13 +12,13 @@
             :key="index"
           >
             <a :href="`./${removeSpaces(speaker.url)}`">
-              <v-avatar size="300">
+              <v-avatar size="250">
                 <img :src="findImage(speaker.name)" />
               </v-avatar>
             </a>
-            <h5 class="text-h5 pt-3">
+            <div class="headline font-weight-bold pt-3">
               {{ speaker.name }}
-            </h5>
+            </div>
           </v-col>
         </v-row>
       </v-content>

@@ -16,6 +16,7 @@ import ChevronLeft from "@/components/icons/ChevronLeft"
 import Youtube from "@/components/icons/Youtube"
 import Slack from "@/components/icons/Slack"
 import QALogo from "@/components/icons/QALogo"
+import Clock from "@/components/icons/Clock"
 
 export default function (Vue, { appOptions, head }) {
   head.link.push({
@@ -84,6 +85,9 @@ export default function (Vue, { appOptions, head }) {
         },
         qalogo: {
           component: QALogo
+        },
+        clock: {
+          component: Clock
         }
       }
     }
