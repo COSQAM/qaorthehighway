@@ -1,17 +1,42 @@
 <template>
-  <v-img :src="require('@/assets/web/hero-image.png')" min-height="750px" max-height="800px">
-    <v-row align="center" justify="center" style="height: 700px" :class="$vuetify.breakpoint.xsOnly ? 'ma-2' : ''">>
+  <v-img
+    :src="require('@/assets/web/hero-image.png')"
+    min-height="750px"
+    max-height="800px"
+  >
+    <v-row
+      align="center"
+      justify="center"
+      style="min-height: 700px"
+      :class="$vuetify.breakpoint.xsOnly ? 'ma-2' : ''"
+    >
       <v-spacer></v-spacer>
-      <v-col class="white--text" cols="auto" :class="$vuetify.breakpoint.xsOnly ? '' : 'small-style'">
-        <h1 class="text-h2 font-weight-bold mb-5">
+      <v-col
+        class="white--text"
+        cols="auto"
+        :class="$vuetify.breakpoint.xsOnly ? '' : 'small-style'"
+      >
+        <div
+          :class="
+            $vuetify.breakpoint.smAndDown
+              ? 'text-h3 font-weight-bold'
+              : 'text-h2 font-weight-bold'
+          "
+        >
           The Midwests Largest Software Quality Conference
-        </h1>
-        <h1 class="text-h5 font-weight-bold mb-5 secondary--text">
+        </div>
+        <div
+          :class="
+            $vuetify.breakpoint.smAndDown
+              ? 'text-h6 font-weight-bold secondary--text py-5'
+              : 'text-h5 font-weight-bold secondary--text py-5'
+          "
+        >
           <span class="accent--text">03-30-2022</span>
           <span class="pl-4 pr-1">COLUMBUS, OH</span>
           <span class="px-2">/</span>
           <span>THE OHIO UNION</span>
-        </h1>
+        </div>
         <h4 class="subheading mb-5">
           QA or the Highway is an affordable one day conference featuring real
           world experience and thought leadership in quality assurance for the
