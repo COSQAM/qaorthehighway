@@ -1,7 +1,11 @@
 <template>
   <div class="background">
     <div
-      class="text-h4 font-weight-black white--text text-center padding"
+              :class="
+            $vuetify.breakpoint.smAndDown
+              ? 'text-h4 font-weight-black white--text text-center padding-small'
+              : 'text-h4 font-weight-black white--text text-center padding-large'
+          "
     >
       {{ title }}
     </div>
@@ -28,8 +32,11 @@ export default {
   position: relative;
 }
 
-.padding {
+.padding-large {
   padding: 60px 60px
+}
+.padding-small {
+  padding: 60px 20px
 }
 
 .color {
