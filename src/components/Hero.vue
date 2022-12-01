@@ -32,7 +32,7 @@
               : 'text-h5 font-weight-bold secondary--text py-5'
           "
         >
-          <span class="accent--text">03-30-2022</span>
+          <span class="accent--text">05-30-2023</span>
           <span class="pl-4 pr-1">COLUMBUS, OH</span>
           <span class="px-2">/</span>
           <span>THE OHIO UNION</span>
@@ -42,8 +42,17 @@
           world experience and thought leadership in quality assurance for the
           software industry
         </h4>
-        <v-btn block color="accent" class="black--text" href="./tickets" x-large
-          >Get Your Tickets Now</v-btn
+        <div
+          :class="
+            $vuetify.breakpoint.smAndDown
+              ? 'text-h4 font-weight-bold py-5'
+              : 'text-h3 font-weight-bold py-5'
+          "
+        >
+         Call for Speakers now open!
+        </div>
+        <v-btn block color="accent" class="black--text" href="https://forms.gle/RPKw3NkBNv4N7PGK9" target="_blank" x-large
+          >Submit your talk here</v-btn
         >
       </v-col>
       <v-spacer></v-spacer>

@@ -64,7 +64,7 @@
       </v-row>
 
       <v-divider class="my-2" />
-      <div class="subheading text-color">{{ bio }}</div>
+      <div class="subheading text-color pre-format">{{ bio }}</div>
     </v-col>
   </v-row>
 </template>
@@ -93,6 +93,9 @@ export default {
 </script>
 
 <style scoped>
+.pre-format {
+  white-space: pre-wrap;
+}
 .text-color {
   color: rgba(0, 0, 0, 0.5);
 }

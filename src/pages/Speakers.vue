@@ -4,6 +4,10 @@
       <v-content>
         <Header title="Speakers" />
         <v-row class="text-center max-center mt-5">
+          <v-col class="headline font-weight-bold pt-3">
+              Speakers have not been announced for the 2023 conference. Please check back later.
+          </v-col>
+          <!--
           <v-col
             cols="12"
             md="4"
@@ -20,6 +24,7 @@
               {{ speaker.name }}
             </div>
           </v-col>
+          -->
         </v-row>
       </v-content>
     </Layout>
