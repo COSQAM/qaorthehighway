@@ -1,7 +1,7 @@
 <template>
   <v-container class="my-5">
     <v-row align="center" justify="center"
-      ><h3 class="text-h5 font-weight-black pb-5">SPONSORS</h3></v-row
+      ><h3 class="text-h5 font-weight-black pb-5">2022 SPONSORS</h3></v-row
     >
     <v-row align="center" justify="center"
       ><h3 class="text-h5 font-weight-black primary--text py-5">

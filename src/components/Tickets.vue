@@ -7,9 +7,9 @@
       <v-row align="center" justify="center" class="mb-5 pb-5">
         <v-col cols="12" md="6" class="text-center">
           <v-card class="text-left padding-y px-5">
-            <v-card-title class="text-h3 font-weight-black">$85</v-card-title>
+            <v-card-title class="text-h3 font-weight-black">$99</v-card-title>
             <v-card-subtitle class="text-h5 font-weight-bold"
-              >Early Bird Pricing <span class="text-subtitle-1 font-weight-light pl-4">(Ends 02/30/2022)</span></v-card-subtitle
+              >Early Bird Pricing <span class="text-subtitle-1 font-weight-light pl-4">(Ends 03/31/2023)</span></v-card-subtitle
             >
             <div class="spacer" />
             <v-card-text class="text-subtitle-1">
@@ -24,7 +24,7 @@
         </v-col>
         <v-col cols="12" md="6" class="text-center">
           <v-card class="text-left padding-y px-5" color="primary" dark>
-            <v-card-title class="text-h3 font-weight-black">$99</v-card-title>
+            <v-card-title class="text-h3 font-weight-black">$129</v-card-title>
             <v-card-subtitle class="text-h5 font-weight-bold"
               >Full Price Ticket</v-card-subtitle
             >

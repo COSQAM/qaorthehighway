@@ -3,6 +3,11 @@
     <Layout>
       <v-content>
         <Header title="Schedule" />
+        <div class="headline font-weight-bold pt-3 text-center">
+          The schedule have not been announced for the 2023 conference. Please check
+          back later.
+        </div>
+        <!--
         <div class="max-center">
           <div class="ma-3">
             <SessionList
@@ -35,6 +40,7 @@
             />
           </div>
         </div>
+        -->
       </v-content>
     </Layout>
   </v-app>
