@@ -17,7 +17,7 @@
         md="6"
         class="d-flex justify-center"
       >
-        <a :href="`${platinum.url}`">
+        <a :href="`${platinum.url}`" target="_blank">
           <v-img
             contain
             max-height="350"
@@ -42,7 +42,7 @@
         md="6"
         class="d-flex justify-center"
       >
-        <a :href="`${gold.url}`">
+        <a :href="`${gold.url}`" target="_blank">
           <v-img
             contain
             max-height="250"
@@ -66,7 +66,7 @@
         md="4"
         class="d-flex justify-center"
       >
-        <a :href="`${silver.url}`">
+        <a :href="`${silver.url}`" target="_blank">
           <v-img
             contain
             max-height="250"
@@ -90,7 +90,7 @@
         md="6"
         class="d-flex justify-center"
       >
-        <a :href="`${snack.url}`">
+        <a :href="`${snack.url}`" target="_blank">
           <v-img
             contain
             max-height="250"
@@ -119,27 +119,27 @@ export default {
         { image: "mabl", url: "https://www.mabl.com/" },
       ],
       golds: [
-        { image: "sogeti", url: "" },
-        { image: "practitest", url: "" },
-        { image: "impower", url: "" },
-        { image: "nesco", url: "" },
+        { image: "sogeti", url: "https://www.sogeti.com/" },
+        { image: "practitest", url: "https://www.practitest.com/" },
+        { image: "impower", url: "https://www.impower.ai/" },
+        { image: "nesco", url: "https://www.nescoresource.com/" },
       ],
       silvers: [
-        { image: "revel", url: "" },
-        { image: "perfecto", url: "" },
-        { image: "igs", url: "" },
-        { image: "unicon", url: "" },
-        { image: "boundless", url: "" },
-        { image: "echelle", url: "" },
-        { image: "applitools", url: "" },
-        { image: "cgi", url: "" },
-        { image: "provar", url: "" },
-        { image: "improving", url: "" },
-        { image: "functionize", url: "" },
+        { image: "revel", url: "https://www.revelit.com/" },
+        { image: "perfecto", url: "https://www.perfecto.io/" },
+        { image: "igs", url: "https://www.igs.com/" },
+        { image: "unicon", url: "https://www.unicon.net/" },
+        { image: "boundless", url: "https://www.boundless.com/" },
+        { image: "echelle", url: "http://echelleresources.com/" },
+        { image: "applitools", url: "https://applitools.com/" },
+        { image: "cgi", url: "https://www.cgi.com/en" },
+        { image: "provar", url: "https://www.provartesting.com/" },
+        { image: "improving", url: "https://improving.com/" },
+        { image: "functionize", url: "https://www.functionize.com/" },
       ],
       snacks: [
-        { image: "practitest", url: "" },
-        { image: "boundless", url: "" },
+        { image: "practitest", url: "https://www.practitest.com/" },
+        { image: "boundless", url: "https://www.boundless.com/" },
       ],
     };
   },
