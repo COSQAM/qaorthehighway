@@ -44,11 +44,11 @@ export default {
         },
         {
           q: "What if I'm hungry?​",
-          a: "Breakfast with hot and cold drinks will be available from 7:00 AM to 7:50 AM inside the East Ballroom on the second floor. A buffet lunch will be offered at 11:30 AM inside the East Ballroom. Afternoon refreshments will be provided at the 2:55 PM break in the Danny Price Student Lounge on the second floor. The Ohio Union also has several food and beverage options located on the first floor!",
+          a: "A full breakfast including food with hot and cold drinks will be available from 7:00 AM to 7:50 AM inside the East Ballroom on the second floor. \n\nA buffet lunch will be offered at 11:30 AM inside the East Ballroom. \n\nAfternoon refreshments and treats will be provided at the 2:55 PM break in the Danny Price Student Lounge on the second floor. \n\nThe Ohio Union also has several food and beverage options located on the first floor.",
         },
         {
-          q: "What about vegetarians?",
-          a: "If you prefer a vegetarian meal for lunch, please indicate so when you Buy your Ticket. We will have a separate breakfast and lunch buffet station with Vegan options.",
+          q: "What about vegetarians or vegans?",
+          a: "If you prefer a vegetarian or vegan meal for lunch, please indicate so when you buy your ticket. We will have a separate breakfast and lunch buffet station with vegitarian and vegan options.",
         },
         {
           q: "How do I connect to Wi-Fi?",
@@ -73,7 +73,7 @@ export default {
         },
         {
           q: "How can I tell you about my experience?",
-          a: 'We love feedback! Face-to-face works best. Find any Organizer or Volunteer and let them know what you think. Alternately, you can leave anonymous, confidential feedback on our "Keep It, Stop It, Add It" Kanban board by the Registration desk, or scan the QR Code on your badge to leave session-specific feedback online.',
+          a: 'We love feedback! Face-to-face works best. Find any Organizer or Volunteer and let them know what you think. Alternately, you can scan the QR Code on your badge to leave session-specific feedback online.',
         },
         {
           q: "This FAQ didn't answer my question! Now what?",
