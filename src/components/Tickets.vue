@@ -9,7 +9,7 @@
           <v-card class="text-left padding-y px-5">
             <v-card-title class="text-h3 font-weight-black">$99</v-card-title>
             <v-card-subtitle class="text-h5 font-weight-bold"
-              >Early Bird Pricing <span class="text-subtitle-1 font-weight-light pl-4">(Ends 03/31/2023)</span></v-card-subtitle
+              >Early Bird Pricing <span class="text-subtitle-1 pl-4">(Ends 03/31/2023)</span></v-card-subtitle
             >
             <div class="spacer" />
             <v-card-text class="text-subtitle-1">
@@ -56,7 +56,7 @@ export default {
     return {
       list: [
         "Access to 32 different talks given by world renowned speakers",
-        "Breakfast and Lunch provided (vegan available by request)",
+        "Breakfast and Lunch provided (vegetarian and vegan available by request)",
         "Conference t-shirt",
         "Coffee, Water, Soda, and Tea provided between sessions",
         "Conference and Sponsor Raffles",

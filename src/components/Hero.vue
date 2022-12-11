@@ -8,13 +8,13 @@
       align="center"
       justify="center"
       style="min-height: 700px"
-      :class="$vuetify.breakpoint.xsOnly ? 'ma-2' : ''"
+      :class="$vuetify.breakpoint.smAndDown ? 'ma-2' : ''"
     >
       <v-spacer></v-spacer>
       <v-col
         class="white--text"
         cols="auto"
-        :class="$vuetify.breakpoint.xsOnly ? '' : 'small-style'"
+        :class="$vuetify.breakpoint.smAndDown ? '' : 'small-style'"
       >
         <div
           :class="
@@ -23,7 +23,7 @@
               : 'text-h2 font-weight-bold'
           "
         >
-          The Midwests Largest Software Quality Conference
+          The Midwest's Largest Software Quality Conference
         </div>
         <div
           :class="

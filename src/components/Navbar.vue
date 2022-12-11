@@ -1,21 +1,22 @@
 <template>
   <nav>
     <v-app-bar app dark fixed elevate-on-scroll color="primary">
-        <v-col class="pa-0">
-            <a href="./"><v-icon :size="$vuetify.breakpoint.xsOnly ? 140 : 225">$vuetify.icons.qalogo</v-icon></a>
-        </v-col>
-          <v-app-bar-title
-            class="hidden-sm-and-down center"
-            v-for="link in links"
-            :key="link.title"
-          >
-            <v-btn text :href="link.path">{{ link.title }}</v-btn>
-          </v-app-bar-title>
-          <v-btn color="accent" outlined href="./tickets">Tickets</v-btn>
-          <v-app-bar-nav-icon
-            @click="drawer = !drawer"
-            class="hidden-md-and-up"
-          />
+      <v-col class="pa-0">
+        <a href="./"
+          ><v-icon :size="$vuetify.breakpoint.xsOnly ? 140 : 225"
+            >$vuetify.icons.qalogo</v-icon
+          ></a
+        >
+      </v-col>
+      <v-app-bar-title
+        class="hidden-sm-and-down center"
+        v-for="link in links"
+        :key="link.title"
+      >
+        <v-btn text :href="link.path">{{ link.title }}</v-btn>
+      </v-app-bar-title>
+      <v-btn color="accent" outlined href="./tickets">Tickets</v-btn>
+      <v-app-bar-nav-icon @click="drawer = !drawer" class="hidden-md-and-up" />
     </v-app-bar>
 
     <v-navigation-drawer dark right disable-resize-watcher app v-model="drawer">
@@ -25,10 +26,8 @@
           :key="link.title"
           :href="link.path"
           ripple
+          class="padding-left"
         >
-          <v-list-item-action>
-            <v-icon>{{ link.icon }}</v-icon>
-          </v-list-item-action>
           <v-list-item-content>{{ link.title }}</v-list-item-content>
         </v-list-item>
       </v-list>
@@ -42,13 +41,17 @@ export default {
     return {
       drawer: false,
       links: [
-        { icon: "fa-chalkboard-teacher", title: "Speakers", path: "./speakers" },
-        { icon: "fa-list-alt", title: "Schedule", path: "./schedule" },
-        { icon: "fa-map-pin", title: "Venue", path: "./venue" },
-        { icon: "fa-question-circle", title: "FAQ", path: "./faq" },
-        { icon: "fa-users", title: "Committee", path: "./committee" },
-        { icon: "fa-at", title: "Contact", path: "./contact" },
-        { icon: "fa-history", title: "Archive", path: "./archive" },
+        {
+          icon: "fa-chalkboard-teacher",
+          title: "Speakers",
+          path: "./speakers",
+        },
+        { title: "Schedule", path: "./schedule" },
+        { title: "Venue", path: "./venue" },
+        { title: "FAQ", path: "./faq" },
+        { title: "Committee", path: "./committee" },
+        { title: "Contact", path: "./contact" },
+        { title: "Archive", path: "./archive" },
       ],
     };
   },
@@ -71,5 +74,8 @@ export default {
 }
 .theme--dark.v-navigation-drawer {
   background-color: var(--v-primary-base);
+}
+.padding-left {
+  padding-left: 2.5rem;
 }
 </style>
