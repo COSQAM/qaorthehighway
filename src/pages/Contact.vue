@@ -3,20 +3,20 @@
     <Layout>
       <v-main>
         <Header title="Contact" />
-        <v-row align-content="center">
-          <v-spacer />
-          <v-col cols="auto">
+        <v-row align-content="center" class="mt-3">
+          <v-spacer v-if="$vuetify.breakpoint.mdAndUp"/>
+          <v-col cols="12" md="6">
             <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLSfzPcI7LO2NbRtI0kaH7jHbdIEtAa-b7KjYo0nVPHz2ECnnDA/viewform?embedded=true"
-              width="800"
-              height="750"
+              width="100%"
+              height="800"
               frameborder="0"
               marginheight="0"
               marginwidth="0"
               >Loading…</iframe
             >
           </v-col>
-          <v-spacer />
+          <v-spacer v-if="$vuetify.breakpoint.mdAndUp"/>
         </v-row>
         <div class="max-center">
           <v-row justify="center" class="ma-5">
