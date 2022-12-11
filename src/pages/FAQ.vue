@@ -3,16 +3,22 @@
     <Layout>
       <v-main>
         <Header title="Frequently Asked Questions" />
-        <div class="max-center mb-5">
+        <div class="max-center my-5">
           <div
             v-for="(question, index) in questions"
             :key="index"
             class="mx-3 preline"
           >
-            <div class="text-h6 font-weight-bold mb-1 primary--text">
+            <div class="text-h6 font-weight-bold primary--text">
               {{ question.q }}
             </div>
-            <div class="font-weight-light">{{ question.a }}</div>
+            <div class="font-weight-light margin-top">
+              {{ question.a}}<span v-if="question.btnName" class="pl-3"
+                ><v-btn x-small color="primary" :href="question.link" :target="question.target">{{
+                  question.btnName
+                }}</v-btn></span
+              >
+            </div>
           </div>
         </div>
       </v-main>
@@ -33,6 +39,8 @@ export default {
         {
           q: "When and where do I register?​",
           a: "Ticket holders may register for the conference beginning at 7:00 AM at the registration desk which is located on the North side of the first floor by the main stairway. Refer to the Venue floorplans for more information. Stop by to get your lanyard, parking voucher, and free conference swag!",
+          btnName: "Venue floorplan",
+          link: "./venue",
         },
         {
           q: "What if I'm hungry?​",
@@ -47,8 +55,10 @@ export default {
           a: "Complimentary wireless internet access is available throughout the Ohio Union. To access it:\n\n1. Connect to “WiFi@OSU”. No password is required.\n\n2. After waiting 10-15 seconds to establish a connection, open a web browser. Most devices will automatically be redirected to an authentication page. If this does not occur within 30 seconds of opening your browser, type www.osu.edu into the browser’s address bar. \n\n3. Upon reaching the authentication page and reviewing the terms and conditions, check the box under the “Guests” column and click “Log-in”. \n\n4. You may be required to repeat Step 3 after several hours of inactivity.",
         },
         {
-          q: "What if I hate stairs?",
+          q: "Are elevators available?",
           a: "There are two sets of elevators available in addition to the stairs. Refer to the Venue floorplans for more information.",
+          btnName: "Venue floorplan",
+          link: "./venue",
         },
         {
           q: "Do you have any free stuff?​",
@@ -57,6 +67,9 @@ export default {
         {
           q: "Where can I get copies of the presentations?",
           a: "Many past slide decks from previous years are available on Slideshare.net. After this years conference, we encourage all speakers to make their slide decks available there, as well.",
+          btnName: "Slideshare",
+          link: "https://www.slideshare.net/qaoth",
+          target: "_blank"
         },
         {
           q: "How can I tell you about my experience?",
@@ -65,6 +78,8 @@ export default {
         {
           q: "This FAQ didn't answer my question! Now what?",
           a: "Reach out to us via our Contact form and tell us what we missed!",
+          btnName: "Contact us",
+          link: "./contact",
         },
       ],
     };
@@ -85,5 +100,8 @@ export default {
 }
 .preline {
   white-space: pre-line;
+}
+.margin-top {
+  margin-top: -1.5rem;
 }
 </style>
