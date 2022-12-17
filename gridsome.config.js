@@ -7,6 +7,5 @@
 module.exports = {
   siteName: 'QA or the Highway',
   plugins: [],
-  siteUrl: 'https://cosqam.github.io',
-  pathPrefix: '/qaorthehighway'
+  siteUrl: 'https://www.qaorthehwy.com'
 }
