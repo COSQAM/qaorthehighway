@@ -18,7 +18,7 @@ import Slack from "@/components/icons/Slack"
 import QALogo from "@/components/icons/QALogo"
 import Clock from "@/components/icons/Clock"
 
-export default function (Vue, { appOptions, head }) {
+export default function (Vue, { appOptions, head, isClient, process }) {
   head.link.push({
     rel: 'stylesheet',
     href: 'https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css',
@@ -29,9 +29,22 @@ export default function (Vue, { appOptions, head }) {
     href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900',
   });
 
+  head.script.push({
+    src: '<https://www.googletagmanager.com/gtag/jsid=G-CR7QVM3F0G>',
+    async: true
+  })
+
+  if (process.isClient) {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-CR7QVM3F0G');
+    window.gtag = gtag; // expose gtag function to global scope
+  }
+
   const opts = {
     theme: {
-      options : {
+      options: {
         customProperties: true,
       },
       themes: {
