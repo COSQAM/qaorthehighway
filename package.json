@@ -9,7 +9,6 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@gridsome/plugin-google-analytics": "^0.1.2",
     "gh-pages": "^3.2.3",
     "gridsome": "^0.7.0",
     "gridsome-plugin-pwa": "^0.0.22",
