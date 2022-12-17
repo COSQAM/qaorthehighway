@@ -40,7 +40,7 @@ export default {
           q: "When and where do I register?​",
           a: "Ticket holders may register for the conference beginning at 7:00 AM at the registration desk which is located on the North side of the first floor by the main stairway. Refer to the Venue floorplans for more information. Stop by to get your lanyard, parking voucher, and free conference swag!",
           btnName: "Venue floorplan",
-          link: "./venue",
+          link: "/venue",
         },
         {
           q: "What if I'm hungry?​",
@@ -58,7 +58,7 @@ export default {
           q: "Are elevators available?",
           a: "There are two sets of elevators available in addition to the stairs. Refer to the Venue floorplans for more information.",
           btnName: "Venue floorplan",
-          link: "./venue",
+          link: "/venue",
         },
         {
           q: "Do you have any free stuff?​",
@@ -79,7 +79,7 @@ export default {
           q: "This FAQ didn't answer my question! Now what?",
           a: "Reach out to us via our Contact form and tell us what we missed!",
           btnName: "Contact us",
-          link: "./contact",
+          link: "/contact",
         },
       ],
     };

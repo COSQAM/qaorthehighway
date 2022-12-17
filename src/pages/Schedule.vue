@@ -3,10 +3,17 @@
     <Layout>
       <v-content>
         <Header title="Schedule" />
-        <div class="headline font-weight-bold pt-3 text-center">
-          The schedule have not been announced for the 2023 conference. Please check
-          back later.
-        </div>
+        <v-row class="text-center max-center mt-5">
+          <v-col class="text-h5 primary--text font-weight-bold pt-3">
+            <div>
+              We are still reviewing speaker submissions for the 2023
+              conference.
+            </div>
+            <div class="pt-3">
+              We'll be releasing the schedule on March 31, 2023.
+            </div>
+          </v-col>
+        </v-row>
         <!--
         <div class="max-center">
           <div class="ma-3">

@@ -2,7 +2,7 @@
   <nav>
     <v-app-bar app dark fixed elevate-on-scroll color="primary">
       <v-col class="pa-0">
-        <a href="./"
+        <a href="/"
           ><v-icon :size="$vuetify.breakpoint.xsOnly ? 140 : 225"
             >$vuetify.icons.qalogo</v-icon
           ></a
@@ -15,7 +15,7 @@
       >
         <v-btn text :href="link.path">{{ link.title }}</v-btn>
       </v-app-bar-title>
-      <v-btn color="accent" outlined href="./tickets">Tickets</v-btn>
+      <v-btn color="accent" outlined href="/tickets">Tickets</v-btn>
       <v-app-bar-nav-icon @click="drawer = !drawer" class="hidden-md-and-up" />
     </v-app-bar>
 
@@ -44,14 +44,14 @@ export default {
         {
           icon: "fa-chalkboard-teacher",
           title: "Speakers",
-          path: "./speakers",
+          path: "/speakers",
         },
-        { title: "Schedule", path: "./schedule" },
-        { title: "Venue", path: "./venue" },
-        { title: "FAQ", path: "./faq" },
-        { title: "Committee", path: "./committee" },
-        { title: "Contact", path: "./contact" },
-        { title: "Archive", path: "./archive" },
+        { title: "Schedule", path: "/schedule" },
+        { title: "Venue", path: "/venue" },
+        { title: "FAQ", path: "/faq" },
+        { title: "Committee", path: "/committee" },
+        { title: "Contact", path: "/contact" },
+        { title: "Archive", path: "/archive" },
       ],
     };
   },
