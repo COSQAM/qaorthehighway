@@ -12,7 +12,7 @@
           <v-col cols="auto">
             <iframe
               id="eventbrite-widget-container-129775290387"
-              src="./eventbrite.html"
+              src="/eventbrite.html"
               frameborder="0"
               width="800px"
               height="1200px"

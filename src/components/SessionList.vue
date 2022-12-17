@@ -16,7 +16,7 @@
           >
             <v-list-item
               :class="timeFiltered"
-              :href="`./${removeSpaces(session.node.speaker)}`"
+              :href="`/${removeSpaces(session.node.speaker)}`"
             >
               <v-list-item-content>
                 <v-list-item-title>{{ session.node.title }}</v-list-item-title>

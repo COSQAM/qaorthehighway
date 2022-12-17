@@ -4,8 +4,14 @@
       <v-content>
         <Header title="Speakers" />
         <v-row class="text-center max-center mt-5">
-          <v-col class="headline font-weight-bold pt-3">
-              Speakers have not been announced for the 2023 conference. Please check back later.
+          <v-col class="text-h5 primary--text font-weight-bold pt-3">
+            <div>
+              We are still reviewing speaker submissions for the 2023
+              conference.
+            </div>
+            <div class="pt-3">
+              We'll be releasing the full list of speakers on March 31, 2023.
+            </div>
           </v-col>
           <!--
           <v-col
@@ -15,7 +21,7 @@
             v-for="(speaker, index) in combineSpeakers($page.speakers.edges)"
             :key="index"
           >
-            <a :href="`./${removeSpaces(speaker.url)}`">
+            <a :href="`/${removeSpaces(speaker.url)}`">
               <v-avatar size="250">
                 <img :src="findImage(speaker.name)" />
               </v-avatar>
