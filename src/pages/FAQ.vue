@@ -13,10 +13,15 @@
               {{ question.q }}
             </div>
             <div class="font-weight-light margin-top">
-              {{ question.a}}<span v-if="question.btnName" class="pl-3"
-                ><v-btn x-small color="primary" :href="question.link" :target="question.target">{{
-                  question.btnName
-                }}</v-btn></span
+              {{ question.a
+              }}<span v-if="question.btnName" class="pl-3"
+                ><v-btn
+                  x-small
+                  color="primary"
+                  :href="question.link"
+                  :target="question.target"
+                  >{{ question.btnName }}</v-btn
+                ></span
               >
             </div>
           </div>
@@ -61,23 +66,29 @@ export default {
           link: "/venue",
         },
         {
+          q: "Is there any information about building accessability?",
+          a: "Attendees with questions about access, accessible parking while attending the conference can contact the Ohio Union for the accessibility contact person and latest disability entrances.",
+          btnName: "Ohio Union - Accessibility",
+          link: "https://ohiounion.osu.edu/visiting/accessibility/",
+        },
+        {
           q: "Do you have any free stuff?​",
-          a: "Plenty! Visit our passionate sponsors on the second floor outside the East Ballroom.  And, be sure to stay for our second keynote and closing remarks.  There are lots of prizes to win during the raffle starting at 5:15!",
+          a: "Plenty! Visit our passionate sponsors on the second floor outside the East Ballroom.  And, be sure to stay for our second keynote and closing remarks.  There are lots of prizes to win during the raffle starting at 5:15.",
         },
         {
           q: "Where can I get copies of the presentations?",
           a: "Many past slide decks from previous years are available on Slideshare.net. After this years conference, we encourage all speakers to make their slide decks available there, as well.",
           btnName: "Slideshare",
           link: "https://www.slideshare.net/qaoth",
-          target: "_blank"
+          target: "_blank",
         },
         {
           q: "How can I tell you about my experience?",
-          a: 'We love feedback! Face-to-face works best. Find any Organizer or Volunteer and let them know what you think. Alternately, you can scan the QR Code on your badge to leave session-specific feedback online.',
+          a: "We love feedback! Face-to-face works best. Find any Organizer or Volunteer and let them know what you think. Alternately, you can scan the QR Code on your badge to leave session-specific feedback online.",
         },
         {
-          q: "This FAQ didn't answer my question! Now what?",
-          a: "Reach out to us via our Contact form and tell us what we missed!",
+          q: "I have another question that is not covered by this FAQ.",
+          a: "Reach out to us via our Contact form, and we'll try to answer any additional questions to might have",
           btnName: "Contact us",
           link: "/contact",
         },
