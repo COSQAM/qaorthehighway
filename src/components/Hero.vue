@@ -20,7 +20,7 @@
           :class="
             $vuetify.breakpoint.smAndDown
               ? 'text-h3 font-weight-bold'
-              : 'text-h2 font-weight-bold'
+              : 'large-text font-weight-bold'
           "
         >
           The Midwest's Largest Software Quality Conference
@@ -37,7 +37,7 @@
           <span class="px-2">/</span>
           <span>THE OHIO UNION</span>
         </div>
-        <h4 class="subheading mb-5">
+        <h4 class="text-body-1 mb-5">
           QA or the Highway is an affordable one day conference featuring real
           world experience and thought leadership in quality assurance for the
           software industry
@@ -75,5 +75,10 @@ export default {
 <style scoped>
 .small-style {
   max-width: 700px;
+}
+.large-text {
+  font-size: 4.5rem;
+  line-height: 5rem;
+
 }
 </style>
