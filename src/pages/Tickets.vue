@@ -3,24 +3,25 @@
     <Layout>
       <v-main>
         <Header title="Tickets" />
+        <!--
         <v-col class="headline font-weight-bold pt-3 text-center">
           Tickets currently not on sale. Please check back later.
         </v-col>
-        <!--
+        -->
+
         <v-row class="my-5" align-content="center">
-          <v-spacer />
-          <v-col cols="auto">
+          <v-spacer v-if="$vuetify.breakpoint.mdAndUp"/>
+          <v-col cols="12" md="6">
             <iframe
-              id="eventbrite-widget-container-129775290387"
+              id="eventbrite-widget-container-494986045587"
               src="/eventbrite.html"
               frameborder="0"
-              width="800px"
+              width="100%"
               height="1200px"
             ></iframe>
           </v-col>
-          <v-spacer />
+          <v-spacer v-if="$vuetify.breakpoint.mdAndUp"/>
         </v-row>
-        -->
       </v-main>
     </Layout>
   </v-app>
