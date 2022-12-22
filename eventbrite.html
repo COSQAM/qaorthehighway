@@ -1,4 +1,4 @@
-<div id="eventbrite-widget-container-129775290387"></div>
+<div id="eventbrite-widget-container-494986045587"></div>
 
 <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 
@@ -8,10 +8,13 @@
     };
 
     window.EBWidgets.createWidget({
+        // Required
         widgetType: 'checkout',
         eventId: '494986045587',
-        modal: true,
-        modalTriggerElementId: 'eventbrite-widget-modal-trigger-494986045587',
-        onOrderComplete: exampleCallback
+        iframeContainerId: 'eventbrite-widget-container-494986045587',
+
+        // Optional
+        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
     });
 </script>
