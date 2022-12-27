@@ -17,7 +17,7 @@
               src="/eventbrite.html"
               frameborder="0"
               width="100%"
-              height="1200px"
+              height="800px"
             ></iframe>
           </v-col>
           <v-spacer v-if="$vuetify.breakpoint.mdAndUp"/>
