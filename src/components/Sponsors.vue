@@ -1,7 +1,7 @@
 <template>
   <v-container class="my-5">
     <v-row align="center" justify="center"
-      ><h3 class="text-h5 font-weight-black pb-5">2022 SPONSORS</h3></v-row
+      ><h3 class="text-h5 font-weight-black pb-5">SPONSORS</h3></v-row
     >
     <v-row align="center" justify="center"
       ><h3 class="text-h5 font-weight-black primary--text py-5">
@@ -100,7 +100,30 @@
         </a>
       </v-col>
     </v-row>
-
+    <v-row align="center" justify="center"
+      ><h3 class="text-h5 font-weight-black primary--text py-5">
+        T-Shirt Sponsors
+      </h3>
+    </v-row>
+    <v-divider></v-divider>
+    <v-row align="center" justify="space-around" class="my-3">
+      <v-col
+        v-for="(tshirt, index) in tshirts"
+        :key="index"
+        sm="12"
+        md="6"
+        class="d-flex justify-center"
+      >
+        <a :href="`${tshirt.url}`" target="_blank">
+          <v-img
+            contain
+            max-height="250"
+            max-width="250"
+            :src="findImage(tshirt.image)"
+          />
+        </a>
+      </v-col>
+    </v-row>
     <Break class="color" />
   </v-container>
 </template>
@@ -115,32 +138,13 @@ export default {
   data() {
     return {
       platinums: [
-        { image: "everest", url: "https://everesttech.com/" },
+        { image: "practitest", url: "https://www.practitest.com/" },
         { image: "mabl", url: "https://www.mabl.com/" },
       ],
-      golds: [
-        { image: "sogeti", url: "https://www.sogeti.com/" },
-        { image: "practitest", url: "https://www.practitest.com/" },
-        { image: "impower", url: "https://www.impower.ai/" },
-        { image: "nesco", url: "https://www.nescoresource.com/" },
-      ],
-      silvers: [
-        { image: "revel", url: "https://www.revelit.com/" },
-        { image: "perfecto", url: "https://www.perfecto.io/" },
-        { image: "igs", url: "https://www.igs.com/" },
-        { image: "unicon", url: "https://www.unicon.net/" },
-        { image: "boundless", url: "https://www.boundless.com/" },
-        { image: "echelle", url: "http://echelleresources.com/" },
-        { image: "applitools", url: "https://applitools.com/" },
-        { image: "cgi", url: "https://www.cgi.com/en" },
-        { image: "provar", url: "https://www.provartesting.com/" },
-        { image: "improving", url: "https://improving.com/" },
-        { image: "functionize", url: "https://www.functionize.com/" },
-      ],
-      snacks: [
-        { image: "practitest", url: "https://www.practitest.com/" },
-        { image: "boundless", url: "https://www.boundless.com/" },
-      ],
+      golds: [{ image: "perfecto", url: "https://www.perfecto.io/" }],
+      silvers: [{ image: "boundless", url: "https://www.boundless.com/" },],
+      snacks: [],
+      tshirts: [{ image: "practitest", url: "https://www.practitest.com/" }],
     };
   },
   methods: {
