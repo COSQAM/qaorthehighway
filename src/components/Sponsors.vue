@@ -141,9 +141,17 @@ export default {
         { image: "practitest", url: "https://www.practitest.com/" },
         { image: "mabl", url: "https://www.mabl.com/" },
       ],
-      golds: [{ image: "perfecto", url: "https://www.perfecto.io/" }],
-      silvers: [{ image: "boundless", url: "https://www.boundless.com/" },],
-      snacks: [],
+      golds: [
+        { image: "perfecto", url: "https://www.perfecto.io/" },
+        { image: "yourlogo", url: "/contact" },
+      ],
+      silvers: [
+        { image: "boundless", url: "https://www.boundless.com/" },
+        { image: "yourlogo", url: "/contact" },
+      ],
+      snacks: [
+        { image: "yourlogo", url: "/contact" }
+      ],
       tshirts: [{ image: "practitest", url: "https://www.practitest.com/" }],
     };
   },
