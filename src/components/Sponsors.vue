@@ -143,7 +143,9 @@ export default {
       ],
       golds: [
         { image: "perfecto", url: "https://www.perfecto.io/" },
-        { image: "yourlogo", url: "/contact" },
+        { image: "impower", url: "https://www.impower.ai/" },
+        { image: "lighthouse", url: "https://lighthousetechnologies.com/" },
+        { image: "valuemomentum", url: "https://valuemomentum.com/" }
       ],
       silvers: [
         { image: "boundless", url: "https://www.boundless.com/" },
