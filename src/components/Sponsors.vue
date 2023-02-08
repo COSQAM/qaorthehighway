@@ -149,7 +149,7 @@ export default {
       ],
       silvers: [
         { image: "boundless", url: "https://www.boundless.com/" },
-        { image: "yourlogo", url: "/contact" },
+        { image: "applitools", url: "https://applitools.com/" },
       ],
       snacks: [
         { image: "yourlogo", url: "/contact" }
