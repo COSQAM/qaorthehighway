@@ -155,6 +155,7 @@ export default {
       silvers: [
         { image: "boundless", url: "https://www.boundless.com/" },
         { image: "applitools", url: "https://applitools.com/" },
+        { image: "revel", url: "https://www.revelit.com/" }
       ],
       snacks: [
         { image: "yourlogo", url: "/contact" }
