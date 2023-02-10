@@ -15,6 +15,7 @@
         :key="index"
         sm="12"
         md="6"
+        align-self="center"
         class="d-flex justify-center"
       >
         <a :href="`${platinum.url}`" target="_blank">
@@ -38,6 +39,7 @@
       <v-col
         v-for="(gold, index) in golds"
         :key="index"
+        align-self="center"
         sm="12"
         md="6"
         class="d-flex justify-center"
@@ -64,6 +66,7 @@
         :key="index"
         sm="12"
         md="4"
+        align-self="center"
         class="d-flex justify-center"
       >
         <a :href="`${silver.url}`" target="_blank">
@@ -88,6 +91,7 @@
         :key="index"
         sm="12"
         md="6"
+        align-self="center"
         class="d-flex justify-center"
       >
         <a :href="`${snack.url}`" target="_blank">
@@ -112,6 +116,7 @@
         :key="index"
         sm="12"
         md="6"
+        align-self="center"
         class="d-flex justify-center"
       >
         <a :href="`${tshirt.url}`" target="_blank">
