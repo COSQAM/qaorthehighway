@@ -155,12 +155,16 @@ export default {
       silvers: [
         { image: "boundless", url: "https://www.boundless.com/" },
         { image: "applitools", url: "https://applitools.com/" },
-        { image: "revel", url: "https://www.revelit.com/" }
+        { image: "revel", url: "https://www.revelit.com/" },
+        { image: "cgi", url: "https://www.cgi.com/" }
       ],
       snacks: [
         { image: "yourlogo", url: "/contact" }
       ],
-      tshirts: [{ image: "practitest", url: "https://www.practitest.com/" }],
+      tshirts: [
+        { image: "practitest", url: "https://www.practitest.com/" },
+        { image: "cgi", url: "https://www.cgi.com/" }
+      ],
     };
   },
   methods: {
