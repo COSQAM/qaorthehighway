@@ -156,7 +156,8 @@ export default {
         { image: "boundless", url: "https://www.boundless.com/" },
         { image: "applitools", url: "https://applitools.com/" },
         { image: "revel", url: "https://www.revelit.com/" },
-        { image: "cgi", url: "https://www.cgi.com/" }
+        { image: "cgi", url: "https://www.cgi.com/" },
+        { image: "testguild", url: "https://testguild.com/"}
       ],
       snacks: [
         { image: "yourlogo", url: "/contact" }
