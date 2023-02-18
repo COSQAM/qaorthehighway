@@ -43,6 +43,8 @@ module.exports = function (api) {
         twitter2: session.twitter2,
         youtube: session.youtube,
         youtube2: session.youtube2,
+        shortbio: session.shortbio,
+        shortbio2: session.shortbio2,
         path
       })
     })

@@ -2,7 +2,7 @@
   <v-row class="ma-2">
     <v-col cols="12" md="4" class="text-center">
       <v-avatar size="250">
-        <img :src="findImage()" :alt="speaker" />
+        <v-img aspect-ratio="1:1" :src="findImage()" :alt="speaker" />
       </v-avatar>
     </v-col>
     <v-col cols="12" md="8">
@@ -77,7 +77,7 @@ export default {
   methods: {
     findImage: function () {
       try {
-        return require(`@/assets/images/${this.speaker.toLowerCase()}.webp`);
+        return require(`@/assets/images/speakers/${this.speaker.toLowerCase()}.webp`);
       } catch (error) {
         return require("@/assets/images/generic-profile.png");
       }

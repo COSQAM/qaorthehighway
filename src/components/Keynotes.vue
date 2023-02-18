@@ -4,7 +4,7 @@
       ><h3 class="text-h5 font-weight-black">2023 KEYNOTE SPEAKERS</h3></v-row
     >
     <div class="max-center">
-    <v-row align="center" justify="center" class="my-3">
+      <v-row align="center" justify="center" class="my-3">
         <v-col sm="12" md="6" class="text-center text-h5">
           <a :href="`/${removeSpaces($page.keynote1.edges[0].node.speaker)}`">
             <v-avatar size="300">
@@ -12,9 +12,12 @@
             </v-avatar>
           </a>
 
-          <h3 class="text-h5 pt-3">
+          <div class="headline font-weight-bold pt-3">
             {{ $page.keynote1.edges[0].node.speaker }}
-          </h3>
+          </div>
+          <div class="text-subtitle-1 grey--text">
+            {{ $page.keynote1.edges[0].node.shortbio }}
+          </div>
         </v-col>
         <v-col sm="12" md="6" class="text-center text-h5">
           <a :href="`/${removeSpaces($page.keynote2.edges[0].node.speaker)}`">
@@ -22,11 +25,14 @@
               <img :src="findImage($page.keynote2.edges[0].node.speaker)" />
             </v-avatar>
           </a>
-          <h3 class="text-h5 pt-3">
+          <div class="headline font-weight-bold pt-3">
             {{ $page.keynote2.edges[0].node.speaker }}
-          </h3>
+          </div>
+          <div class="text-subtitle-1 grey--text">
+            {{ $page.keynote2.edges[0].node.shortbio }}
+          </div>
         </v-col>
-    </v-row>
+      </v-row>
     </div>
 
     <Break class="color" />
@@ -43,7 +49,7 @@ export default {
   methods: {
     findImage: (speaker) => {
       try {
-        return require(`@/assets/images/${speaker.toLowerCase()}.webp`);
+        return require(`@/assets/images/speakers/${speaker.toLowerCase()}.webp`);
       } catch (error) {
         return require("@/assets/images/generic-profile.png");
       }
