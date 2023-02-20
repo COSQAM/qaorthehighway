@@ -47,7 +47,7 @@
                 ></span>
               </div>
               <v-divider class="pt-3" />
-              <div>{{ $page.session.abstract }}</div>
+              <div class="pre-formatted">{{ $page.session.abstract }}</div>
             </v-col>
           </v-row>
           <SpeakerBio

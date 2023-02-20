@@ -63,6 +63,7 @@ query currentSessions {
         abstract
         time
         room
+        shortbio
       }
     }
   },
@@ -79,6 +80,7 @@ query currentSessions {
         abstract
         time
         room
+        shortbio
       }
     }
   }

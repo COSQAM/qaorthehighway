@@ -3,7 +3,9 @@
     <Layout>
       <v-content>
         <Header title="Speakers" />
+
         <v-row class="text-center max-center mt-5">
+          <!--
           <v-col class="text-h5 primary--text font-weight-bold pt-3">
             <div>
               We are still reviewing speaker submissions for the 2023
@@ -13,7 +15,7 @@
               We'll be releasing the full list of speakers on March 31, 2023.
             </div>
           </v-col>
-          <!--
+          -->
           <v-col
             cols="12"
             md="4"
@@ -23,15 +25,21 @@
           >
             <a :href="`/${removeSpaces(speaker.url)}`">
               <v-avatar size="250">
-                <img :src="findImage(speaker.name)" />
+                <v-img aspect-ratio="1:1" :src="findImage(speaker.name)" />
               </v-avatar>
             </a>
             <div class="headline font-weight-bold pt-3">
               {{ speaker.name }}
             </div>
+            <div class="text-subtitle-1 grey--text">
+              {{ speaker.shortbio }}
+            </div>
           </v-col>
-          -->
         </v-row>
+        <div class="text-caption grey--text text-center pa-3">
+          This speaker list is not complete and will continue to grow as the committee recieves
+          confirmation from the selected speakers. We are planning 30 session talks and 2 keynotes.
+        </div>
       </v-content>
     </Layout>
   </v-app>
@@ -47,7 +55,7 @@ export default {
   methods: {
     findImage: (speaker) => {
       try {
-        return require(`@/assets/images/${speaker.toLowerCase()}.webp`);
+        return require(`@/assets/images/speakers/${speaker.toLowerCase()}.webp`);
       } catch (error) {
         return require("@/assets/images/generic-profile.png");
       }
@@ -61,11 +69,13 @@ export default {
         speakerList.push({
           name: session.node.speaker,
           url: session.node.speaker,
+          shortbio: session.node.shortbio,
         });
         if (session.node.speaker2) {
           speakerList.push({
             name: session.node.speaker2,
             url: session.node.speaker,
+            shortbio: session.node.shortbio2,
           });
         }
       });
@@ -93,6 +103,8 @@ query currentSessions {
         abstract
         time
         room
+        shortbio
+        shortbio2
       }
     }
   },
