@@ -64,6 +64,36 @@
             "youtube2": ""
         },
         {
+            "speaker": "Melissa Tondi",
+            "bio": "Melissa Tondi has spent most of her career working within software testing teams. She is the Director of Quality Engineering at Guild Education and a Principal Consultant at Disrupt Testing, where she assists companies to continuously improve the pursuit of quality software—from design to delivery and everything in between. In her software test and quality engineering careers, Melissa has focused on building and organizing teams around three major tenets—efficiency, innovation, and culture – and uses the Greatest Common Denominator (GCD) approach for determining ways in which team members can assess, implement and report on day to day activities so the gap between need and value is as small as possible.",
+            "shortbio": "Quality and Process Engineering Enthusiast",
+            "title": "Automation - We're Doing it Wrong",
+            "abstract": "The term automation as it pertains to software testing has been a driving force in defining the software testing industry. For many years, we've used it as a catch-all to determine whether a tester, testing team, or IT organization is successful. In this talk, we will discuss the five misconceptions that are pervasive within companies - including using a percentage or number of test cases to define success and specifying a title/role for those who automate and matrixing that role across teams versus embedding it within the project they are supporting. Melissa will discuss re-booting our current thinking of automation and show tactics to address the five misconceptions that have contributed to what many of us would consider one of the wedges that divide the testing industry. In addition, she will share practical and proven approaches you can take back with you to show immediate and valuable results.",
+            "time": "4:15 - 5:15",
+            "room": "East Ballroom",
+            "picture": "",
+            "website": "",
+            "linkedin": "https://www.linkedin.com/in/melissa-tondi-186551/",
+            "twitter": "https://twitter.com/melissatondi",
+            "youtube": ""
+        },
+        {
+            "speaker": "Jordan Powell",
+            "bio": "Jordan is a Google Developer Expert (GDE) and Developer Experience Engineer at Cypress. He is passionate about writing \"good code\" that is easy to read, test and maintain over time. He has over a decade of experience in software development, marketing, design, and video production. Jordan also serves as the CEO & Co-Founder for the non-profit Dream On: Global. When he is not working, he spends his time as a husband, father and Cleveland sports fan.",
+            "shortbio": "Senior Developer Experience Engineer at Cypress.io",
+            "title": "API Testing Made Easy",
+            "abstract": "API's are a vital part of how we build applications today. It's how we send data from point A to Point B. They are sort of like the planes, trains and automobiles of the digital world.\n\nThough they are a key piece to building applications, they aren't always easy to test. In this talk, I will show you how easy it is to write API tests using Cypress.",
+            "time": "4:15 - 5:15",
+            "room": "East Ballroom",
+            "picture": "",
+            "website": "https://jordanpowell.online",
+            "linkedin": "https://linkedin.com/in/jpdesigning",
+            "twitter": "https://twitter.com/jordanpowell88",
+            "youtube": ""
+        }
+    ],
+    "potential": [
+        {
             "speaker": "Jeff Sing",
             "bio": "Jeff Sing is a Quality Leader who has been in the testing industry for over 15 years. During this time, he has built automation frameworks, test strategies, and executed quality initiatives for fields such as medical devices, infrastructure security, web identification, marketing tech, and experimentation and progressive delivery.\n\nJeff is currently a Director of Engineering at Iterable where he leads the Quality Engineering organization to orchestrate their quality control plan utilizing a combination of automated testing, implementing QA procedures, and acts as Iterable‘s customer experience champion to ensure Iterable remains the world's leading customer engagement platform. He also has built and leads Iterable‘s Engineering Operations Team which runs the services and programs to systematically improve effectiveness and productivity across the engineering organization as it scales.\n\nJeff resides in Redwood City, California along with his wife and three children. Jeff studied Computer Science at UCSD, and to this day is still a passionate Chargers fan.",
             "shortbio": "Director of Engineering, Quality and Operations at Iterable",
@@ -103,34 +133,6 @@
             "website": "",
             "linkedin": "https://www.linkedin.com/in/matthew-eakin-34568ba/",
             "twitter": "",
-            "youtube": ""
-        },
-        {
-            "speaker": "Melissa Tondi",
-            "bio": "Melissa Tondi has spent most of her career working within software testing teams. She is the Director of Quality Engineering at Guild Education and a Principal Consultant at Disrupt Testing, where she assists companies to continuously improve the pursuit of quality software—from design to delivery and everything in between. In her software test and quality engineering careers, Melissa has focused on building and organizing teams around three major tenets—efficiency, innovation, and culture – and uses the Greatest Common Denominator (GCD) approach for determining ways in which team members can assess, implement and report on day to day activities so the gap between need and value is as small as possible.",
-            "shortbio": "Quality and Process Engineering Enthusiast",
-            "title": "Automation - We're Doing it Wrong",
-            "abstract": "The term automation as it pertains to software testing has been a driving force in defining the software testing industry. For many years, we've used it as a catch-all to determine whether a tester, testing team, or IT organization is successful. In this talk, we will discuss the five misconceptions that are pervasive within companies - including using a percentage or number of test cases to define success and specifying a title/role for those who automate and matrixing that role across teams versus embedding it within the project they are supporting. Melissa will discuss re-booting our current thinking of automation and show tactics to address the five misconceptions that have contributed to what many of us would consider one of the wedges that divide the testing industry. In addition, she will share practical and proven approaches you can take back with you to show immediate and valuable results.",
-            "time": "4:15 - 5:15",
-            "room": "East Ballroom",
-            "picture": "",
-            "website": "",
-            "linkedin": "https://www.linkedin.com/in/melissa-tondi-186551/",
-            "twitter": "https://twitter.com/melissatondi",
-            "youtube": ""
-        },
-        {
-            "speaker": "Jordan Powell",
-            "bio": "Jordan is a Google Developer Expert (GDE) and Developer Experience Engineer at Cypress. He is passionate about writing \"good code\" that is easy to read, test and maintain over time. He has over a decade of experience in software development, marketing, design, and video production. Jordan also serves as the CEO & Co-Founder for the non-profit Dream On: Global. When he is not working, he spends his time as a husband, father and Cleveland sports fan.",
-            "shortbio": "Senior Developer Experience Engineer at Cypress.io",
-            "title": "API Testing Made Easy",
-            "abstract": "API's are a vital part of how we build applications today. It's how we send data from point A to Point B. They are sort of like the planes, trains and automobiles of the digital world.\n\nThough they are a key piece to building applications, they aren't always easy to test. In this talk, I will show you how easy it is to write API tests using Cypress.",
-            "time": "4:15 - 5:15",
-            "room": "East Ballroom",
-            "picture": "",
-            "website": "https://jordanpowell.online",
-            "linkedin": "https://linkedin.com/in/jpdesigning",
-            "twitter": "https://twitter.com/jordanpowell88",
             "youtube": ""
         },
         {
