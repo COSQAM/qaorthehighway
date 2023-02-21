@@ -8,16 +8,22 @@
         <v-col cols="12" md="6" class="text-center">
           <v-card class="text-left padding-y px-5">
             <v-card-title class="text-h3 font-weight-black">$99</v-card-title>
-            <v-card-subtitle class="text-h5 font-weight-bold"
-              >Early Bird Pricing <span class="text-subtitle-1 pl-4">(Ends 03/31/2023)</span></v-card-subtitle
-            >
+            <v-card-subtitle class="text-h5 font-weight-bold">
+              <div>Early Bird Pricing</div>
+              <div class="text-subtitle-1">(Ends 03/31/2023)</div>
+            </v-card-subtitle>
             <div class="spacer" />
             <v-card-text class="text-subtitle-1">
               <ul v-for="(item, index) in list" :key="index">
                 <li>{{ item }}</li>
               </ul>
             </v-card-text>
-            <v-btn block color="accent" class="black--text mt-3" href="/tickets" x-large
+            <v-btn
+              block
+              color="accent"
+              class="black--text mt-3"
+              href="/tickets"
+              x-large
               >Buy Now</v-btn
             >
           </v-card>
@@ -25,16 +31,22 @@
         <v-col cols="12" md="6" class="text-center">
           <v-card class="text-left padding-y px-5" color="primary" dark>
             <v-card-title class="text-h3 font-weight-black">$129</v-card-title>
-            <v-card-subtitle class="text-h5 font-weight-bold"
-              >Full Price Ticket</v-card-subtitle
-            >
+            <v-card-subtitle class="text-h5 font-weight-bold">
+              <div>Full Price Ticket</div>
+              <div class="text-subtitle-1">‏‏‎ ‎</div>
+            </v-card-subtitle>
             <div class="spacer" />
             <v-card-text class="text-subtitle-1">
               <ul v-for="(item, index) in list" :key="index">
                 <li>{{ item }}</li>
               </ul>
             </v-card-text>
-            <v-btn block color="accent" class="black--text mt-3" x-large disabled
+            <v-btn
+              block
+              color="accent"
+              class="black--text mt-3"
+              x-large
+              disabled
               >Unavailable</v-btn
             >
           </v-card>
