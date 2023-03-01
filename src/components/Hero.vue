@@ -42,6 +42,9 @@
           world experience and thought leadership in quality assurance for the
           software industry
         </h4>
+        <v-btn block color="accent" class="black--text" href="./tickets" x-large
+          >Get Your Tickets Now</v-btn>
+        <!-- call for speakers
         <div
           :class="
             $vuetify.breakpoint.smAndDown
@@ -54,6 +57,7 @@
         <v-btn block color="accent" class="black--text" href="https://forms.gle/RPKw3NkBNv4N7PGK9" target="_blank" x-large
           >Submit your talk here</v-btn
         >
+        -->
       </v-col>
       <v-spacer></v-spacer>
       <v-col cols="4"></v-col>
