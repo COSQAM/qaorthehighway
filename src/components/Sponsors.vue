@@ -157,14 +157,17 @@ export default {
         { image: "applitools", url: "https://applitools.com/" },
         { image: "revel", url: "https://www.revelit.com/" },
         { image: "cgi", url: "https://www.cgi.com/" },
-        { image: "testguild", url: "https://testguild.com/"}
+        { image: "testguild", url: "https://testguild.com/"},
+        { image: "tricentis", url: "https://www.tricentis.com/"},
+        { image: "nesco", url: "https://www.nescoresource.com/"}
       ],
       snacks: [
         { image: "yourlogo", url: "/contact" }
       ],
       tshirts: [
         { image: "practitest", url: "https://www.practitest.com/" },
-        { image: "cgi", url: "https://www.cgi.com/" }
+        { image: "cgi", url: "https://www.cgi.com/" },
+        { image: "nesco", url: "https://www.nescoresource.com/"}
       ],
     };
   },
