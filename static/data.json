@@ -118,9 +118,7 @@
             "linkedin": "https://www.linkedin.com/in/leandromelendez/",
             "twitter": "https://twitter.com/SrPerf",
             "youtube": "https://www.youtube.com/@SrPerfEng"
-        }
-    ],
-    "potential": [
+        },
         {
             "speaker": "Jeff Sing",
             "bio": "Jeff Sing is a Quality Leader who has been in the testing industry for over 15 years. During this time, he has built automation frameworks, test strategies, and executed quality initiatives for fields such as medical devices, infrastructure security, web identification, marketing tech, and experimentation and progressive delivery.\n\nJeff is currently a Director of Engineering at Iterable where he leads the Quality Engineering organization to orchestrate their quality control plan utilizing a combination of automated testing, implementing QA procedures, and acts as Iterable‘s customer experience champion to ensure Iterable remains the world's leading customer engagement platform. He also has built and leads Iterable‘s Engineering Operations Team which runs the services and programs to systematically improve effectiveness and productivity across the engineering organization as it scales.\n\nJeff resides in Redwood City, California along with his wife and three children. Jeff studied Computer Science at UCSD, and to this day is still a passionate Chargers fan.",
@@ -134,21 +132,9 @@
             "linkedin": "https://www.linkedin.com/in/jeffsing/",
             "twitter": "",
             "youtube": ""
-        },
-        {
-            "speaker": "Hristina Koleva",
-            "bio": "Process geek and software tester, currently running a process improvement consultancy.\n\nFor 16+ years in the Software industry, Hristina has realised that Software Quality is not guaranteed only by testing but by a full-picture process approach implemented via efficient practices.\n\nHristina helps startups start on the right foot with software quality and believe in early risk mitigation and intense collaboration as tools for delivering high-quality software fast and safe, and for building motivated teams. Her mission is to help as many teams not get lost in translation about software quality and agile workflows. ",
-            "shortbio": "Quality & Process Improvement Consultant",
-            "title": "Where Is Your User Now, and What Could Go Wrong? The Non-Existent Art of User Story Analysis",
-            "abstract": "Backlog refinements are not enough to make a proper User Story analysis. The one-sentence pattern is not enough to grasp the user's pain and the anticipated risks and inspire the development team to heal that pain. Sprint planning is insufficient to break down all the knowns and plan enough capacity for the unknowns.\n\nThe lack of thorough user story analysis in agile teams is the root cause of most bugs, delays, and frustrations.\n\nWe keep complaining at retrospectives about the vagueness of the user stories and the lack of time to discuss them and test them properly. Then, let's ask ourselves how we, as a company, want our users to feel when they use our feature.\n\nThis talk is about a neat, systematic way to analyse a user story. How to build routines to Define as a Team, identify Quality risks early, and turn the user story into compact but thorough Requirements that inspire engineering to solve our actual user needs and free capacity to deal with the unknown.",
-            "time": "4:15 - 5:15",
-            "room": "East Ballroom",
-            "picture": "",
-            "website": "https://hriskoleva.com/",
-            "linkedin": "https://www.linkedin.com/in/hristinakoleva/",
-            "twitter": "https://twitter.com/hriskoleva",
-            "youtube": ""
         }
+    ],
+    "potential": [
     ]
 }
         
