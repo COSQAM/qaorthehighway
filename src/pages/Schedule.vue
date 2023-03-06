@@ -6,8 +6,7 @@
         <v-row class="text-center max-center mt-5">
           <v-col class="text-h5 primary--text font-weight-bold pt-3">
             <div>
-              We are still reviewing speaker submissions for the 2023
-              conference.
+              We are currently waiting for speaker confirmations and finalizing the schedule.
             </div>
             <div class="pt-3">
               We'll be releasing the schedule on March 31, 2023.
