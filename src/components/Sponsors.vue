@@ -158,7 +158,8 @@ export default {
         { image: "cgi", url: "https://www.cgi.com/" },
         { image: "testguild", url: "https://testguild.com/"},
         { image: "tricentis", url: "https://www.tricentis.com/"},
-        { image: "nesco", url: "https://www.nescoresource.com/"}
+        { image: "nesco", url: "https://www.nescoresource.com/"},
+        { image: "capgemini", url: "https://www.capgemini.com/"}
       ],
       snacks: [
         { image: "yourlogo", url: "/contact" }
@@ -166,7 +167,8 @@ export default {
       tshirts: [
         { image: "practitest", url: "https://www.practitest.com/" },
         { image: "cgi", url: "https://www.cgi.com/" },
-        { image: "nesco", url: "https://www.nescoresource.com/"}
+        { image: "nesco", url: "https://www.nescoresource.com/"},
+        { image: "capgemini", url: "https://www.capgemini.com/"}
       ],
     };
   },
