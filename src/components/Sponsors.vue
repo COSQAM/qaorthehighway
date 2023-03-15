@@ -162,7 +162,8 @@ export default {
         { image: "capgemini", url: "https://www.capgemini.com/"}
       ],
       snacks: [
-        { image: "yourlogo", url: "/contact" }
+        { image: "yourlogo", url: "/contact" },
+        { image: "capgemini", url: "https://www.capgemini.com/"}
       ],
       tshirts: [
         { image: "practitest", url: "https://www.practitest.com/" },
