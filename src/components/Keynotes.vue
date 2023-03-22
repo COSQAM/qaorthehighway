@@ -6,7 +6,7 @@
     <div class="max-center">
       <v-row align="center" justify="center" class="my-3">
         <v-col sm="12" md="6" class="text-center text-h5">
-          <a :href="`/${removeSpaces($page.keynote1.edges[0].node.speaker)}`">
+          <a :href="$page.keynote1.edges[0].node.path">
             <v-avatar size="300">
               <v-img aspect-ratio="1:1" :src="findImage($page.keynote1.edges[0].node.speaker)" />
             </v-avatar>
@@ -19,7 +19,7 @@
           </a>
         </v-col>
         <v-col sm="12" md="6" class="text-center text-h5">
-          <a :href="`/${removeSpaces($page.keynote2.edges[0].node.speaker)}`">
+          <a :href="$page.keynote2.edges[0].node.path">
             <v-avatar size="300">
               <v-img aspect-ratio="1:1" :src="findImage($page.keynote2.edges[0].node.speaker)" />
             </v-avatar>
@@ -52,9 +52,6 @@ export default {
       } catch (error) {
         return require("@/assets/images/generic-profile.png");
       }
-    },
-    removeSpaces: function (text) {
-      return text.replace(/\s/g, "");
     },
   },
 };

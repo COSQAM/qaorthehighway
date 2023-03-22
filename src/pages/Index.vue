@@ -64,6 +64,7 @@ query currentSessions {
         time
         room
         shortbio
+        path
       }
     }
   },
@@ -81,6 +82,7 @@ query currentSessions {
         time
         room
         shortbio
+        path
       }
     }
   }
