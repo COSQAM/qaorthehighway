@@ -7,6 +7,7 @@
 
 const data = require('./static/data.json')
 const nodeExternals = require('webpack-node-externals')
+const _ = require('lodash')
 
 module.exports = function (api) {
   api.chainWebpack((config, { isServer }) => {
@@ -22,8 +23,9 @@ module.exports = function (api) {
   for (const session of data.sessions) {
     api.loadSource(store => {
       const collection = store.addCollection('Session')
-      var speaker = session.speaker.replace(/\s/g, '')
-      var path = `/${speaker}`
+      var speaker = _.kebabCase(session.speaker)
+      var title = _.kebabCase(session.title)
+      var path = `/${speaker}/${title}`
 
       collection.addNode({
         id: undefined,

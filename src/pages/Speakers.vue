@@ -23,17 +23,52 @@
             v-for="(speaker, index) in combineSpeakers($page.speakers.edges)"
             :key="index"
           >
-            <a :href="`/${removeSpaces(speaker.url)}`">
-              <v-avatar size="250">
-                <v-img aspect-ratio="1:1" :src="findImage(speaker.name)" />
-              </v-avatar>
-              <div class="speaker headline font-weight-bold pt-3">
-                {{ speaker.name }}
-              </div>
-              <div class="bio text-subtitle-1">
-                {{ speaker.shortbio }}
-              </div>
-            </a>
+            <div v-if="speaker[1].length > 1">
+              <v-menu>
+                <template v-slot:activator="{ on, attrs }">
+                  <a v-on="on" v-bind="attrs">
+                    <v-avatar size="250">
+                      <v-img
+                        aspect-ratio="1:1"
+                        :src="findImage(speaker[1][0].name)"
+                      />
+                    </v-avatar>
+                    <div class="speaker headline font-weight-bold pt-3">
+                      {{ speaker[1][0].name }}
+                    </div>
+                    <div class="bio text-subtitle-1">
+                      {{ speaker[1][0].shortbio }}
+                    </div>
+                  </a>
+                </template>
+                <v-list>
+                  <v-list-subheader class="text-subtitle-2 grey--text pl-4" >SELECT A SESSION</v-list-subheader>
+                  <v-list-item
+                    v-for="(session, index) in speaker[1]"
+                    :key="index"
+                    :href="session.path"
+                  >
+                    <v-list-item-title>{{ session.title }}</v-list-item-title>
+                  </v-list-item>
+                </v-list>
+              </v-menu>
+            </div>
+            <div v-else>
+              <a :href="speaker[1][0].path">
+                <v-avatar size="250">
+                  <v-img
+                    aspect-ratio="1:1"
+                    :src="findImage(speaker[1][0].name)"
+                  />
+                </v-avatar>
+                <div class="speaker headline font-weight-bold pt-3">
+                  {{ speaker[1][0].name }}
+                </div>
+                <div class="bio text-subtitle-1">
+                  {{ speaker[1][0].shortbio }}
+                </div>
+              </a>
+            </div>
           </v-col>
         </v-row>
         <div class="text-caption grey--text text-center pa-3">
@@ -48,6 +83,7 @@
 
 <script>
 import Header from "@/components/Header";
+import _ from "lodash";
 
 export default {
   components: {
@@ -61,9 +97,6 @@ export default {
         return require("@/assets/images/generic-profile.png");
       }
     },
-    removeSpaces: function (text) {
-      return text.replace(/\s/g, "");
-    },
     combineSpeakers: (speakerArray) => {
       let speakerList = [];
       speakerArray.map((session) => {
@@ -71,16 +104,22 @@ export default {
           name: session.node.speaker,
           url: session.node.speaker,
           shortbio: session.node.shortbio,
+          title: session.node.title,
+          path: session.node.path,
         });
         if (session.node.speaker2) {
           speakerList.push({
             name: session.node.speaker2,
             url: session.node.speaker,
+            title: session.node.title,
             shortbio: session.node.shortbio2,
+
+            path: session.node.path,
           });
         }
       });
-      return speakerList;
+      let speakerListNoDups = Object.entries(_.groupBy(speakerList, "name"));
+      return speakerListNoDups;
     },
   },
   metaInfo() {
@@ -106,6 +145,7 @@ query currentSessions {
         room
         shortbio
         shortbio2
+        path
       }
     }
   },
@@ -126,16 +166,16 @@ a:hover .v-image {
   opacity: 0.8;
 }
 a:hover .speaker {
-  color: var(--v-primary-base)
+  color: var(--v-primary-base);
 }
 .speaker {
-  color: black
+  color: black;
 }
 
 a:hover .bio {
-  color: var(--v-primary-base)
+  color: var(--v-primary-base);
 }
 .bio {
-  color: #9e9e9e
+  color: #9e9e9e;
 }
 </style>
