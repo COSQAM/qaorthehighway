@@ -17,9 +17,9 @@
         {
             "speaker": "Raj Subrameyer",
             "shortbio": "Certified Leadership and Career Coach & 2TEDx Speaker",
-            "bio": "Raj Subrameyer is a Senior QA Manager and Certified Tech Career and Leadership Coach helping people to land their dream job and become successful leaders. He is passionate about guiding professionals to maximize their opportunities and discover their zone of genius. He has given multiple TEDx talks and is a sought-after speaker at various conferences and has been featured in numerous TV news segments, podcasts and publications, including CBS, BBC, FOX, NPR, NBC, Entrepreneur, CEOWorld Magazine, CIO and Authority Magazine, Career Addict, Thrive Global, Addicted2Success and The Good Men Project. His areas of expertise include career advancement, leadership, motivation, productivity, mental health, diversity & inclusion and entrepreneurship. In his spare time, he loves traveling and enjoying craft beer.",
-            "title": "** Session Title Coming **",
-            "abstract": "** We'll be posting the session abstract shortly. Please check back later **",
+            "bio": "I am a Senior QA Manager, Certified Tech Career and Leadership Coach, International Speaker and Author. I have spent decades leading teams in huge organizations in addition to start-up companies. I also have over 2000 hours and 100+ clients worth of coaching experience helping mid to senior-level and C-Suite Executives to overcome their struggles, face obstacles, navigate their career path and deal with their insecurities to become influential leaders. My specialty is using my experiences and strategies backed by neuroscience in guiding professionals to maximize their opportunities and discover their zone of genius.\n\nI have given multiple TEDx talks and have been featured in numerous TV news segments, podcasts and publications, including CBS, BBC, FOX, NPR, NBC, Entrepreneur, CEOWorld Magazine, CIO and Authority Magazine, Career Addict, Thrive Global, Addicted2Success and The Good Men Project. I also wrote a best-selling book called “Skyrocket Your Career” which hit #5 on the Amazon bestseller list and also won the Readers' Favorite Silver medal for best nonfiction book in 2021.\n\nMy areas of expertise include career advancement, leadership, motivation, productivity, mental health, diversity & inclusion and entrepreneurship. In my spare time,  I love traveling and enjoying craft beer.",
+            "title": "How to become a Rockstar in Tech",
+            "abstract": "Did you know there are a lot of similarities between a developer and an entrepreneur? In both cases, you have to establish trust & credibility, provide value, build your personal brand, fight for a cause, take pride in your work, help people, and spread the knowledge.\n\nMost importantly, you have to understand that you are the best marketer of your skillsets and provide value to others.\n\nIn my nearly two decades of experience in tech as a Developer, Tester, Manager, Content Writer, Thought Leader, Career/Leadership coach, entrepreneur and working in various domains, including SaaS-based products, IoT, Insurance, Payroll, digital streaming services, travel, and AI-based vendor tools; I realized that irrespective of the environment you work in or your role, when you do work with an entrepreneurial mindset people take you seriously and respect you in the industry.\n\nIn this talk, I will discuss different strategies I have used in my life to build my career from a shy, introverted kid earning a minimal salary into a global developer/tester, speaker, author, senior manager and tech career and leadership coach. I will teach you with real-life examples how to become your best self to your organization and the loved ones around you. Some of the tools and tricks I will share include how to - build trust and credibility at work, build your personal brand, become an effective communicator, and a thought leader, and most importantly, how to influence people and grow in your tech career. Join my talk and rediscover yourself.\n\nKey Takeaways\n- Understand similarities between entrepreneurs and developers/testers\n- Different strategies tech folks can use to grow in their personal lives and careers with real-life examples\n- How to approach your Tech Career with an Entrepreneurial Mindset",
             "time": "4:15 - 5:15",
             "room": "East Ballroom",
             "picture": "",
@@ -285,6 +285,34 @@
             "website": "https://red-green-refactor.com/",
             "linkedin": "https://www.linkedin.com/in/thomas-haver/",
             "twitter": "https://twitter.com/COGSfun",
+            "youtube": ""
+        },
+        {
+            "speaker": "Thomas Haver",
+            "bio": "Thomas is presently serving as a Test Automation Architect. He leads a team of testers, ops engineers, and production support analysts in the adoption of DevOps practices. Previously, he led the enterprise automation support of 73 applications at Huntington National Bank that encompassed testing, metrics & reporting, and data management.",
+            "shortbio": "International Speaker & Automation Architect",
+            "title": "From Novice to Expert: How M&T Bank Supercharged Their Mobile Testing ",
+            "abstract": "M&T Bank, one of the largest banks in the Eastern US, needed a better way to test their mobile banking app and ensure their UX was on point. By turning to the power of Perfecto, they saw immediate positive results with:\n- Combining manual and automated testing for effective tests against real devices.\n- Speeding up their testing velocity by testing on real and virtual devices.\n- Streamlining their testing processes across their entire team by leveraging Perfecto Scriptless' simple and fast test creation capabilities. \n\nThis session will cover how M&T Bank's team was able to use those tools to test end-user combinations in order to align the test coverage with the userbase. Hear how their team’s revamped mobile testing program helped recreate defects that would otherwise be impossible on corporate machines. ",
+            "time": "4:15 - 5:15",
+            "room": "East Ballroom",
+            "picture": "",
+            "website": "https://red-green-refactor.com/",
+            "linkedin": "https://www.linkedin.com/in/thomas-haver/",
+            "twitter": "https://twitter.com/COGSfun",
+            "youtube": ""
+        },
+        {
+            "speaker": "Ben Oconis",
+            "bio": "Ben is currently the lead QA at Storyblocks, the first stock subscription service. He comes from a customer support background where he spent 15 years managing customers. He attempts to take that background and apply it to find innovative ways to help improve quality across the organization. He has had some great successes and failures and hopes to share those with the testing community.\n\nWhen not testing, Ben enjoys hiking, reading comic books, watching movies, and hanging with his family, which includes 2 boys, a 7-year-old and 2-year old, his wife, and his old dog Dexter, who is a dachshund mix.",
+            "shortbio": "Lead QA at Storyblocks",
+            "title": "Breaking Down Silos - Bridging Collaborative Testing Practices In Your Organization",
+            "abstract": "Do you often feel you are the last team in your organization to know about features before they reach customers or that when features are finally ready for testing, it’s too late to produce a high-quality product? Have you felt a divide between your testing team and other engineering or product teams within your organization? At Storyblocks, we’ve built a bridge between product, engineering, stakeholders, and our testing team, forming a productive and cooperative environment. In this session, Ben will walk through how his testing team has built that relationship over time. He will review why testing teams may find themselves isolated in their organization to the point where the relationship between the testing team and others feels combative. He will review the impact this has on the organization. He’ll look into strategies such as building communication, empathy, early team-building exercises across teams, and trust or testing as a whole team approach to help dig out of the silo and create open communication channels shared across your org.  So join him and learn how to create a more collaborative and productive environment in your organization.",
+            "time": "4:15 - 5:15",
+            "room": "East Ballroom",
+            "picture": "",
+            "website": "",
+            "linkedin": "",
+            "twitter": "https://twitter.com/BenOconis",
             "youtube": ""
         }
     ],

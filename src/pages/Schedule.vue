@@ -9,7 +9,7 @@
               We are currently waiting for speaker confirmations and finalizing the schedule.
             </div>
             <div class="pt-3">
-              We'll be releasing the schedule on March 31, 2023.
+              We'll be releasing the schedule on April 7, 2023.
             </div>
           </v-col>
         </v-row>
