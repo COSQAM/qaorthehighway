@@ -2,33 +2,43 @@
   <v-container pa-0 fluid>
     <v-layout row wrap fluid>
       <v-flex>
-        <v-list three-line>
+        <v-list>
           <v-subheader class="title font-weight-bold pa-0 background pl-3">{{
             sessions.edges[0].node.time
           }}</v-subheader>
-          <div
-            v-show="
-              favorites.sessions[indexOf(session.node.speaker)].saved ||
-              !favorites.filterall
-            "
-            v-for="(session, index) in sessions.edges"
-            :key="index"
-          >
-            <v-list-item
-              :class="timeFiltered"
-              :href="`/${removeSpaces(session.node.speaker)}`"
-            >
+          <div v-for="(session, index) in sessions.edges" :key="index">
+            <v-list-item :class="timeFiltered" :href="session.node.path">
               <v-list-item-content>
-                <v-list-item-title>{{ session.node.title }}</v-list-item-title>
+                <v-list-item-title class="font-weight-medium">{{
+                  session.node.title
+                }}</v-list-item-title>
                 <v-list-item-subtitle>
-                  <v-layout ma-0 pa-0 wrap>
-                    <v-flex xs12 sm6 class="pb-1">
-                      {{ session.node.speaker }}
-                      <span v-if="session.node.speaker2"
-                        >& {{ session.node.speaker2 }}</span
-                      >
+                  <div class="two-line-clamp">
+                    In this talk, we will discuss leveraging Machine Learning
+                    practices in Software Testing with several practical
+                    examples and a case study that I used in my project to do
+                    Bug Triage.
+                  </div>
+                  <v-layout align-center wrap class="pt-2">
+                    <v-flex xs12 sm6 class="py-1">
+                      <v-avatar size="32">
+                        <v-img
+                          :src="findImage(session.node.speaker)"
+                          :alt="session.node.speaker"
+                        ></v-img>
+                      </v-avatar>
+                      <span class="pl-2">{{ session.node.speaker }}</span>
+                      <span v-if="session.node.speaker2" class="pl-4">
+                        <v-avatar size="32">
+                          <v-img
+                            :src="findImage(session.node.speaker2)"
+                            :alt="session.node.speaker"
+                          ></v-img>
+                        </v-avatar>
+                        <span class="pl-2">{{ session.node.speaker2 }}</span>
+                      </span>
                     </v-flex>
-                    <v-flex xs12 sm6>
+                    <v-flex xs12 sm6 class="py-1">
                       <v-icon small :class="roomFiltered([index])"
                         >$circlesolid</v-icon
                       >
@@ -38,27 +48,6 @@
                   </v-layout>
                 </v-list-item-subtitle>
               </v-list-item-content>
-              <v-list-item-action>
-                <v-btn
-                  icon
-                  ripple
-                  :title="`${session.node.speaker} Like Button`"
-                  @click.prevent.stop="
-                    favorites.sessions[indexOf(session.node.speaker)].saved =
-                      !favorites.sessions[indexOf(session.node.speaker)].saved
-                  "
-                >
-                  <v-icon
-                    v-if="
-                      favorites.sessions[indexOf(session.node.speaker)].saved
-                    "
-                    small
-                    color="amber"
-                    >$starsolid</v-icon
-                  >
-                  <v-icon v-else small color="grey">$staroutline</v-icon>
-                </v-btn>
-              </v-list-item-action>
             </v-list-item>
             <v-divider />
           </div>
@@ -72,7 +61,7 @@
 
 <script>
 export default {
-  props: ["sessions", "favorites"],
+  props: ["sessions"],
   data: function () {
     return {
       timeFiltered: `t${this.sessions.edges[0].node.time.replace(
@@ -83,14 +72,6 @@ export default {
     };
   },
   methods: {
-    indexOf: function (speakerName) {
-      var indexPos = this.$props.favorites.sessions
-        .map(function (instance) {
-          return instance.speaker;
-        })
-        .indexOf(speakerName);
-      return indexPos;
-    },
     roomFiltered: function (index) {
       return this.sessions.edges[index].node.room
         .replace(/:|-| |&/g, "")
@@ -98,6 +79,13 @@ export default {
     },
     removeSpaces: function (text) {
       return text.replace(/\s/g, "");
+    },
+    findImage: function (speaker) {
+      try {
+        return require(`@/assets/images/speakers/${speaker.toLowerCase()}.webp`);
+      } catch (error) {
+        return require("@/assets/images/generic-profile.png");
+      }
     },
     findFloor: function (room) {
       var floorfilter = this.roomFiltered(room);
@@ -124,7 +112,7 @@ export default {
 
 <style scoped>
 .background {
-  background-color: #E0E0E0;
+  background-color: #e0e0e0;
 }
 
 .cartoonroom {
@@ -148,13 +136,16 @@ export default {
 .eastballroom {
   color: #80cbc4;
 }
-.right {
-  right: 5%;
-  bottom: 1rem;
-  position: absolute;
-}
 .time-font {
   font-size: 2rem;
+}
+.two-line-clamp {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 </style>
 
