@@ -159,7 +159,8 @@ export default {
         { image: "testguild", url: "https://testguild.com/"},
         { image: "tricentis", url: "https://www.tricentis.com/"},
         { image: "nesco", url: "https://www.nescoresource.com/"},
-        { image: "capgemini", url: "https://www.capgemini.com/"}
+        { image: "capgemini", url: "https://www.capgemini.com/"},
+        { image: "keysight", url: "https://www.keysight.com/"}
       ],
       snacks: [
         { image: "yourlogo", url: "/contact" },
