@@ -10,7 +10,7 @@
             <v-card-title class="text-h3 font-weight-black">$99</v-card-title>
             <v-card-subtitle class="text-h5 font-weight-bold">
               <div>Early Bird Pricing</div>
-              <div class="text-subtitle-1">(Ends 03/31/2023)</div>
+              <div class="text-subtitle-1">(Ends April 16, 2023)</div>
             </v-card-subtitle>
             <div class="spacer" />
             <v-card-text class="text-subtitle-1">
