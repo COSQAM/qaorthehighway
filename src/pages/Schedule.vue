@@ -3,6 +3,7 @@
     <Layout>
       <v-content>
         <Header title="Schedule" />
+        <!--
         <v-row class="text-center max-center mt-5">
           <v-col class="text-h5 primary--text font-weight-bold pt-3">
             <div>
@@ -13,40 +14,23 @@
             </div>
           </v-col>
         </v-row>
-        <!--
+        -->
         <div class="max-center">
           <div class="ma-3">
-            <SessionList
-              :sessions="$page.session1"
-              :favorites="favorites2022"
-            />
-            <SessionList
-              :sessions="$page.session2"
-              :favorites="favorites2022"
-            />
-            <SessionList
-              :sessions="$page.session3"
-              :favorites="favorites2022"
-            />
-            <SessionList
-              :sessions="$page.session4"
-              :favorites="favorites2022"
-            />
-            <SessionList
-              :sessions="$page.session5"
-              :favorites="favorites2022"
-            />
-            <SessionList
-              :sessions="$page.session6"
-              :favorites="favorites2022"
-            />
-            <SessionList
-              :sessions="$page.session7"
-              :favorites="favorites2022"
-            />
+            <SessionList :sessions="$page.session1" />
+            <SessionList :sessions="$page.session2" />
+            <SessionList :sessions="$page.session3" />
+            <SessionList :sessions="$page.session4" />
+            <SessionList :sessions="$page.session5" />
+            <SessionList :sessions="$page.session6" />
+            <SessionList :sessions="$page.session7" />
+          </div>
+          <div class="text-caption grey--text text-center pa-3">
+            This session list is not complete and will continue to grow as the
+            committee recieves confirmation from the selected speakers. We are
+            planning 30 session talks and 2 keynotes.
           </div>
         </div>
-        -->
       </v-content>
     </Layout>
   </v-app>
@@ -63,42 +47,6 @@ export default {
     SessionList,
     IndexNavbar,
     Header,
-  },
-  data: function () {
-    return {
-      favorites2022,
-    };
-  },
-  //This is checking if there is any information in local storage, compare and update to recent favorites list, and saving to favorites
-  mounted() {
-    if (localStorage.favorites2022) {
-      console.log("mounted");
-      const oldFavorites = JSON.parse(localStorage.favorites2022);
-      let speakers = new Set(
-        oldFavorites.sessions.map((session) => session.speaker)
-      );
-      let mergedSpeakers = [
-        ...oldFavorites.sessions,
-        ...this.favorites2022.sessions.filter(
-          (session) => !speakers.has(session.speaker)
-        ),
-      ];
-      this.favorites2022.sessions = mergedSpeakers;
-      localStorage.setItem("favorites2022", this.favorites2022);
-    }
-  },
-  //This is watching for changes in favorites and saving them to local storage
-  watch: {
-    favorites2022: {
-      handler() {
-        console.log("favorites changed");
-        localStorage.setItem(
-          "favorites2022",
-          JSON.stringify(this.favorites2022)
-        );
-      },
-      deep: true,
-    },
   },
   metaInfo() {
     return {
@@ -120,9 +68,11 @@ query currentSessions {
         speaker
         speaker2
         title
+        summary
         abstract
         time
         room
+        path
       }
     }
   },
@@ -136,9 +86,11 @@ query currentSessions {
         speaker
         speaker2
         title
+        summary
         abstract
         time
         room
+        path
       }
     }
   },
@@ -152,9 +104,11 @@ query currentSessions {
         speaker
         speaker2
         title
+        summary
         abstract
         time
         room
+        path
       }
     }
   },
@@ -168,9 +122,11 @@ query currentSessions {
         speaker
         speaker2
         title
+        summary
         abstract
         time
         room
+        path
       }
     }
   },
@@ -184,9 +140,11 @@ query currentSessions {
         speaker
         speaker2
         title
+        summary
         abstract
         time
         room
+        path
       }
     }
   },
@@ -200,9 +158,11 @@ query currentSessions {
         speaker
         speaker2
         title
+        summary
         abstract
         time
         room
+        path
       }
     }
   }
@@ -216,9 +176,11 @@ query currentSessions {
         speaker
         speaker2
         title
+        summary
         abstract
         time
         room
+        path
       }
     }
   }
