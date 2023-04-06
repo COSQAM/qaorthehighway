@@ -9,15 +9,10 @@
           <div v-for="(session, index) in sessions.edges" :key="index">
             <v-list-item :class="timeFiltered" :href="session.node.path">
               <v-list-item-content>
-                <v-list-item-title class="font-weight-medium">{{
-                  session.node.title
-                }}</v-list-item-title>
+                <v-list-item-title class="font-weight-medium">{{session.node.title}}</v-list-item-title>
                 <v-list-item-subtitle>
                   <div class="two-line-clamp">
-                    In this talk, we will discuss leveraging Machine Learning
-                    practices in Software Testing with several practical
-                    examples and a case study that I used in my project to do
-                    Bug Triage.
+                    {{session.node.summary}}
                   </div>
                   <v-layout align-center wrap class="pt-2">
                     <v-flex xs12 sm6 class="py-1">

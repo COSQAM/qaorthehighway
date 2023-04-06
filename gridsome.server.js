@@ -34,6 +34,7 @@ module.exports = function (api) {
         bio: session.bio,
         bio2: session.bio2,
         title: session.title,
+        summary: session.summary,
         abstract: session.abstract,
         time: session.time,
         room: session.room,

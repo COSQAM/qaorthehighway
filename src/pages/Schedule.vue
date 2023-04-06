@@ -17,27 +17,18 @@
         -->
         <div class="max-center">
           <div class="ma-3">
-            <SessionList
-              :sessions="$page.session1"
-            />
-            <SessionList
-              :sessions="$page.session2"
-            />
-            <SessionList
-              :sessions="$page.session3"
-            />
-            <SessionList
-              :sessions="$page.session4"
-            />
-            <SessionList
-              :sessions="$page.session5"
-            />
-            <SessionList
-              :sessions="$page.session6"
-            />
-            <SessionList
-              :sessions="$page.session7"
-            />
+            <SessionList :sessions="$page.session1" />
+            <SessionList :sessions="$page.session2" />
+            <SessionList :sessions="$page.session3" />
+            <SessionList :sessions="$page.session4" />
+            <SessionList :sessions="$page.session5" />
+            <SessionList :sessions="$page.session6" />
+            <SessionList :sessions="$page.session7" />
+          </div>
+          <div class="text-caption grey--text text-center pa-3">
+            This session list is not complete and will continue to grow as the
+            committee recieves confirmation from the selected speakers. We are
+            planning 30 session talks and 2 keynotes.
           </div>
         </div>
       </v-content>
@@ -77,6 +68,7 @@ query currentSessions {
         speaker
         speaker2
         title
+        summary
         abstract
         time
         room
@@ -94,6 +86,7 @@ query currentSessions {
         speaker
         speaker2
         title
+        summary
         abstract
         time
         room
@@ -111,6 +104,7 @@ query currentSessions {
         speaker
         speaker2
         title
+        summary
         abstract
         time
         room
@@ -128,6 +122,7 @@ query currentSessions {
         speaker
         speaker2
         title
+        summary
         abstract
         time
         room
@@ -145,6 +140,7 @@ query currentSessions {
         speaker
         speaker2
         title
+        summary
         abstract
         time
         room
@@ -162,6 +158,7 @@ query currentSessions {
         speaker
         speaker2
         title
+        summary
         abstract
         time
         room
@@ -179,6 +176,7 @@ query currentSessions {
         speaker
         speaker2
         title
+        summary
         abstract
         time
         room
