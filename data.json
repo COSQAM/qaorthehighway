@@ -410,6 +410,22 @@
             "linkedin": "https://www.linkedin.com/in/davidwleslie/",
             "twitter": "https://twitter.com/davidwleslie",
             "youtube": ""
+        }
+    ],
+    "potential": [
+        {
+            "speaker": "",
+            "bio": "",
+            "shortbio": "",
+            "title": "",
+            "abstract": "",
+            "time": "4:15 - 5:15",
+            "room": "East Ballroom",
+            "picture": "",
+            "website": "",
+            "linkedin": "",
+            "twitter": "",
+            "youtube": ""
         },
         {
             "speaker": "Jon Fazzaro",
@@ -439,22 +455,6 @@
             "website": "",
             "linkedin": "https://www.linkedin.com/in/federicotoledo/",
             "twitter": "https://twitter.com/fltoledo",
-            "youtube": ""
-        }
-    ],
-    "potential": [
-        {
-            "speaker": "",
-            "bio": "",
-            "shortbio": "",
-            "title": "",
-            "abstract": "",
-            "time": "4:15 - 5:15",
-            "room": "East Ballroom",
-            "picture": "",
-            "website": "",
-            "linkedin": "",
-            "twitter": "",
             "youtube": ""
         }
     ]
