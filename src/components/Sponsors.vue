@@ -150,27 +150,28 @@ export default {
         { image: "perfecto", url: "https://www.perfecto.io/" },
         { image: "impower", url: "https://www.impower.ai/" },
         { image: "lighthouse", url: "https://lighthousetechnologies.com/" },
-        { image: "valuemomentum", url: "https://valuemomentum.com/" }
+        { image: "valuemomentum", url: "https://valuemomentum.com/" },
       ],
       silvers: [
         { image: "applitools", url: "https://applitools.com/" },
         { image: "revel", url: "https://www.revelit.com/" },
         { image: "cgi", url: "https://www.cgi.com/" },
-        { image: "testguild", url: "https://testguild.com/"},
-        { image: "tricentis", url: "https://www.tricentis.com/"},
-        { image: "nesco", url: "https://www.nescoresource.com/"},
-        { image: "capgemini", url: "https://www.capgemini.com/"},
-        { image: "keysight", url: "https://www.keysight.com/"}
+        { image: "testguild", url: "https://testguild.com/" },
+        { image: "tricentis", url: "https://www.tricentis.com/" },
+        { image: "nesco", url: "https://www.nescoresource.com/" },
+        { image: "capgemini", url: "https://www.capgemini.com/" },
+        { image: "keysight", url: "https://www.keysight.com/" },
+        { image: "aries", url: "https://www.ariessolutions.io/" },
       ],
       snacks: [
         { image: "yourlogo", url: "/contact" },
-        { image: "capgemini", url: "https://www.capgemini.com/"}
+        { image: "capgemini", url: "https://www.capgemini.com/" },
       ],
       tshirts: [
         { image: "practitest", url: "https://www.practitest.com/" },
         { image: "cgi", url: "https://www.cgi.com/" },
-        { image: "nesco", url: "https://www.nescoresource.com/"},
-        { image: "capgemini", url: "https://www.capgemini.com/"}
+        { image: "nesco", url: "https://www.nescoresource.com/" },
+        { image: "capgemini", url: "https://www.capgemini.com/" },
       ],
     };
   },
