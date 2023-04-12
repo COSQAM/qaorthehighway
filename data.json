@@ -235,7 +235,7 @@
         {
             "speaker": "Joel Montvelisky",
             "bio": "Joel Montvelisky is a Co-Founder and Chief Solution Architect at PractiTest.\n\nJoel has been in testing and QA since 1997, working as a tester, QA Manager and Director, and a Consultant for companies in Israel, the US, and the EU. Joel is a Forbes council member, and a blogger and is constantly imparting webinars on a number of testing and Quality Related topics.\n\nIn addition, Joel is the founder and Chair of the OnlineTestConf, http://www.onlinetestconf.com, the co-founder of the State of Testing survey and report, and a Director at the Association of Software Testing.\n\nJoel is a seasoned conference speaker worldwide, among them the STAR Conferences, STPCon, JaSST, TestLeadership Conf, CAST, QA&Test, and more.",
-            "shortbio": "JoCo-Founder and Chief Solution Architect,PractiTest",
+            "shortbio": "Co-Founder and Chief Solution Architect,PractiTest",
             "title": "Testing - The 2023 Vision",
             "summary": "How to adapt testing practices and approaches to the new challenges arising from Agile & DevOps methodologies, automation, remote work and more.",
             "abstract": "Our ecosystem has undergone many changes in the last 5 to 10 years, with the adoption of Agile and then DevOps, Working from Home practices, improvements in automation, etc.  Still, many organizations continue approaching their testing in the same way they've been doing it for years on end.\n\nWe need to adapt our testing practices and approach to the new challenges and also to the new opportunities available to us today. Let's review some of the most important ways in which we can take testing to the level it should be today.\n\nIn this session we will review how to:\n- Approach quality and testing from and end to end perspective\n- Adapting “Testing in Production” practices in order to reduce the time it takes us to deliver products.\n- How to correctly recruit the other members of your team (including but not only developers, product owners, etc) into the testing process.\n- and more",
@@ -425,6 +425,21 @@
             "linkedin": "https://www.linkedin.com/in/jonfazzaro/",
             "twitter": "https://twitter.com/jonfazzaro",
             "youtube": "https://www.youtube.com/@jonfazzaro"
+        },
+        {
+            "speaker": "Ravindra Lakkavalli",
+            "bio": "I'm Ravi Lakkavalli, working as a QE manager at Capgemini.\n\nI have over 16 years of experience in IT industry.\n\nI'm a tech enthusiast and help organizations with test solutions through smart implementation of tools.\n\nExtensive experience in Test Management and delivery, design and implementation of UI/API Test Automation, Continuous Integration, Performance Testing and Service virtualization solutions.\n\nI live in Columbus, Ohio with my wife and two kids. I love reading books and recommend everyone to read The Alchemist and The Art of Happiness. I also enjoy playing chess and Ping pong.",
+            "shortbio": "QE Manager at Capgemini",
+            "title": "World Quality Report",
+            "summary": "Ravi will present the key findings from the World Quality Report",
+            "abstract": "Welcome to the 14th edition of World Quality Report, which is recognized as the industry’s largest research study to provide a comprehensive assessment of the current state of quality engineering practices from around the world and across different industries.\n\nIn this report you will see our key findings and recommendations for several key focus areas: Agile quality orchestration, intelligent automation, test environment provisioning, test data provisioning and data quality, sustainable IT, quality engineering for emerging technologies, and value stream management.",
+            "time": "3:05 - 4:05",
+            "room": "Interfaith Room",
+            "picture": "",
+            "website": "",
+            "linkedin": "https://www.linkedin.com/in/ravindra-lakkavalli-a786062a/",
+            "twitter": "",
+            "youtube": ""
         }
     ],
     "potential": [
