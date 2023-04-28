@@ -28,11 +28,13 @@
             <SessionList :sessions="$page.session6" />
             <SessionList :sessions="$page.session7" />
           </div>
+          <!--
           <div class="text-caption grey--text text-center pa-3">
             This session list is not complete and will continue to grow as the
             committee recieves confirmation from the selected speakers. We are
             planning 30 session talks and 2 keynotes.
           </div>
+          -->
         </div>
       </v-content>
     </Layout>
