@@ -71,11 +71,13 @@
             </div>
           </v-col>
         </v-row>
+        <!--
         <div class="text-caption grey--text text-center pa-3">
           This speaker list is not complete and will continue to grow as the
           committee recieves confirmation from the selected speakers. We are
           planning 30 session talks and 2 keynotes.
         </div>
+        -->
       </v-content>
     </Layout>
   </v-app>
