@@ -3,11 +3,11 @@
     <v-layout row wrap fluid>
       <v-flex>
         <v-list>
-          <v-subheader class="title font-weight-bold pa-0 background pl-3">{{
+          <v-subheader class="title font-weight-bold pa-0 background pl-2">{{
             sessions.edges[0].node.time
           }}</v-subheader>
           <div v-for="(session, index) in sessions.edges" :key="index">
-            <v-list-item :class="timeFiltered" :href="session.node.path">
+            <v-list-item :class="[timeFiltered, 'px-2']" :href="session.node.path">
               <v-list-item-content>
                 <v-list-item-title class="font-weight-medium">{{session.node.title}}</v-list-item-title>
                 <v-list-item-subtitle>
