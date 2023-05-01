@@ -492,6 +492,28 @@
             "linkedin": "https://www.linkedin.com/in/sarah-geisinger-681578a5",
             "twitter": "",
             "youtube": ""
+        },
+        {
+            "speaker": "Sylvia Sesostris",
+            "bio": "** Bio coming soon **",
+            "shortbio": "Director at Perficient",
+            "title": "Predictive QA and Multiverse Orchestration",
+            "summary": "Do you use predictive analysis in QA?  If you could predict the QA impact of every change to the release scope, how would you manage QA utilization?",
+            "abstract": "Do you use predictive analysis in QA?  If you could predict the QA impact of every change to the release scope, how would you manage QA utilization?\n\nIs your automation orchestration speedway predictive? Is your continuous testing support timely executions with quality results? Can you predict if your automation suites complete on time?\n✔ Self-Healing\n✔ Codeless scripting\n✔ Machine learning/AI Based\n✔ Parallel Executions\n✔ Multi browser support\n? Large volume of test suite executions\n? Performance of Jenkins or pipeline server",
+            "time": "12:45 - 1:45",
+            "room": "Cartoon Room",
+            "picture": "",
+            "website": "",
+            "linkedin": "https://www.linkedin.com/in/sylviasesostris/",
+            "twitter": "",
+            "youtube": "",
+            "speaker2": "SriLatha Uppugonduri",
+            "bio2": "** Bio coming soon **",
+            "shortbio2": "Director at Perficient",
+            "linkedin2": "",
+            "twitter2": "",
+            "website2": "",
+            "youtube2": ""
         }
     ],
     "potential": [
