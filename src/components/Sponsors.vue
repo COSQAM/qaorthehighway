@@ -162,6 +162,7 @@ export default {
         { image: "capgemini", url: "https://www.capgemini.com/" },
         { image: "keysight", url: "https://www.keysight.com/" },
         { image: "aries", url: "https://www.ariessolutions.io/" },
+        { image: "improving", url: "https://www.improving.com/" }
       ],
       snacks: [
         { image: "yourlogo", url: "/contact" },
