@@ -7,44 +7,60 @@
           <v-row class="pb-5 ma-1">
             <v-col cols="12" class="text-color">
               <div class="pb-3">
-                <span class="pr-2"> <v-icon small>$clock</v-icon></span>
-                <span class="pr-5">{{ $page.session.time }} </span>
-                <span class="pr-2">
-                  <v-icon small :class="roomFiltered($page.session.room)"
-                    >$circlesolid</v-icon
-                  >
-                </span>
-                <span>{{ $page.session.room }}</span>
-                <span class="pl-2">
-                  <v-dialog
-                    v-model="dialog"
-                    transition="dialog-bottom-transition"
-                  >
-                    <template v-slot:activator="{ on, attrs }">
-                      <v-btn
-                        small
-                        outlined
-                        class="text-none"
-                        color="primary"
-                        v-bind="attrs"
-                        v-on="on"
-                        >Map</v-btn
+                <v-row justify="space-around">
+                  <v-col cols="12" md="6">
+                    <span class="pr-2"> <v-icon small>$clock</v-icon></span>
+                    <span class="pr-5">{{ $page.session.time }} </span>
+                    <span class="pr-2">
+                      <v-icon small :class="roomFiltered($page.session.room)"
+                        >$circlesolid</v-icon
                       >
-                    </template>
-                    <template v-slot:default="dialog">
-                      <v-card>
-                        <v-card-actions class="justify-end">
+                    </span>
+                    <span>{{ $page.session.room }}</span>
+                    <span class="pl-2">
+                      <v-dialog
+                        v-model="dialog"
+                        transition="dialog-bottom-transition"
+                      >
+                        <template v-slot:activator="{ on, attrs }">
                           <v-btn
+                            small
                             outlined
                             class="text-none"
-                            @click="dialog.value = false"
-                            >Close</v-btn
+                            color="primary"
+                            v-bind="attrs"
+                            v-on="on"
+                            >Map</v-btn
                           >
-                        </v-card-actions>
-                        <img :src="findImage($page.session.room)" alt="" />
-                      </v-card>
-                    </template> </v-dialog
-                ></span>
+                        </template>
+                        <template v-slot:default="dialog">
+                          <v-card>
+                            <v-card-actions class="justify-end">
+                              <v-btn
+                                outlined
+                                class="text-none"
+                                @click="dialog.value = false"
+                                >Close</v-btn
+                              >
+                            </v-card-actions>
+                            <img :src="findImage($page.session.room)" alt="" />
+                          </v-card>
+                        </template> </v-dialog
+                    ></span>
+                  </v-col>
+                  <v-spacer></v-spacer>
+                  <v-col cols="12" md="auto">
+                    <v-btn
+                      small
+                      outlined
+                      class="text-none"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSdLEJnLY9pzGm9YKkXRdMmqfyWKxzThUtTzaXTPVOxXeImkEw/viewform?usp=pp_url&entry.539325667=Speaker"
+                      target="_blank"
+                      color="primary"
+                      >Leave Feeback</v-btn
+                    >
+                  </v-col>
+                </v-row>
               </div>
               <v-divider class="pt-3" />
               <div class="pre-formatted">{{ $page.session.abstract }}</div>

@@ -42,8 +42,16 @@
           world experience and thought leadership in quality assurance for the
           software industry
         </h4>
-        <v-btn block color="accent" class="black--text" href="./tickets" x-large
-          >Get Your Tickets Now</v-btn>
+        <div
+          :class="
+            $vuetify.breakpoint.smAndDown
+              ? 'text-h6 font-weight-bold py-5'
+              : 'text-h5 font-weight-bold py-5'
+          "
+        >
+        We want you to have a great conference expereience. Your feedback is important to us.
+        </div>
+        <v-btn block color="accent" class="black--text" href="https://forms.gle/9ADa33TAGtd8T96A9" target="_blank" x-large>Leave Feedback</v-btn>
         <!-- call for speakers
         <div
           :class="
