@@ -1,7 +1,7 @@
 <template>
   <v-container class="my-5">
     <v-row align="center" justify="center"
-      ><h3 class="text-h5 font-weight-black">2023 KEYNOTE SPEAKERS</h3></v-row
+      ><h3 class="text-h5 font-weight-black">KEYNOTE SPEAKERS</h3></v-row
     >
     <div class="max-center">
       <v-row align="center" justify="center" class="my-3">
