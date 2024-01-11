@@ -5,17 +5,16 @@
         <Header title="Speakers" />
 
         <v-row class="text-center max-center mt-5">
-          <!--
           <v-col class="text-h5 primary--text font-weight-bold pt-3">
             <div>
-              We are still reviewing speaker submissions for the 2023
+              We are still reviewing speaker submissions for the 2024
               conference.
             </div>
             <div class="pt-3">
-              We'll be releasing the full list of speakers on March 31, 2023.
+              We'll be releasing the full list of speakers on April 15, 2024.
             </div>
           </v-col>
-          -->
+          <!--
           <v-col
             cols="12"
             md="4"
@@ -70,6 +69,7 @@
               </a>
             </div>
           </v-col>
+          -->
         </v-row>
         <!--
         <div class="text-caption grey--text text-center pa-3">

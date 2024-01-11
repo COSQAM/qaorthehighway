@@ -28,7 +28,7 @@
         </a>
       </v-col>
     </v-row>
-    <div></div>
+    <!--
     <v-row align="center" justify="center"
       ><h3 class="text-h5 font-weight-black primary--text py-5">
         Gold Sponsors
@@ -129,6 +129,7 @@
         </a>
       </v-col>
     </v-row>
+    -->
     <Break class="color" />
   </v-container>
 </template>
@@ -143,8 +144,8 @@ export default {
   data() {
     return {
       platinums: [
-        { image: "practitest", url: "https://www.practitest.com/" },
-        { image: "mabl", url: "https://www.mabl.com/" },
+        { image: "yourlogo", url: "/contact" },
+        { image: "yourlogo", url: "/contact" },
       ],
       golds: [
         { image: "perfecto", url: "https://www.perfecto.io/" },

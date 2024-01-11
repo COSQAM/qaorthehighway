@@ -32,7 +32,7 @@
               : 'text-h5 font-weight-bold secondary--text py-5'
           "
         >
-          <span class="accent--text">05-30-2023</span>
+          <span class="accent--text">06-21-2024</span>
           <span class="pl-4 pr-1">COLUMBUS, OH</span>
           <span class="px-2">/</span>
           <span>THE OHIO UNION</span>
@@ -42,6 +42,7 @@
           world experience and thought leadership in quality assurance for the
           software industry
         </h4>
+        <!-- leave feedback
         <div
           :class="
             $vuetify.breakpoint.smAndDown
@@ -52,7 +53,8 @@
         We want you to have a great conference expereience. Your feedback is important to us.
         </div>
         <v-btn block color="accent" class="black--text" href="https://forms.gle/9ADa33TAGtd8T96A9" target="_blank" x-large>Leave Feedback</v-btn>
-        <!-- call for speakers
+        -->
+        <!-- call for speakers -->
         <div
           :class="
             $vuetify.breakpoint.smAndDown
@@ -65,7 +67,7 @@
         <v-btn block color="accent" class="black--text" href="https://forms.gle/RPKw3NkBNv4N7PGK9" target="_blank" x-large
           >Submit your talk here</v-btn
         >
-        -->
+
       </v-col>
       <v-spacer></v-spacer>
       <v-col cols="4"></v-col>
