@@ -28,7 +28,7 @@
         </a>
       </v-col>
     </v-row>
-    <!--
+
     <v-row align="center" justify="center"
       ><h3 class="text-h5 font-weight-black primary--text py-5">
         Gold Sponsors
@@ -79,6 +79,7 @@
         </a>
       </v-col>
     </v-row>
+    <!--
     <v-row align="center" justify="center"
       ><h3 class="text-h5 font-weight-black primary--text py-5">
         Snack Sponsors
@@ -148,22 +149,13 @@ export default {
         { image: "yourlogo", url: "/contact" },
       ],
       golds: [
-        { image: "perfecto", url: "https://www.perfecto.io/" },
-        { image: "impower", url: "https://www.impower.ai/" },
-        { image: "lighthouse", url: "https://lighthousetechnologies.com/" },
-        { image: "valuemomentum", url: "https://valuemomentum.com/" },
+        { image: "yourlogo", url: "/contact" },
+        { image: "yourlogo", url: "/contact" },
       ],
       silvers: [
-        { image: "applitools", url: "https://applitools.com/" },
-        { image: "revel", url: "https://www.revelit.com/" },
-        { image: "cgi", url: "https://www.cgi.com/" },
-        { image: "testguild", url: "https://testguild.com/" },
-        { image: "tricentis", url: "https://www.tricentis.com/" },
-        { image: "nesco", url: "https://www.nescoresource.com/" },
-        { image: "capgemini", url: "https://www.capgemini.com/" },
-        { image: "keysight", url: "https://www.keysight.com/" },
-        { image: "aries", url: "https://www.ariessolutions.io/" },
-        { image: "improving", url: "https://www.improving.com/" }
+        { image: "globalapptesting", url: "https://www.globalapptesting.com/" },
+        { image: "yourlogo", url: "/contact" },
+        { image: "yourlogo", url: "/contact" }
       ],
       snacks: [
         { image: "yourlogo", url: "/contact" },
@@ -185,7 +177,7 @@ export default {
         return require("@/assets/images/generic-profile.png");
       }
     },
-    removeSpaces: function (text) {
+    removeSpaces: function(text) {
       return text.replace(/\s/g, "");
     },
   },
