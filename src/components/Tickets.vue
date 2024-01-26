@@ -6,7 +6,7 @@
       >
       <v-row align="center" justify="center" class="mb-5 pb-5">
         <v-col cols="12" md="6" class="text-center">
-          <v-card class="text-left padding-y px-5" color="primary" dark>
+          <v-card class="text-left padding-y px-5">
             <v-card-title class="text-h3 font-weight-black">$99</v-card-title>
             <v-card-subtitle class="text-h5 font-weight-bold">
               <div>Early Bird Pricing</div>
@@ -22,9 +22,9 @@
               block
               color="accent"
               class="black--text mt-3"
+              href="/tickets"
               x-large
-              disabled
-              >Currently Unavailable</v-btn
+              >Buy Now</v-btn
             >
           </v-card>
         </v-col>

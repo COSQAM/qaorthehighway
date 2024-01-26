@@ -13,7 +13,7 @@
           <v-spacer v-if="$vuetify.breakpoint.mdAndUp"/>
           <v-col cols="12" md="6">
             <iframe
-              id="eventbrite-widget-container-494986045587"
+              id="eventbrite-widget-container-811498914097"
               src="/eventbrite.html"
               frameborder="0"
               width="100%"
