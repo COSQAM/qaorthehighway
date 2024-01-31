@@ -79,6 +79,31 @@
         </a>
       </v-col>
     </v-row>
+        <v-row align="center" justify="center"
+      ><h3 class="text-h5 font-weight-black primary--text py-5">
+        Lunch Sponsors
+      </h3>
+    </v-row>
+    <v-divider></v-divider>
+    <v-row align="center" justify="space-around" class="my-3">
+      <v-col
+        v-for="(lunch, index) in lunches"
+        :key="index"
+        sm="12"
+        md="4"
+        align-self="center"
+        class="d-flex justify-center"
+      >
+        <a :href="`${lunch.url}`" target="_blank">
+          <v-img
+            contain
+            max-height="250"
+            max-width="250"
+            :src="findImage(lunch.image)"
+          />
+        </a>
+      </v-col>
+    </v-row>
     <!--
     <v-row align="center" justify="center"
       ><h3 class="text-h5 font-weight-black primary--text py-5">
@@ -156,6 +181,9 @@ export default {
         { image: "globalapptesting", url: "https://www.globalapptesting.com/" },
         { image: "yourlogo", url: "/contact" },
         { image: "yourlogo", url: "/contact" }
+      ],
+      lunches: [
+        {image: "revel", url: "https://www.revelit.com/"}
       ],
       snacks: [
         { image: "yourlogo", url: "/contact" },
