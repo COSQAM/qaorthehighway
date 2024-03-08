@@ -174,7 +174,7 @@ export default {
         { image: "yourlogo", url: "/contact" },
       ],
       golds: [
-        { image: "yourlogo", url: "/contact" },
+        { image: "parasoft", url: "https://www.parasoft.com/" },
         { image: "yourlogo", url: "/contact" },
       ],
       silvers: [
