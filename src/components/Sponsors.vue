@@ -104,7 +104,6 @@
         </a>
       </v-col>
     </v-row>
-    <!--
     <v-row align="center" justify="center"
       ><h3 class="text-h5 font-weight-black primary--text py-5">
         Snack Sponsors
@@ -155,7 +154,6 @@
         </a>
       </v-col>
     </v-row>
-    -->
     <Break class="color" />
   </v-container>
 </template>
@@ -175,25 +173,24 @@ export default {
       ],
       golds: [
         { image: "parasoft", url: "https://www.parasoft.com/" },
-        { image: "yourlogo", url: "/contact" },
+        { image: "practitest", url: "https://www.practitest.com/" },
+        { image: "lighthouse", url: "https://lighthousetechnologies.com/" }
       ],
       silvers: [
         { image: "globalapptesting", url: "https://www.globalapptesting.com/" },
-        { image: "yourlogo", url: "/contact" },
+        { image: "mabl", url: "https://www.mabl.com/" },
         { image: "yourlogo", url: "/contact" }
       ],
       lunches: [
         {image: "revel", url: "https://www.revelit.com/"}
       ],
       snacks: [
+        { image: "mabl", url: "https://www.mabl.com/" },
         { image: "yourlogo", url: "/contact" },
-        { image: "capgemini", url: "https://www.capgemini.com/" },
       ],
       tshirts: [
-        { image: "practitest", url: "https://www.practitest.com/" },
-        { image: "cgi", url: "https://www.cgi.com/" },
-        { image: "nesco", url: "https://www.nescoresource.com/" },
-        { image: "capgemini", url: "https://www.capgemini.com/" },
+        { image: "yourlogo", url: "/contact" },
+        { image: "yourlogo", url: "/contact" }
       ],
     };
   },
