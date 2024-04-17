@@ -5,6 +5,7 @@
         <Header title="Speakers" />
 
         <v-row class="text-center max-center mt-5">
+          <!--
           <v-col class="text-h5 primary--text font-weight-bold pt-3">
             <div>
               We are still reviewing speaker submissions for the 2024
@@ -14,7 +15,7 @@
               We'll be releasing the full list of speakers on April 15, 2024.
             </div>
           </v-col>
-          <!--
+          -->
           <v-col
             cols="12"
             md="4"
@@ -41,7 +42,9 @@
                   </a>
                 </template>
                 <v-list>
-                  <v-list-subheader class="text-subtitle-2 grey--text pl-4" >SELECT A SESSION</v-list-subheader>
+                  <v-list-subheader class="text-subtitle-2 grey--text pl-4"
+                    >SELECT A SESSION</v-list-subheader
+                  >
                   <v-list-item
                     v-for="(session, index) in speaker[1]"
                     :key="index"
@@ -69,15 +72,12 @@
               </a>
             </div>
           </v-col>
-          -->
         </v-row>
-        <!--
         <div class="text-caption grey--text text-center pa-3">
           This speaker list is not complete and will continue to grow as the
           committee recieves confirmation from the selected speakers. We are
           planning 30 session talks and 2 keynotes.
         </div>
-        -->
       </v-content>
     </Layout>
   </v-app>

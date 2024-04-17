@@ -9,7 +9,7 @@
               We are currently waiting for speaker confirmations and finalizing the schedule.
             </div>
             <div class="pt-3">
-              We'll be releasing the schedule on April 15, 2024.
+              We'll be releasing the schedule on May 1, 2024.
             </div>
           </v-col>
         </v-row>

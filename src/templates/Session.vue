@@ -49,6 +49,7 @@
                     ></span>
                   </v-col>
                   <v-spacer></v-spacer>
+                  <!--
                   <v-col cols="12" md="auto">
                     <v-btn
                       small
@@ -60,6 +61,7 @@
                       >Leave Feeback</v-btn
                     >
                   </v-col>
+                  -->
                 </v-row>
               </div>
               <v-divider class="pt-3" />

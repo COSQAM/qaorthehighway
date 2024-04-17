@@ -29,7 +29,7 @@
             text
             icon
             class="mx-1"
-            color="#38A1F3"
+            color="#000000"
             target="_blank"
             :href="twitUrl"
             :title="`${speaker} Twitter`"
