@@ -28,7 +28,7 @@
             >
           </v-card>
         </v-col>
-        <v-col cols="12" lg="6" class="text-center">
+        <v-col cols="12" md="6" class="text-center">
           <v-card class="text-left padding-y px-5" color="primary" dark>
             <v-card-title class="text-h3 font-weight-black">$129</v-card-title>
             <v-card-subtitle class="text-h5 font-weight-bold">
