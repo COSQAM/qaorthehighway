@@ -177,7 +177,6 @@ export default {
         { image: "lighthouse", url: "https://lighthousetechnologies.com/" }
       ],
       silvers: [
-        { image: "globalapptesting", url: "https://www.globalapptesting.com/" },
         { image: "mabl", url: "https://www.mabl.com/" },
         { image: "yourlogo", url: "/contact" }
       ],
