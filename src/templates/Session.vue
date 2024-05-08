@@ -191,7 +191,7 @@ img {
 .text-color {
   color: rgba(0, 0, 0, 0.5);
 }
-.cartoonroom {
+.senatechamber {
   color: #90caf9;
 }
 .greathall12 {
