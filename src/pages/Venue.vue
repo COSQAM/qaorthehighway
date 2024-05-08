@@ -94,18 +94,6 @@
             </v-row>
             <v-row align="center" justify="center"
               ><h3 class="text-h5 font-weight-black primary--text py-5">
-                FLOOR PLAN
-              </h3>
-            </v-row>
-            <v-divider></v-divider>
-            <v-row align="center" justify="center" class="max-center my-5">
-              <img
-                :src="require(`@/assets/images/rooms/venue.webp`)"
-                width="80%"
-              />
-            </v-row>
-            <v-row align="center" justify="center"
-              ><h3 class="text-h5 font-weight-black primary--text py-5">
                 NEARBY HOTELS
               </h3>
             </v-row>

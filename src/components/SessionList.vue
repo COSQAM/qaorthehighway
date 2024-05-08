@@ -89,12 +89,12 @@ export default {
       } else if (
         floorfilter == "eastballroom" ||
         floorfilter == "studentalumniroom" ||
-        floorfilter == "westballroom"
+        floorfilter == "westballroom" ||
+        floorfilter == "senatechamber"
       ) {
         return "2nd Floor";
       } else if (
-        floorfilter == "interfaithroom" ||
-        floorfilter == "cartoonroom"
+        floorfilter == "interfaithroom"
       ) {
         return "3rd Floor";
       } else {
@@ -110,7 +110,7 @@ export default {
   background-color: #e0e0e0;
 }
 
-.cartoonroom {
+.senatechamber {
   color: #90caf9;
 }
 .greathall12 {

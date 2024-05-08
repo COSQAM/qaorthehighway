@@ -3,6 +3,7 @@
     <Layout>
       <v-content>
         <Header title="Schedule" />
+        <!--
         <v-row class="text-center max-center mt-5">
           <v-col class="text-h5 primary--text font-weight-bold pt-3">
             <div>
@@ -13,29 +14,39 @@
             </div>
           </v-col>
         </v-row>
-        <!--
+        -->
         <div class="max-center">
           <div class="ma-3">
-            <Break time="7:00 - 7:50" activity="Breakfast" loc="East Ballroom (2nd Floor)"/>
+            <Break
+              time="7:00 - 7:50"
+              activity="Breakfast"
+              loc="East Ballroom (2nd Floor)"
+            />
             <SessionList :sessions="$page.session1" />
             <SessionList :sessions="$page.session2" />
             <SessionList :sessions="$page.session3" />
-            <Break time="11:30 - 12:45" activity="Lunch" loc="East Ballroom (2nd Floor)"/>
+            <Break
+              time="11:30 - 12:45"
+              activity="Lunch"
+              loc="East Ballroom (2nd Floor)"
+            />
             <SessionList :sessions="$page.session4" />
             <SessionList :sessions="$page.session5" />
-            <Break time="2:55 - 3:05" activity="Snacks & Refreshments" loc="Traditions Room (2nd Floor)"/>
+            <Break
+              time="2:55 - 3:05"
+              activity="Snacks & Refreshments"
+              loc="Traditions Room (2nd Floor)"
+            />
             <SessionList :sessions="$page.session6" />
             <SessionList :sessions="$page.session7" />
           </div>
-          
+
           <div class="text-caption grey--text text-center pa-3">
             This session list is not complete and will continue to grow as the
             committee recieves confirmation from the selected speakers. We are
             planning 30 session talks and 2 keynotes.
           </div>
-          
         </div>
-        -->
       </v-content>
     </Layout>
   </v-app>
@@ -53,7 +64,7 @@ export default {
     SessionList,
     IndexNavbar,
     Header,
-    Break
+    Break,
   },
   metaInfo() {
     return {
