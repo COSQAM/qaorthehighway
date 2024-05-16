@@ -5,8 +5,9 @@
         ><h3 class="text-h5 font-weight-black white--text">TICKETS</h3></v-row
       >
       <v-row align="center" justify="center" class="mb-5 pb-5">
+        <!--
         <v-col cols="12" md="6" class="text-center">
-          <v-card class="text-left padding-y px-5">
+          <v-card class="text-left padding-y px-5" color="primary" dark>
             <v-card-title class="text-h3 font-weight-black">$99</v-card-title>
             <v-card-subtitle class="text-h5 font-weight-bold">
               <div>Early Bird Pricing</div>
@@ -28,8 +29,9 @@
             >
           </v-card>
         </v-col>
-        <v-col cols="12" md="6" class="text-center">
-          <v-card class="text-left padding-y px-5" color="primary" dark>
+        -->
+        <v-col cols="12" md="8" class="text-center">
+          <v-card class="text-left padding-y px-5" >
             <v-card-title class="text-h3 font-weight-black">$129</v-card-title>
             <v-card-subtitle class="text-h5 font-weight-bold">
               <div>Full Price Ticket</div>
@@ -47,8 +49,7 @@
               class="black--text mt-3"
               href="/tickets"
               x-large
-              disabled
-              >Unavailable</v-btn
+              >Buy Now</v-btn
             >
           </v-card>
         </v-col>
