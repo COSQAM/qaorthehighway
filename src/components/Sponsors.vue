@@ -184,7 +184,8 @@ export default {
         {image: "revel", url: "https://www.revelit.com/"}
       ],
       snacks: [
-        { image: "mabl", url: "https://www.mabl.com/" }
+        { image: "mabl", url: "https://www.mabl.com/" },
+        { image: "experis", url: "https://www.experis.com/en" }
       ],
       tshirts: [
         { image: "yourlogo", url: "/contact" }
