@@ -421,6 +421,58 @@
             "linkedin": "https://linkedin.com/in/jordanpowell88",
             "twitter": "https://twitter.com/jordanpowell88",
             "youtube": ""
+        },
+                {
+            "speaker": "Bob Fornal",
+            "bio": "My focus is on front-end development: JavaScript, CSS, SVG, AngularJS and Angular, React, and Ionic. I commonly speak about Quality Engineering, Best Practices, and Front-End Technologies. \"Learning from my mistakes over the decades, I feel that I have become a solid programmer.\" -- Me",
+            "shortbio": "Senior Solutions Developer II at Leading EDJE",
+            "title": "Active Career Management",
+            "summary": "These are thoughts and ideas that have been hardened through Coffee Chats with hundreds bootcamp and college students over several years.",
+            "abstract": "As we know, finding jobs is challenging at best. Let's talk about finding the right job, the right company, and ways to stand out within a crowd of developers. These are thoughts and ideas that have been hardened through Coffee Chats with hundreds bootcamp and college students over several years.\n\nHow does all of this impact individuals that are new to the development industry? What are some of the challenges that those of us with decades in the industry will have?\n\nThis talk is for the new or transitioning developer; experienced developers should consider it, as well.",
+            "time": "1:55 - 2:55",
+            "room": "Student Alumni Room",
+            "picture": "",
+            "website": "https://code-squid.com",
+            "linkedin": "https://www.linkedin.com/in/rfornal/",
+            "twitter": "https://twitter.com/rfornal",
+            "youtube": "https://www.youtube.com/@bob-fornal"
+        },
+        {
+            "speaker": "Aaron Evans",
+            "bio": "I am a QA consultant focusing on test automation strategy and continuous delivery. I live on a farm in Montana with a benevolent family who takes care of me and lots of other animals.",
+            "shortbio": "Test Architect & QA Consultant",
+            "title": "Pair testing and other radical ideas",
+            "summary": "How collaboration can make testing more effective and fun.",
+            "abstract": "Agile is an old buzzword now, but a long time ago it was a new and radical concept. One of the more extreme ideas was having two developers work together on the same code at the same time.  I talk about how this concept can be expanded to having testers work together on manual and automated testing, working together with developers writing tests alongside code, partnering with product owners to discover and document tests and requirements, and collaborating with devOps to make delivery pipelines and test environments work smoothly.",
+            "time": "12:45 - 1:45",
+            "room": "Interfaith Room",
+            "picture": "",
+            "website": "https://fijiaaron.com",
+            "linkedin": "https://linkedin.com/in/aaronevans",
+            "twitter": "",
+            "youtube": ""
+        },
+        {
+            "speaker": "Jeremy Emberling",
+            "bio": "I work with market leading firms to collaboratively define and execute testing strategies. From defining (and refining) initiative requirements to identifying existing process challenges and  improvement opportunities, I share what I’ve learned with those who are working to plan and/or optimize their testing approach. Best in class testing is NOT easy, but it can be achieved.",
+            "shortbio": "Solutions Architect at Keysight Technologies",
+            "title": "Egos & Silos: Why NOTHING is working!",
+            "summary": "This spirited conversation will address the common barriers to successful testing programs, including individual agendas, organizational structures, and funding availability.",
+            "abstract": "This spirited conversation will address the common barriers to successful testing programs, including individual agendas, organizational structures, and funding availability.\n\nJoin us for what’s sure to be spirited conversation focused on the following:\n- Developers’ requirements! Testers’ requirements! QA’s requirements! … How do we accommodate EVERYONE?!?!?\n- My Development Team is here in Columbus. Our Testing Team is in Taiwan. All our QA is done in our Austin, TX office … How do we get ANYTHING done effectively?!?!?\n- Our never ending ERP upgrade is going on year 5. We’re close to making our new HR platform investment decision. I need to hire AT LEAST 6 more staff members this year. How am I going to fund my 6-18 mos. testing initiative?!?!?",
+            "time": "12:45 - 1:45",
+            "room": "Great Hall 1 & 2",
+            "picture": "",
+            "website": "",
+            "linkedin": "https://www.linkedin.com/in/jemberling/",
+            "twitter": "",
+            "youtube": "",
+            "speaker2": "Chad Brace",
+            "bio2": "I’m your local Columbus, OH testing automation “go to.” Jeremy and I collaborate with those who lead testing programs in an effort support their planning and/or optimization initiatives.",
+            "shortbio2": "Enterprise Technology Sales at Keysight Technologies",
+            "linkedin2": "https://www.linkedin.com/in/chad-brace-7190108/",
+            "twitter2": "",
+            "website2": "",
+            "youtube2": ""
         }
     ],
     "potential": [
@@ -438,6 +490,28 @@
             "linkedin": "",
             "twitter": "",
             "youtube": ""
+        },
+        {
+            "speaker": "",
+            "bio": "",
+            "shortbio": "",
+            "title": "",
+            "summary": "",
+            "abstract": "",
+            "time": "",
+            "room": "",
+            "picture": "",
+            "website": "",
+            "linkedin": "",
+            "twitter": "",
+            "youtube": "",
+            "speaker2": "",
+            "bio2": "",
+            "shortbio2": "",
+            "linkedin2": "",
+            "twitter2": "",
+            "website2": "",
+            "youtube2": ""
         }
     ]
 }
