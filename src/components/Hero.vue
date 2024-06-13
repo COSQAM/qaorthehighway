@@ -77,10 +77,10 @@
               : 'text-h3 font-weight-bold py-5'
           "
         >
-         Get your tickets now!
+        We want to hear from you
         </div>
-        <v-btn block color="accent" class="black--text" href="/tickets" target="_blank" x-large
-          >Buy Tickets</v-btn
+        <v-btn block color="accent" class="black--text" href="https://docs.google.com/forms/d/e/1FAIpQLSdnQr50JlBFIJt5QM2nVAm7BYU-lADGdw3Fp4-HMYcLuzRRAA/viewform?usp=sf_link" target="_blank" x-large
+          >Leave Feedback</v-btn
         >
       </v-col>
       <v-spacer></v-spacer>
