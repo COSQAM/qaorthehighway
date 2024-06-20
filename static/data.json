@@ -83,7 +83,8 @@
             "website": "",
             "linkedin": "https://www.linkedin.com/in/brianhamilton1/",
             "twitter": "",
-            "youtube": ""
+            "youtube": "",
+            "slidesLink": "https://docs.google.com/presentation/d/1LbXlY6Sek0p7OjdIrBaOp6d2IqchI3Mz/edit?usp=drive_link&ouid=117169569504323699333&rtpof=true&sd=true"
         },
         {
             "speaker": "Daniel Pries",
@@ -113,7 +114,8 @@
             "website": "",
             "linkedin": "https://www.linkedin.com/in/kayla-hildebrandt-1066762a/",
             "twitter": "",
-            "youtube": ""
+            "youtube": "",
+            "slidesLink": "https://docs.google.com/presentation/d/1702Cdc2r64oH1PdQ5s9z86jDxLlFOqkt/edit?usp=sharing&ouid=117169569504323699333&rtpof=true&sd=true"
         },
         {
             "speaker": "Federico Toledo",
@@ -158,7 +160,8 @@
             "website": "https://github.com/hammzj",
             "linkedin": "http://linkedin.com/in/hammzachj",
             "twitter": "",
-            "youtube": ""
+            "youtube": "",
+            "slidesLink": "https://docs.google.com/presentation/d/1U73lCTUiV9bJTK2mtSNKR672WU6XgbMt3ve_tQYM4FE/edit?usp=drive_link"
         },
         {
             "speaker": "Bret Gregersen",
@@ -188,7 +191,8 @@
             "website": "",
             "linkedin": "https://www.linkedin.com/in/newtonolivieri",
             "twitter": "",
-            "youtube": ""
+            "youtube": "",
+            "slidesLink": "https://drive.google.com/file/d/12ZUIwV65E4u2YlE-WQCHdaJhtwdnpTsv/view?usp=drive_link"
         },
         {
             "speaker": "Josh Kulp",
@@ -345,7 +349,8 @@
             "website": "",
             "linkedin": "https://www.linkedin.com/in/tester-anna/",
             "twitter": "https://twitter.com/testerAnna",
-            "youtube": "https://www.youtube.com/@tester_Anna"
+            "youtube": "https://www.youtube.com/@tester_Anna",
+            "slidesLink": "https://slides.com/tester-anna/cypress-api-highway"
         },
         {
             "speaker": "Michal Buczko",

@@ -48,6 +48,7 @@ module.exports = function (api) {
         youtube2: session.youtube2,
         shortbio: session.shortbio,
         shortbio2: session.shortbio2,
+        slidesLink: session.slidesLink,
         path
       })
     })
