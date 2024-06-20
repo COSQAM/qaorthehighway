@@ -57,6 +57,26 @@
             </v-row>
             <v-row align="center" justify="center"
               ><h3 class="text-h5 font-weight-black primary--text py-5">
+                FLOOR PLAN
+              </h3>
+            </v-row>
+            <v-divider></v-divider>
+            <v-row align="center" justify="center" class="mt-5">
+              <img
+                :src="require(`@/assets/images/rooms/greathall3.png`)"
+                width="60%"
+              />
+              <img
+                :src="require(`@/assets/images/rooms/secondfloor.png`)"
+                width="60%"
+              />
+              <img
+                :src="require(`@/assets/images/rooms/thirdfloor.png`)"
+                width="60%"
+              />
+            </v-row>
+            <v-row align="center" justify="center"
+              ><h3 class="text-h5 font-weight-black primary--text py-5">
                 PARKING
               </h3>
             </v-row>
@@ -141,19 +161,22 @@ export default {
       hotels: [
         {
           name: "SpringHill Suites by Marriott",
-          description: "Located 1.5 miles from the Ohio Union, this hotel is a great and safe walk through Ohio State's campus to the Ohio Union. Also, it is conveniently located by The Ohio State University. Just minutes to Downtown Columbus and other Columbus attractions such as the Nationwide Arena District, Short North, Huntington Park, COSI and German Village.", 
+          description:
+            "Located 1.5 miles from the Ohio Union, this hotel is a great and safe walk through Ohio State's campus to the Ohio Union. Also, it is conveniently located by The Ohio State University. Just minutes to Downtown Columbus and other Columbus attractions such as the Nationwide Arena District, Short North, Huntington Park, COSI and German Village.",
           mapsUrl:
             "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.8746108070845!2d-83.02856388461704!3d39.98890737941711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388ef032010203%3A0x73b8944335921fbd!2sSpringHill%20Suites%20by%20Marriott%20Columbus%20OSU!5e0!3m2!1sen!2sus!4v1665517226610!5m2!1sen!2sus",
         },
         {
           name: "The Blackwell Inn",
-          description: "Located 0.8 miles from the Ohio Union, this hotel is a great and safe walk through Ohio State's campus to the Ohio Union and right accross the street from the Ohio Stadium (the horseshoe). The Blackwell Inn and Pfahl Conference Center is located in University District. The area's natural beauty can be seen at Chadwick Arboretum & Learning Gardens, while Billy Ireland Cartoon Library and Museum and Wexner Center for the Arts are cultural highlights.",
+          description:
+            "Located 0.8 miles from the Ohio Union, this hotel is a great and safe walk through Ohio State's campus to the Ohio Union and right accross the street from the Ohio Stadium (the horseshoe). The Blackwell Inn and Pfahl Conference Center is located in University District. The area's natural beauty can be seen at Chadwick Arboretum & Learning Gardens, while Billy Ireland Cartoon Library and Museum and Wexner Center for the Arts are cultural highlights.",
           mapsUrl:
             "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.165269855282!2d-83.01892018391231!3d40.00475578851412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388e97af90fd3d%3A0xe43dbd69e093c2c!2sThe%20Blackwell%20Inn%20%26%20Pfahl%20Conference%20Center!5e0!3m2!1sen!2sus!4v1665517681174!5m2!1sen!2sus",
         },
         {
           name: "Hilton Garden Inn",
-          description: "Located 2.8 miles from the Ohio Union, this hotel has shopping and restaurants close by along with sporting and entertainment venues. Suburbs of Upper Arlington, Grandview and Clintonville are located within two miles of the hotel.",
+          description:
+            "Located 2.8 miles from the Ohio Union, this hotel has shopping and restaurants close by along with sporting and entertainment venues. Suburbs of Upper Arlington, Grandview and Clintonville are located within two miles of the hotel.",
           mapsUrl:
             "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.18665243653!2d-83.02954926427311!3d40.02661192135342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388c2560a8c93f%3A0x964a5d09816f59a8!2sHilton%20Garden%20Inn%20Columbus-University%20Area!5e0!3m2!1sen!2sus!4v1665517800813!5m2!1sen!2sus",
         },
