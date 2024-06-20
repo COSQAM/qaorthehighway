@@ -8,7 +8,7 @@
             <v-col cols="12" class="text-color">
               <div class="pb-3">
                 <v-row justify="space-around">
-                  <v-col cols="12" md="6">
+                  <v-col cols="8" md="6">
                     <span class="pr-2"> <v-icon small>$clock</v-icon></span>
                     <span class="pr-5">{{ $page.session.time }} </span>
                     <span class="pr-2">
@@ -48,20 +48,18 @@
                         </template> </v-dialog
                     ></span>
                   </v-col>
-                  <v-spacer></v-spacer>
-                  <!--
-                  <v-col cols="12" md="auto">
+                  <v-spacer />
+                  <v-col v-if="$page.session.slidesLink" cols="auto">
                     <v-btn
                       small
                       outlined
                       class="text-none"
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSdLEJnLY9pzGm9YKkXRdMmqfyWKxzThUtTzaXTPVOxXeImkEw/viewform?usp=pp_url&entry.539325667=Speaker"
+                      :href="$page.session.slidesLink"
                       target="_blank"
                       color="primary"
-                      >Leave Feeback</v-btn
+                      >Slides</v-btn
                     >
                   </v-col>
-                  -->
                 </v-row>
               </div>
               <v-divider class="pt-3" />
@@ -112,6 +110,7 @@ query Session ($path: String!) {
     website2
     youtube
     youtube2
+    slidesLink
   }
 }
 </page-query>
@@ -135,10 +134,10 @@ export default {
     };
   },
   methods: {
-    roomFiltered: function (room) {
+    roomFiltered: function(room) {
       return room.replace(/:|-| |&/g, "").toLowerCase();
     },
-    findFloor: function (room) {
+    findFloor: function(room) {
       var floorfilter = this.roomFiltered(room);
       if (floorfilter == "greathall12" || floorfilter == "greathall3") {
         return "1st Floor";
@@ -157,7 +156,7 @@ export default {
         return "Error";
       }
     },
-    findImage: function (floor) {
+    findImage: function(floor) {
       var floorfilter = this.roomFiltered(floor);
       try {
         return require(`@/assets/images/rooms/${floorfilter}.png`);
@@ -165,7 +164,7 @@ export default {
         return require("@/assets/images/generic-profile.png");
       }
     },
-    roomFiltered: function (room) {
+    roomFiltered: function(room) {
       return room.replace(/:|-| |&/g, "").toLowerCase();
     },
   },
@@ -213,4 +212,3 @@ img {
   color: #80cbc4;
 }
 </style>
-
