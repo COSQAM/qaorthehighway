@@ -105,13 +105,12 @@ export default {
     return {
       members: [
         { name: "Joe Beale", title: "President", bio: "" },
+        { name: "Ryan Quellhorst", title: "Vice President", bio: "" },
+        { name: "Jenna Davis", title: "Secretary", bio: "" },
         { name: "Jared Kiste", title: "Treasurer", bio: "" },
-        { name: "Barry Kuck", title: "", bio: "" },
-        { name: "Jenna Davis", title: "", bio: "" },
         { name: "Krishna Bandarupalli", title: "", bio: "" },
         { name: "Anna Heiermann", title: "", bio: "" },
-        { name: "Dave Sadlon", title: "", bio: "" },
-        { name: "Ryan Quellhorst", title: "", bio: "" },
+        { name: "Dave Sadlon", title: "", bio: "" }
       ],
     };
   },
