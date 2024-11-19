@@ -32,7 +32,7 @@
               : 'text-h5 font-weight-bold secondary--text py-5'
           "
         >
-          <span class="accent--text">06-21-2024</span>
+          <span class="accent--text">06-27-2025</span>
           <span class="pl-4 pr-1">COLUMBUS, OH</span>
           <span class="px-2">/</span>
           <span>THE OHIO UNION</span>
@@ -69,7 +69,8 @@
           >Submit your talk here</v-btn
         >
         -->
-        <!-- call for speakers -->
+        <!-- feedback -->
+        <!--
         <div
           :class="
             $vuetify.breakpoint.smAndDown
@@ -82,6 +83,7 @@
         <v-btn block color="accent" class="black--text" href="https://docs.google.com/forms/d/e/1FAIpQLSdnQr50JlBFIJt5QM2nVAm7BYU-lADGdw3Fp4-HMYcLuzRRAA/viewform?usp=sf_link" target="_blank" x-large
           >Leave Feedback</v-btn
         >
+      -->
       </v-col>
       <v-spacer></v-spacer>
       <v-col cols="4"></v-col>
