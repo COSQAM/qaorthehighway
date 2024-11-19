@@ -3,7 +3,6 @@
     <Layout>
       <v-content>
         <Header title="Schedule" />
-        <!--
         <v-row class="text-center max-center mt-5">
           <v-col class="text-h5 primary--text font-weight-bold pt-3">
             <div>
@@ -14,7 +13,7 @@
             </div>
           </v-col>
         </v-row>
-        -->
+        <!--
         <div class="max-center">
           <div class="ma-3">
             <Break
@@ -47,6 +46,7 @@
             planning 30 session talks and 2 keynotes.
           </div>
         </div>
+        -->
       </v-content>
     </Layout>
   </v-app>
