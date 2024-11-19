@@ -68,7 +68,7 @@ export default {
         {
           title: "Twitter",
           icon: "$vuetify.icons.twitter",
-          color: "#38A1F3",
+          color: "#000000",
           href: "https://twitter.com/QAortheHighway",
         },
         {

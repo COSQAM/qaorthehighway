@@ -171,21 +171,18 @@ export default {
         { image: "yourlogo", url: "/contact" }
       ],
       golds: [
-        { image: "parasoft", url: "https://www.parasoft.com/" },
-        { image: "practitest", url: "https://www.practitest.com/" },
-        { image: "lighthouse", url: "https://lighthousetechnologies.com/" },
-        { image: "keysight", url: "https://www.keysight.com/" }
+        { image: "yourlogo", url: "/contact" },
+        { image: "yourlogo", url: "/contact" }
       ],
       silvers: [
-        { image: "mabl", url: "https://www.mabl.com/" },
-        { image: "ttc", url: "https://ttcglobal.com/" }
+        { image: "yourlogo", url: "/contact" },
+        { image: "yourlogo", url: "/contact" }
       ],
       lunches: [
-        {image: "revel", url: "https://www.revelit.com/"}
+        {image: "yourlogo", url: "/contact"}
       ],
       snacks: [
-        { image: "mabl", url: "https://www.mabl.com/" },
-        { image: "experis", url: "https://www.experis.com/en" }
+        { image: "yourlogo", url: "/contact" }
       ],
       tshirts: [
         { image: "yourlogo", url: "/contact" }
