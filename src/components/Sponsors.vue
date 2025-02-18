@@ -171,8 +171,7 @@ export default {
         { image: "yourlogo", url: "/contact" }
       ],
       golds: [
-        { image: "yourlogo", url: "/contact" },
-        { image: "yourlogo", url: "/contact" }
+        { image: "lighthouse", url: "https://lighthousetechnologies.com/" }
       ],
       silvers: [
         { image: "yourlogo", url: "/contact" },
