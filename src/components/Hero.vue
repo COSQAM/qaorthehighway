@@ -55,6 +55,7 @@
         <v-btn block color="accent" class="black--text" href="https://forms.gle/9ADa33TAGtd8T96A9" target="_blank" x-large>Leave Feedback</v-btn>
         -->
         <!-- call for speakers -->
+        <!--
         <div
           :class="
             $vuetify.breakpoint.smAndDown
@@ -62,11 +63,18 @@
               : 'text-h3 font-weight-bold py-5'
           "
         >
-         Call for Speakers now open!
+          Call for Speakers now open!
         </div>
-        <v-btn block color="accent" class="black--text" href="https://forms.gle/tXBfWR1fueEdvWZa7" target="_blank" x-large
+        <v-btn
+          block
+          color="accent"
+          class="black--text"
+          href="https://forms.gle/tXBfWR1fueEdvWZa7"
+          target="_blank"
+          x-large
           >Submit your talk here</v-btn
         >
+        -->
         <!-- feedback -->
         <!--
         <div
@@ -82,6 +90,24 @@
           >Leave Feedback</v-btn
         >
       -->
+        <div
+          :class="
+            $vuetify.breakpoint.smAndDown
+              ? 'text-h4 font-weight-bold py-5'
+              : 'text-h3 font-weight-bold py-5'
+          "
+        >
+          Get your tickets now!
+        </div>
+        <v-btn
+          block
+          color="accent"
+          class="black--text"
+          href="/tickets"
+          target="_blank"
+          x-large
+          >Buy Tickets</v-btn
+        >
       </v-col>
       <v-spacer></v-spacer>
       <v-col cols="4"></v-col>
@@ -107,6 +133,5 @@ export default {
 .large-text {
   font-size: 4.5rem;
   line-height: 5rem;
-
 }
 </style>
