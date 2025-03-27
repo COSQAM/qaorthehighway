@@ -168,10 +168,11 @@ export default {
   data() {
     return {
       platinums: [
-        { image: "yourlogo", url: "/contact" }
+        { image: "ttc", url: "https://ttcglobal.com/" }
       ],
       golds: [
-        { image: "lighthouse", url: "https://lighthousetechnologies.com/" }
+        { image: "lighthouse", url: "https://lighthousetechnologies.com/" },
+        { image: "tricentis", url: "https://www.tricentis.com/" }
       ],
       silvers: [
         { image: "yourlogo", url: "/contact" },
@@ -184,7 +185,7 @@ export default {
         { image: "yourlogo", url: "/contact" }
       ],
       tshirts: [
-        { image: "yourlogo", url: "/contact" }
+        { image: "heritagedental", url: "https://www.heritagedentalohio.com/" }
       ],
     };
   },
