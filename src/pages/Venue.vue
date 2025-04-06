@@ -127,7 +127,7 @@
               <v-col cols="12" md="6">
                 <div class="py-5 font-weight-light">
                   <div class="font-weight-bold pb-5">{{ hotel.name }}</div>
-                  <div>{{ hotel.description }}</div>
+                  <div v-html="hotel.description"></div>
                 </div>
               </v-col>
               <v-col cols="12" md="6">
@@ -161,8 +161,16 @@ export default {
       hotels: [
         {
           name: "SpringHill Suites by Marriott",
-          description:
-            "Located 1.5 miles from the Ohio Union, this hotel is a great and safe walk through Ohio State's campus to the Ohio Union. Also, it is conveniently located by The Ohio State University. Just minutes to Downtown Columbus and other Columbus attractions such as the Nationwide Arena District, Short North, Huntington Park, COSI and German Village.",
+            description: `
+            Located 1.5 miles from the Ohio Union, this hotel is a great and safe walk through Ohio State's campus to the Ohio Union. 
+            Also, it is conveniently located by The Ohio State University. Just minutes to Downtown Columbus and other Columbus attractions 
+            such as the Nationwide Arena District, Short North, Huntington Park, COSI, and German Village.<br/><br/>
+            Get the QA or the Highway group rate for <strong>149.00 USD per night</strong><br/>
+            <strong>Last Day to Book:</strong> Monday, May 26, 2025.<br/>
+            <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1743690111247&key=GRP&guestreslink2=true&app=resvlink" target="_blank">
+              Click here to get the group rate
+            </a>
+            `,
           mapsUrl:
             "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.8746108070845!2d-83.02856388461704!3d39.98890737941711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388ef032010203%3A0x73b8944335921fbd!2sSpringHill%20Suites%20by%20Marriott%20Columbus%20OSU!5e0!3m2!1sen!2sus!4v1665517226610!5m2!1sen!2sus",
         },
