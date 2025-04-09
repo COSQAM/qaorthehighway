@@ -18,22 +18,22 @@
             v-for="(speaker, index) in infiniteSpeakers"
             :key="index"
           >
-            <v-card class="speaker-card" hover link="">
-              <v-row align="center" class="ml-3 my-3">
-                <v-avatar size="60">
+            <v-card class="speaker-card" hover link :href="speaker.path">
+              <v-row align="center" class="ml-5 my-5">
+                <v-avatar size="80">
                   <img
                     :src="findImage(speaker.speaker)"
                     :alt="`${speaker.speaker} Photo`"
                   />
                 </v-avatar>
                 <div class="pl-3">
-                  <div class="speaker-name">{{ speaker.speaker }}</div>
-                  <div class="speaker-bio">{{ speaker.shortbio }}</div>
+                  <div class="speaker-name headline font-weight-bold">{{ speaker.speaker }}</div>
+                  <div class="speaker-bio text-subtitle-1">{{ speaker.shortbio }}</div>
                 </div>
               </v-row>
               <v-row class="ma-0">
-                <v-col cols="12" class="text-center px-5">
-                  <div class="speaker-title">
+                <v-col cols="12" class="text-center px-5 pb-5">
+                  <div class="speaker-title headline font-weight-bold">
                     {{ speaker.title }}
                   </div>
                 </v-col>
@@ -64,17 +64,17 @@ export default {
   },
   data() {
     return {
-      currentSlide: 4, // Start at the first "real" slide (after the clones)
+      currentSlide: 3, // Start at the first "real" slide (after the clones)
       isTransitioning: false,
-      slideWidth: 25, // Percentage width of each slide (100% / 4 speakers = 25%)
+      slideWidth: 33.33, // Percentage width of each slide (100% / 3 speakers = 33.33%)
     };
   },
   computed: {
     infiniteSpeakers() {
-      // Add clones of the first and last 4 items for infinite scrolling
+      // Add clones of the first and last 3 items for infinite scrolling
       if (this.speakers.length > 0) {
-        const cloneStart = this.speakers.slice(0, 4); // First 4 speakers
-        const cloneEnd = this.speakers.slice(-4); // Last 4 speakers
+        const cloneStart = this.speakers.slice(0, 3); // First 3 speakers
+        const cloneEnd = this.speakers.slice(-3); // Last 3 speakers
         return [...cloneEnd, ...this.speakers, ...cloneStart];
       }
       return [];
@@ -100,9 +100,9 @@ export default {
       if (this.currentSlide === 0) {
         // Jump to the last "real" slide
         this.currentSlide = this.speakers.length;
-      } else if (this.currentSlide === this.speakers.length + 4) {
+      } else if (this.currentSlide === this.speakers.length + 3) {
         // Jump back to the first "real" slide
-        this.currentSlide = 4;
+        this.currentSlide = 3;
       }
     },
     findImage: function(speaker) {
@@ -147,14 +147,14 @@ export default {
 }
 
 .carousel-item {
-  flex: 0 0 25%; /* Each item takes up 25% of the carousel width */
+  flex: 0 0 33.33%; /* Each item takes up 33.33% of the carousel width */
   display: flex;
   justify-content: center;
 }
 
 .speaker-card {
   text-align: left;
-  width: 275px;
+  width: 350px;
 }
 
 .speaker-photo {
@@ -164,23 +164,19 @@ export default {
 }
 
 .speaker-name {
-  font-size: 1.2rem;
-  font-weight: bold;
   margin: 0;
-  width: 180px;
+  width: 200px;
   white-space: normal; /* Allow text to wrap */
   word-wrap: break-word; /* Break long words if necessary */
   hyphens: auto; /* Hyphenate long words */
 }
 
 .speaker-bio {
-  font-size: 0.9rem;
-  color: #666;
-  margin: 4px 0 0;
+  color: #9e9e9e;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; /* Truncate the bio to a single line */
-  max-width: 180px; /* Adjust width to control truncation */
+  max-width: 220px; /* Adjust width to control truncation */
 }
 
 .speaker-title {
