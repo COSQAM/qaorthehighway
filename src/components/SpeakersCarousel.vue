@@ -27,8 +27,12 @@
                   />
                 </v-avatar>
                 <div class="pl-3">
-                  <div class="speaker-name headline font-weight-bold">{{ speaker.speaker }}</div>
-                  <div class="speaker-bio text-subtitle-1">{{ speaker.shortbio }}</div>
+                  <div class="speaker-name headline font-weight-bold">
+                    {{ speaker.speaker }}
+                  </div>
+                  <div class="speaker-bio text-subtitle-1">
+                    {{ speaker.shortbio }}
+                  </div>
                 </div>
               </v-row>
               <v-row class="ma-0">
@@ -42,8 +46,12 @@
           </div>
         </div>
       </div>
-      <button class="carousel-control prev" @click="prevSlide">‹</button>
-      <button class="carousel-control next" @click="nextSlide">›</button>
+      <div class="carousel-control prev" @click="prevSlide">
+        <ChevronLeft />
+      </div>
+      <div class="carousel-control next" @click="nextSlide">
+        <ChevronLeft class="flipped" />
+      </div>
     </div>
     <Break class="color" />
   </v-container>
@@ -51,10 +59,12 @@
 
 <script>
 import Break from "@/components/icons/Break";
+import ChevronLeft from "./icons/ChevronLeft.vue";
 
 export default {
   components: {
     Break,
+    ChevronLeft,
   },
   props: {
     speakers: {
@@ -122,7 +132,7 @@ export default {
         this.currentSlide = 3;
       }
     },
-    findImage: function (speaker) {
+    findImage: function(speaker) {
       try {
         return require(`@/assets/images/speakers/${speaker.toLowerCase()}.webp`);
       } catch (error) {
@@ -205,20 +215,28 @@ export default {
 .carousel-control {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  font-size: 2rem;
+  color: #d6d5d5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.carousel-control:hover {
+  color: var(--v-primary-base);
   cursor: pointer;
-  z-index: 1;
 }
 
 .carousel-control.prev {
-  left: 10px;
+  left: 5px;
 }
 
 .carousel-control.next {
-  right: 10px;
+  right: 5px;
+}
+
+.flipped {
+  transform: scaleX(-1); /* Flip the icon horizontally */
 }
 </style>
