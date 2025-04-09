@@ -67,20 +67,37 @@ export default {
       currentSlide: 3, // Start at the first "real" slide (after the clones)
       isTransitioning: false,
       slideWidth: 33.33, // Percentage width of each slide (100% / 3 speakers = 33.33%)
+      shuffledSpeakers: [], // Local copy of speakers for shuffling
     };
   },
   computed: {
     infiniteSpeakers() {
       // Add clones of the first and last 3 items for infinite scrolling
-      if (this.speakers.length > 0) {
-        const cloneStart = this.speakers.slice(0, 3); // First 3 speakers
-        const cloneEnd = this.speakers.slice(-3); // Last 3 speakers
-        return [...cloneEnd, ...this.speakers, ...cloneStart];
+      if (this.shuffledSpeakers.length > 0) {
+        const cloneStart = this.shuffledSpeakers.slice(0, 3); // First 3 speakers
+        const cloneEnd = this.shuffledSpeakers.slice(-3); // Last 3 speakers
+        return [...cloneEnd, ...this.shuffledSpeakers, ...cloneStart];
       }
       return [];
     },
   },
+  watch: {
+    speakers: {
+      immediate: true, // Run the watcher immediately when the component is created
+      handler(newSpeakers) {
+        // Shuffle the speakers array and assign it to shuffledSpeakers
+        this.shuffledSpeakers = this.shuffleArray([...newSpeakers]);
+      },
+    },
+  },
   methods: {
+    shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    },
     nextSlide() {
       if (!this.isTransitioning) {
         this.isTransitioning = true;
@@ -99,13 +116,13 @@ export default {
       // Handle infinite loop logic
       if (this.currentSlide === 0) {
         // Jump to the last "real" slide
-        this.currentSlide = this.speakers.length;
-      } else if (this.currentSlide === this.speakers.length + 3) {
+        this.currentSlide = this.shuffledSpeakers.length;
+      } else if (this.currentSlide === this.shuffledSpeakers.length + 3) {
         // Jump back to the first "real" slide
         this.currentSlide = 3;
       }
     },
-    findImage: function(speaker) {
+    findImage: function (speaker) {
       try {
         return require(`@/assets/images/speakers/${speaker.toLowerCase()}.webp`);
       } catch (error) {
