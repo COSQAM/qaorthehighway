@@ -117,14 +117,12 @@ query Session ($path: String!) {
 
 <script>
 import Layout from "@/layouts/Default";
-import SessionNavbar from "@/components/SessionNavbar";
 import SpeakerBio from "@/components/SpeakerBio";
 import Header from "@/components/Header";
 
 export default {
   components: {
     Layout,
-    SessionNavbar,
     SpeakerBio,
     Header,
   },
