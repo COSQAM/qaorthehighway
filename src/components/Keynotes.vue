@@ -7,7 +7,7 @@
       <v-row align="center" justify="center" class="my-3">
         <v-col sm="12" md="6" class="text-center text-h5">
           <a :href="$page.keynote1.edges[0].node.path">
-            <v-avatar size="300">
+            <v-avatar size="250">
               <v-img aspect-ratio="1:1" :src="findImage($page.keynote1.edges[0].node.speaker)" />
             </v-avatar>
             <div class="speaker headline font-weight-bold pt-3">
@@ -20,7 +20,7 @@
         </v-col>
         <v-col sm="12" md="6" class="text-center text-h5">
           <a :href="$page.keynote2.edges[0].node.path">
-            <v-avatar size="300">
+            <v-avatar size="250">
               <v-img aspect-ratio="1:1" :src="findImage($page.keynote2.edges[0].node.speaker)" />
             </v-avatar>
             <div class="speaker headline font-weight-bold pt-3">
@@ -33,18 +33,13 @@
         </v-col>
       </v-row>
     </div>
-
-    <Break class="color" />
   </v-container>
 </template>
 
 <script>
-import Break from "@/components/icons/Break";
+
 
 export default {
-  components: {
-    Break,
-  },
   methods: {
     findImage: (speaker) => {
       try {
@@ -58,10 +53,6 @@ export default {
 </script>
 
 <style scoped>
-.color {
-  color: var(--v-secondary-base);
-  bottom: none;
-}
 .max-center {
   max-width: 1000px;
   margin: 0px auto;
