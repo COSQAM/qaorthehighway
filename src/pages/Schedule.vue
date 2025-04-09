@@ -1,7 +1,7 @@
 <template>
   <v-app class="white">
     <Layout>
-      <v-content>
+      <v-main>
         <Header title="Schedule" />
         <v-row class="text-center max-center mt-5">
           <v-col class="text-h5 primary--text font-weight-bold pt-3">
@@ -47,7 +47,7 @@
           </div>
         </div>
         -->
-      </v-content>
+      </v-main>
     </Layout>
   </v-app>
 </template>
