@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <Layout>
-      <v-content>
+      <v-main>
         <Header title="Venue" />
         <div class="max-center">
           <div class="ma-3">
@@ -144,7 +144,7 @@
             </v-row>
           </div>
         </div>
-      </v-content>
+      </v-main>
     </Layout>
   </v-app>
 </template>

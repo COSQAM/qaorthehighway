@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <Layout>
-      <v-content>
+      <v-main>
         <Header title="Committee" />
         <div class="max-center-small font-weight-light pa-5">
           <div class="pb-5">
@@ -87,7 +87,7 @@
             </div>
           </div>
         </div>
-      </v-content>
+      </v-main>
     </Layout>
   </v-app>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <Layout>
-      <v-content>
+      <v-main>
         <Header title="Speakers" />
 
         <v-row class="text-center max-center mt-5">
@@ -78,7 +78,7 @@
           committee recieves confirmation from the selected speakers. We are
           planning 30 session talks and 2 keynotes.
         </div>
-      </v-content>
+      </v-main>
     </Layout>
   </v-app>
 </template>

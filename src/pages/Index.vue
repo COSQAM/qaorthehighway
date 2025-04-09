@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <Layout>
-      <v-content>
+      <v-main>
         <Hero />
         <Keynotes />
         <SpeakersCarousel :speakers="speakers" />
@@ -11,7 +11,7 @@
         <Sponsors />
         <div style="height: 18px"></div>
         <PastConference />
-      </v-content>
+      </v-main>
     </Layout>
   </v-app>
 </template>
