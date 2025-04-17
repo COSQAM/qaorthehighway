@@ -13,14 +13,16 @@
         align-self="center"
         class="d-flex justify-center"
       >
-        <a :href="sponsor.url" target="_blank">
-          <v-img
-            contain
-            :max-height="maxHeight"
-            :max-width="maxWidth"
-            :src="findImage(sponsor.image)"
-          />
-        </a>
+        <v-card :width="maxWidth+50" :min-height="maxHeight-100" class="mx-2" :href="sponsor.url" target="_blank" hover outlined>
+          <div class="d-flex justify-center align-center" style="height: 100%;">
+            <v-img
+              contain
+              :max-height="maxHeight"
+              :max-width="maxWidth"
+              :src="findImage(sponsor.image)"
+            />
+          </div>
+        </v-card>
       </v-col>
     </v-row>
   </div>

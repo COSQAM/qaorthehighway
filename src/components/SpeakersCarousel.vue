@@ -18,7 +18,7 @@
             v-for="(speaker, index) in infiniteSpeakers"
             :key="index"
           >
-            <v-card class="speaker-card" hover link :href="speaker.path">
+            <v-card class="speaker-card" hover link :href="speaker.path" outlined>
               <v-row align="center" class="ml-5 my-5">
                 <v-avatar size="80">
                   <img

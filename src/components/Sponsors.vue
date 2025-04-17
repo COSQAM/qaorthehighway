@@ -45,6 +45,32 @@ export default {
         },
         {
           title: "Silver Sponsors",
+          sponsors: [{ image: "mabl", url: "https://www.mabl.com/" }],
+          maxHeight: 250,
+          maxWidth: 250,
+        },
+        {
+          title: "Snack Sponsors",
+          sponsors: [{ image: "mabl", url: "https://www.mabl.com/" }],
+          maxHeight: 250,
+          maxWidth: 250,
+        },
+        {
+          title: "T-Shirt Sponsors",
+          sponsors: [
+            {
+              image: "heritagedental",
+              url: "https://www.heritagedentalohio.com/",
+            },
+            { image: "narwal", url: "https://narwal.ai/" },
+          ],
+          maxHeight: 250,
+          maxWidth: 250,
+        },
+      ],
+      moreSponsors: [
+        {
+          title: "Silver Sponsors",
           sponsors: [
             { image: "yourlogo", url: "/contact" },
             { image: "yourlogo", url: "/contact" },
@@ -61,15 +87,6 @@ export default {
         {
           title: "Snack Sponsors",
           sponsors: [{ image: "yourlogo", url: "/contact" }],
-          maxHeight: 250,
-          maxWidth: 250,
-        },
-        {
-          title: "T-Shirt Sponsors",
-          sponsors: [
-            { image: "heritagedental", url: "https://www.heritagedentalohio.com/" },
-            { image: "narwal", url: "https://narwal.ai/" },
-          ],
           maxHeight: 250,
           maxWidth: 250,
         },
