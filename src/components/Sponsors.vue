@@ -45,7 +45,10 @@ export default {
         },
         {
           title: "Silver Sponsors",
-          sponsors: [{ image: "mabl", url: "https://www.mabl.com/" }],
+          sponsors: [
+            { image: "mabl", url: "https://www.mabl.com/" },
+            { image: "digy4", url: "https://www.digy4.com/" }
+          ],
           maxHeight: 250,
           maxWidth: 250,
         },
