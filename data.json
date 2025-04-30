@@ -217,6 +217,36 @@
             "linkedin": "https://www.linkedin.com/in/buczkomichal/",
             "twitter": "",
             "youtube": ""
+        },
+        {
+            "speaker": "Eric Potter",
+            "bio": "Eric is the Director of Technical Education for Sweetwater and a Microsoft MVP for Visual Studio and Development Technologies. He works primarily in the .Net web platform but loves opportunities to try out other stacks. He has been developing high-quality custom software solutions since 2001. He has successfully delivered solutions for clients in a wide variety of industries. He loves to dabble in new and exciting technologies. In his spare time, he loves to tinker with Arduino projects. He fondly remembers what it was like to develop software for the Palm OS. He has an amazing wife and 5 wonderful children. He blogs at http://humbletoolsmith.com/ and you can follow him on Twitter as @pottereric.",
+            "shortbio": "Director of IT Quality and Education",
+            "title": "Climbing the Unclimbed Mountain: Estimation for Software Projects",
+            "summary": "Use math to quickly generate an estimate and tools you can use to communicate clearly about what your estimate really means.",
+            "abstract": "For many reasons, it is challenging to estimate what it will take to finish a software project. One of those reasons is that no one has ever built that project before. How do you deal with the uncertainties inherent in traveling in uncharted territory?\n\nThe first group to climb Mt. Everest had to make plans for climbing into literal uncharted territory. Their planning enabled them to succeed. In this session, we will look at what they did right in their preparation and how you can apply those lessons in your estimates for your next project. ",
+            "time": "9:15 - 10:15",
+            "room": "Student Alumni Room",
+            "picture": "",
+            "website": "https://humbletoolsmith.com/",
+            "linkedin": "https://www.linkedin.com/in/ericbpotter/",
+            "twitter": "https://x.com/pottereric",
+            "youtube": ""
+        },
+        {
+            "speaker": "Darrin Whitley",
+            "bio": "I am a husband, musician, mentor, and engineer whose life is directed by the gospel of Jesus Christ. Home for me is the DMV area (DC, Maryland, and Virginia) but my wife, Kristen, and I are currently based in the Raleigh-Durham area in North Carolina. I’m passionate about serving others through mentorship, collaboration, and cultivating safe spaces for growth. And my leadership strategy is three fold: Equipping people with knowledge and perspective, Encouraging people with truth and empathy when hard times come, and Empowering people with opportunities and resources to succeed and overcome new challenges.\n\nAfter graduating from James Madison University with a BS in Integrated Science and Technology, I began my career in the software industry as a web developer writing in ColdFusion and C#/.NET with a healthy dose of SQL. After four years, I moved to North Carolina to pursue a MA in Ministry Leadership at Southeastern Baptist Theological Seminary. During my second year, I began my search for a developer position in the area and this is when my career began to shift. I applied to a C#/.NET role and was asked questions about cloud architecture and my plan for working full time while studying part time. When they hired me, I was excited about jumping back into development. But to my surprise, they tasked me with starting their test automation effort with Java and Selenium and to train off-shore testers on the framework. This is how I got into testing!\n\nFast forward nine years, I’m now a Senior Software Test Engineer at WillowTree (a Telus Digital company) with experience building B2B and B2C solutions with diverse teams for clients in various industries including travel, food & beverage, and automotive. Throughout my fifteen year career, I’ve learned that technology is simply another context or vehicle for building relationships with people, whether they are the people on your team, the clients you’re serving, or the users you’re engaging. I’ve also learned that work is deeply personal, especially when we bring our full selves to environments where we spend time and energy that we cannot get back.\n\nHere are some fun facts about me. My wife and I enjoy watching women’s basketball both college and professional. I have a tee shirt for every airport that I’ve visited (including layovers). If you bring up Star Trek or the Nickelodeon cartoon “Hey Arnold”, you’ll be speaking my love language. I love laughing big at small things, thinking deeply about why we do the things we do, and telling and listening to personal stories.",
+            "shortbio": "Senior Software Test Engineer at WillowTree (a Telus Digital Company)",
+            "title": "Testing You Can Trust",
+            "summary": "The core deliverable that any tester must provide is trust.",
+            "abstract": "The purpose of any type of test in any context is not so that the subject can simply pass it. Ultimately, it is to provide a measure of trust. Trust relies on past performance, understands present realities, and anticipates future behavior. It is also impacted by the trustworthiness of the one who made the test. This is a deeply personal matter. As testers, our trustworthiness impacts the trustworthiness of our tests which then impacts the trustworthiness of our feature or application. In this presentation, I’ll be addressing the five elements of trust based on the book “Trust” by Dr. Henry Cloud and applying them to the world of software testing.",
+            "time": "9:15 - 10:15",
+            "room": "Student Alumni Room",
+            "picture": "",
+            "website": "",
+            "linkedin": "https://www.linkedin.com/in/darrin-whitley-84b42219/",
+            "twitter": "",
+            "youtube": ""
         }
     ],
     "potential": [
