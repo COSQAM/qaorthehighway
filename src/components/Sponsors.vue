@@ -3,14 +3,8 @@
     <v-row align="center" justify="center">
       <h3 class="text-h5 font-weight-black pb-5">SPONSORS</h3>
     </v-row>
-    <SponsorSection
-      v-for="(section, index) in sponsorSections"
-      :key="index"
-      :title="section.title"
-      :sponsors="section.sponsors"
-      :maxHeight="section.maxHeight"
-      :maxWidth="section.maxWidth"
-    />
+    <SponsorSection v-for="(section, index) in sponsorSections" :key="index" :title="section.title"
+      :sponsors="section.sponsors" :maxHeight="section.maxHeight" :maxWidth="section.maxWidth" />
     <Break class="color" />
   </v-container>
 </template>
@@ -29,7 +23,10 @@ export default {
       sponsorSections: [
         {
           title: "Platinum Sponsors",
-          sponsors: [{ image: "ttc", url: "https://ttcglobal.com/" }],
+          sponsors: [
+            { image: "ttc", url: "https://ttcglobal.com/" },
+            { image: "checkpoint", url: "https://checkpointech.com/" }
+          ],
           maxHeight: 350,
           maxWidth: 350,
         },
@@ -47,9 +44,15 @@ export default {
           title: "Silver Sponsors",
           sponsors: [
             { image: "mabl", url: "https://www.mabl.com/" },
-            { image: "digy4", url: "https://www.digy4.com/" }, 
+            { image: "digy4", url: "https://www.digy4.com/" },
             { image: "brooksource", url: "https://www.brooksource.com/" }
           ],
+          maxHeight: 250,
+          maxWidth: 250,
+        },
+        {
+          title: "Lunch Sponsors",
+          sponsors: [{ image: "checkpoint", url: "https://checkpointech.com/" }],
           maxHeight: 250,
           maxWidth: 250,
         },
@@ -67,6 +70,7 @@ export default {
               url: "https://www.heritagedentalohio.com/",
             },
             { image: "narwal", url: "https://narwal.ai/" },
+            { image: "checkpoint", url: "https://checkpointech.com/" }
           ],
           maxHeight: 250,
           maxWidth: 250,

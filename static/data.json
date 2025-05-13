@@ -262,6 +262,36 @@
             "linkedin": "https://www.linkedin.com/in/yunhaojiao/",
             "twitter": "https://x.com/yunhaojiao",
             "youtube": ""
+        },
+        {
+            "speaker": "Nate Custer",
+            "bio": "Having worked as a Systems Architect, QA Automation Lead, Application Developer, Developer of Tools and Testing Harnesses for QA teams, and as Principal Consultant with TTC Global for Fortune 500 organizations – Nate is passionate about helping teams deliver quality software. When he is not at a computer, you’ll most likely find him reading a book of philosophy, sipping scotch, or talking with his friends about Manchester United.",
+            "shortbio": "Principal Consultant at TTC Global",
+            "title": "Testing AI? Build a Benchmark",
+            "summary": "Learn how to test AI systems effectively with custom benchmarks and practical testing strategies.",
+            "abstract": "Companies are increasingly building applications which leverage AI. Testing systems built on AI is a pressing concern. In this talk we will explore strategies for testing systems built on AI, explain why building a custom benchmark should be part of your plan, and walk through the scoping and technical process of building a benchmark.\n\nKey Take Away: the goal for this talk is that listeners walk away equipped to have conversations about how testing can play a critical role as companies build AI based features and excided about this new area of testing.",
+            "time": "9:15 - 10:15",
+            "room": "Student Alumni Room",
+            "picture": "",
+            "website": "",
+            "linkedin": "https://www.linkedin.com/in/nate-custer-a2a02210/",
+            "twitter": "",
+            "youtube": ""
+        },
+        {
+            "speaker": "Jeff Van Fleet",
+            "bio": "Co-author of The Coach and the Geek: Building a Kick Butt Culture. After spending over 20 years managing, developing, and deploying complex software/hardware systems for both commercial and Department of Defense (DoD) applications, Jeff founded Lighthouse in 2000 with the aim of establishing a company whose customer service was only eclipsed by the quality of its work. Armed with an encyclopedic knowledge of motivational leadership tactics and a wealth of expertise in software quality assurance (QA) processes and technical leadership, he’s both a hands-on company leader and the primary architect of Lighthouse’s celebrated workplace culture. When not at work, Jeff loves spending time with his family, baking bread, cheering for Penn State, and hiking.",
+            "shortbio": "President &amp; CEO | Lighthouse Technologies",
+            "title": "** Coming Soon **",   
+            "summary": "** Coming Soon **",
+            "abstract": "** Coming Soon **",
+            "time": "9:15 - 10:15",
+            "room": "Student Alumni Room",
+            "picture": "",
+            "website": "https://lighthousetechnologies.com/",
+            "linkedin": "https://www.linkedin.com/in/jeff-van-fleet-381ba4/",
+            "twitter": "",
+            "youtube": ""
         }
     ],
     "potential": [
