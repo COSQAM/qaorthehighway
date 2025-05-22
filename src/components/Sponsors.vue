@@ -36,6 +36,7 @@ export default {
             { image: "lighthouse", url: "https://lighthousetechnologies.com/" },
             { image: "tricentis", url: "https://www.tricentis.com/" },
             { image: "narwal", url: "https://narwal.ai/" },
+            { image: "lambdatest", url: "https://www.lambdatest.com/" }
           ],
           maxHeight: 250,
           maxWidth: 250,
@@ -65,12 +66,10 @@ export default {
         {
           title: "T-Shirt Sponsors",
           sponsors: [
-            {
-              image: "heritagedental",
-              url: "https://www.heritagedentalohio.com/",
-            },
+            { image: "heritagedental", url: "https://www.heritagedentalohio.com/" },
             { image: "narwal", url: "https://narwal.ai/" },
-            { image: "checkpoint", url: "https://checkpointech.com/" }
+            { image: "checkpoint", url: "https://checkpointech.com/" },
+            { image: "lambdatest", url: "https://www.lambdatest.com/" }
           ],
           maxHeight: 250,
           maxWidth: 250,
