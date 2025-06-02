@@ -32,7 +32,7 @@
               : 'text-h5 font-weight-bold secondary--text py-5'
           "
         >
-          <span class="accent--text">06-27-2025</span>
+          <span class="accent--text">June 27, 2025</span>
           <span class="pl-4 pr-1">COLUMBUS, OH</span>
           <span class="px-2">/</span>
           <span>THE OHIO UNION</span>
