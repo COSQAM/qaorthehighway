@@ -46,7 +46,8 @@ export default {
           sponsors: [
             { image: "mabl", url: "https://www.mabl.com/" },
             { image: "digy4", url: "https://www.digy4.com/" },
-            { image: "brooksource", url: "https://www.brooksource.com/" }
+            { image: "brooksource", url: "https://www.brooksource.com/" },
+            { image: "qt", url: "https://www.qt.io/" },
           ],
           maxHeight: 250,
           maxWidth: 250,
