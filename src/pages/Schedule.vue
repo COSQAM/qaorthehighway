@@ -3,18 +3,18 @@
     <Layout>
       <v-main>
         <Header title="Schedule" />
-        <!--
+
         <v-row class="text-center max-center mt-5">
           <v-col class="text-h5 primary--text font-weight-bold pt-3">
             <div>
               We are currently waiting for speaker confirmations and finalizing the schedule.
             </div>
             <div class="pt-3">
-              We'll be releasing the schedule sometime in May.
+              We'll be releasing the schedule this week.
             </div>
           </v-col>
         </v-row>
-        -->
+        <!--
         <div class="max-center">
           <div class="ma-3">
             <Break time="7:00 - 7:50" activity="Breakfast" loc="East Ballroom (2nd Floor)" />
@@ -35,6 +35,7 @@
             planning 30 session talks and 2 keynotes.
           </div>
         </div>
+        -->
       </v-main>
     </Layout>
   </v-app>
