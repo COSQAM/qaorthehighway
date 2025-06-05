@@ -392,7 +392,7 @@
         {
             "speaker": "Bob Fornal",
             "bio": "My focus is on front-end development: JavaScript, CSS, SVG, AngularJS and Angular, React, and Ionic. I commonly speak about Quality Engineering, Best Practices, and Front-End Technologies. \"Learning from my mistakes over the decades, I feel that I have become a solid programmer.\" -- Me",
-            "shortbio": "Senior Developer with a passion for learning, testing, mentoring, speaking and personal growth.",
+            "shortbio": "Senior Developer with a passion for learning, testing, mentoring, speaking and personal growth. ",
             "title": "Gherkin: Friend or Foe? Re-Evaluating Its Role in Modern Development",
             "summary": "Gherkin simplifies specs for all, but misusing it can sabotage your automated testing efforts.",
             "abstract": "Gherkin is a domain-specific language used to define test cases in a human-readable format, primarily for behavior-driven development (BDD). It allows stakeholders, including non-technical team members, to understand and contribute to software specifications. Gherkin uses keywords like \"Feature\", \"Scenario\", \"Given\", \"When\", \"Then\", \"And\", and \"But\" to structure test scenarios.\n\nGherkin is probably sabotaging your development process. I've seen it used well ... I've seen it used badly. Let's talk about situations where it can cause significant problem when building automated test cases and how to use it properly.",
