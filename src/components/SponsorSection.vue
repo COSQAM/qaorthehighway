@@ -1,30 +1,29 @@
 <template>
-  <div>
-    <v-row align="center" justify="center">
-      <h3 class="text-h5 font-weight-black primary--text py-5">{{ title }}</h3>
-    </v-row>
-    <v-divider></v-divider>
-    <v-row align="center" justify="space-around" class="my-3">
-      <v-col
-        v-for="(sponsor, index) in sponsors"
-        :key="index"
-        sm="12"
-        md="6"
-        align-self="center"
-        class="d-flex justify-center"
-      >
-        <v-card :width="maxWidth+50" :min-height="maxHeight-100" class="mx-2" :href="sponsor.url" target="_blank" hover outlined>
-          <div class="d-flex justify-center align-center" style="height: 100%;">
+  <div class="sponsor-section mb-8">
+    <div class="sponsor-header text-center">
+      {{ title.toUpperCase() }}
+    </div>
+    <v-sheet class="sponsor-card" elevation="1">
+      <v-row align="center" justify="center" class="flex-wrap">
+        <v-col
+          v-for="(sponsor, index) in sponsors"
+          :key="index"
+          sm="12"
+          md="6"
+          class="d-flex justify-center align-center"
+        >
+          <a :href="sponsor.url" target="_blank" rel="noopener">
             <v-img
               contain
               :max-height="maxHeight"
               :max-width="maxWidth"
               :src="findImage(sponsor.image)"
+              class="sponsor-logo"
             />
-          </div>
-        </v-card>
-      </v-col>
-    </v-row>
+          </a>
+        </v-col>
+      </v-row>
+    </v-sheet>
   </div>
 </template>
 
@@ -61,5 +60,36 @@ export default {
 </script>
 
 <style scoped>
-/* Add any specific styles for SponsorSection here */
+.sponsor-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  float: none;
+}
+.sponsor-header {
+  background: var(--v-primary-base); /* Adjust color as needed */
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px 6px 0 0;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.sponsor-card {
+  background: #fff;
+  padding: 2rem 1rem 1.5rem 1rem;
+  border-radius: 0 0 6px 6px;
+}
+.sponsor-logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+.sponsor-logo:hover {
+  transform: scale(1.05);
+}
 </style>

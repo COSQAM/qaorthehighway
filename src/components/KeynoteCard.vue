@@ -1,6 +1,6 @@
 /src/components/KeynoteCard.vue
 <template>
-  <v-col sm="12" md="6" class="text-center text-h5">
+  <v-col sm="12" md="5" class="text-center text-h5">
     <a :href="path">
       <v-avatar size="250">
         <v-img aspect-ratio="1:1" :src="findImage(speaker)" />
@@ -45,11 +45,12 @@ export default {
 
 <style scoped>
 a {
+  display: inline-block;
+  text-align: center;
   text-decoration: none;
 }
-a:hover .v-image {
-  transform: scale(1.03);
-  opacity: 0.8;
+a:hover .v-avatar {
+  transform: scale(1.05);
 }
 a:hover .speaker {
   color: var(--v-primary-base);

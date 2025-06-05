@@ -1,8 +1,5 @@
 <template>
   <v-container class="my-5">
-    <v-row align="center" justify="center">
-      <h3 class="text-h5 font-weight-black pb-5">SPONSORS</h3>
-    </v-row>
     <SponsorSection v-for="(section, index) in sponsorSections" :key="index" :title="section.title"
       :sponsors="section.sponsors" :maxHeight="section.maxHeight" :maxWidth="section.maxWidth" />
     <Break class="color" />

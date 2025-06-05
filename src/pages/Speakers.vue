@@ -163,9 +163,8 @@ query currentSessions {
 a {
   text-decoration: none;
 }
-a:hover .v-image {
-  transform: scale(1.03);
-  opacity: 0.8;
+a:hover .v-avatar {
+  transform: scale(1.05);
 }
 a:hover .speaker {
   color: var(--v-primary-base);
