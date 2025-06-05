@@ -1,9 +1,6 @@
 <template>
   <div class="background">
-    <v-container>
-      <v-row align="center" justify="center" class="my-5 py-5">
-        <h3 class="text-h5 font-weight-black white--text">TICKETS</h3>
-      </v-row>
+    <v-container class="max-center">
       <v-row align="center" justify="center" class="mb-5 pb-5">
         <v-col
           v-for="(ticket, index) in tickets"
@@ -73,5 +70,11 @@ export default {
 <style scoped>
 .background {
   background-color: var(--v-secondary-base) !important;
+}
+.max-center {
+  max-width: 1200px;
+  margin: 0 auto;
+  float: none;
+  padding-top: 3.7rem;
 }
 </style>

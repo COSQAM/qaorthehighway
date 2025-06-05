@@ -1,8 +1,8 @@
 <template>
-  <v-container class="my-5">
-    <v-row align="center" justify="center" class="my-5">
-      <h3 class="text-h5 font-weight-black">SESSIONS</h3>
-    </v-row>
+  <v-container class="my-5 max-center">
+    <div class="header text-center">
+      Session Speakers
+    </div>
     <div class="carousel-container mb-5">
       <div class="carousel-wrapper py-5">
         <div
@@ -238,5 +238,22 @@ export default {
 
 .flipped {
   transform: scaleX(-1); /* Flip the icon horizontally */
+}
+
+.header {
+  background: var(--v-primary-base); /* Adjust color as needed */
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px 6px 0 0;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.max-center {
+  max-width: 1200px;
+  margin: 0 auto;
+  float: none;
 }
 </style>

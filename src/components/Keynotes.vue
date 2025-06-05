@@ -1,9 +1,9 @@
 <template>
-  <v-container class="my-5">
-    <v-row align="center" justify="center" class="my-5">
-      <h3 class="text-h5 font-weight-black">KEYNOTE SPEAKERS</h3>
-    </v-row>
-    <div class="max-center">
+  <v-container class="my-5 max-center">
+    <div class="header text-center">
+      Keynote Speakers
+    </div>
+    <div>
       <v-row align="center" justify="center" class="my-3">
         <KeynoteCard
           v-for="(keynote, index) in keynotes"
@@ -37,7 +37,7 @@ export default {
 
 <style scoped>
 .max-center {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   float: none;
 }
@@ -45,8 +45,7 @@ a {
   text-decoration: none;
 }
 a:hover .v-image {
-  transform: scale(1.03);
-  opacity: 0.8;
+  transform: scale(1.05);
 }
 a:hover .speaker {
   color: var(--v-primary-base);
@@ -59,5 +58,16 @@ a:hover .bio {
 }
 .bio {
   color: #9e9e9e;
+}
+.header {
+  background: var(--v-primary-base); /* Adjust color as needed */
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px 6px 0 0;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-align: left;
 }
 </style>
