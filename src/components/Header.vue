@@ -4,7 +4,7 @@
               :class="
             $vuetify.breakpoint.smAndDown
               ? 'text-h4 font-weight-black white--text text-center padding-small'
-              : 'text-h4 font-weight-black white--text text-center padding-large'
+              : 'text-h4 font-weight-black white--text text-center padding-large max-center'
           "
     >
       {{ title }}
@@ -44,4 +44,10 @@ export default {
   bottom: 0;
   position: absolute
 }
+.max-center {
+  max-width: 1200px;
+  margin: 0 auto;
+  float: none;
+}
+
 </style>
