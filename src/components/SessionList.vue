@@ -3,40 +3,32 @@
     <v-layout row wrap fluid>
       <v-flex>
         <v-list>
-          <v-subheader class="title font-weight-bold pa-0 background pl-2">{{
+          <v-subheader class="title font-weight-bold pa-0 pl-2 header">{{
             sessions.edges[0].node.time
-          }}</v-subheader>
+            }}</v-subheader>
           <div v-for="(session, index) in sessions.edges" :key="index">
             <v-list-item :class="[timeFiltered, 'px-2']" :href="session.node.path">
               <v-list-item-content>
-                <v-list-item-title class="font-weight-medium">{{session.node.title}}</v-list-item-title>
+                <v-list-item-title class="font-weight-medium">{{ session.node.title }}</v-list-item-title>
                 <v-list-item-subtitle>
                   <div class="two-line-clamp">
-                    {{session.node.summary}}
+                    {{ session.node.summary }}
                   </div>
                   <v-layout align-center wrap class="pt-2">
                     <v-flex xs12 sm6 class="py-1">
                       <v-avatar size="32">
-                        <v-img
-                          :src="findImage(session.node.speaker)"
-                          :alt="session.node.speaker"
-                        ></v-img>
+                        <v-img :src="findImage(session.node.speaker)" :alt="session.node.speaker"></v-img>
                       </v-avatar>
                       <span class="pl-2">{{ session.node.speaker }}</span>
                       <span v-if="session.node.speaker2" class="pl-4">
                         <v-avatar size="32">
-                          <v-img
-                            :src="findImage(session.node.speaker2)"
-                            :alt="session.node.speaker"
-                          ></v-img>
+                          <v-img :src="findImage(session.node.speaker2)" :alt="session.node.speaker"></v-img>
                         </v-avatar>
                         <span class="pl-2">{{ session.node.speaker2 }}</span>
                       </span>
                     </v-flex>
                     <v-flex xs12 sm6 class="py-1">
-                      <v-icon small :class="roomFiltered([index])"
-                        >$circlesolid</v-icon
-                      >
+                      <v-icon small :class="roomFiltered([index])">$circlesolid</v-icon>
                       {{ session.node.room }}
                       <span class="pl-2">({{ findFloor(index) }})</span>
                     </v-flex>
@@ -66,6 +58,17 @@ export default {
       filter: false,
     };
   },
+
+  computed: {
+    sortedSessions() {
+      return [...this.sessions.edges].sort((a, b) => {
+        const roomA = a.node.room.toLowerCase();
+        const roomB = b.node.room.toLowerCase();
+        return roomA.localeCompare(roomB);
+      });
+    }
+  },
+
   methods: {
     roomFiltered: function (index) {
       return this.sessions.edges[index].node.room
@@ -113,27 +116,35 @@ export default {
 .cartoonroom {
   color: #90caf9;
 }
+
 .greathall12 {
   color: #b39ddb;
 }
+
 .greathall3 {
   color: #a5d6a7;
 }
+
 .interfaithroom {
   color: #fff59d;
 }
+
 .studentalumniroom {
   color: #ef9a9a;
 }
+
 .westballroom {
   color: #ffcc80;
 }
+
 .eastballroom {
   color: #80cbc4;
 }
+
 .time-font {
   font-size: 2rem;
 }
+
 .two-line-clamp {
   display: -webkit-box;
   overflow: hidden;
@@ -142,6 +153,17 @@ export default {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
+
+.header {
+  background: #e0e0e0;
+  /* Adjust color as needed */
+
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-align: left;
+}
 </style>
-
-

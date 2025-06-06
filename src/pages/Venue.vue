@@ -5,18 +5,12 @@
         <Header title="Venue" />
         <div class="max-center">
           <div class="ma-3">
-            <v-row align="center" justify="center"
-              ><div class="text-h5 font-weight-black primary--text py-5">
-                THE OHIO UNION
-              </div>
-            </v-row>
-            <v-divider></v-divider>
+            <div class="sponsor-header text-center">
+              The Ohio Union
+            </div>
             <v-row justify="space-around" class="max-center my-5">
               <v-col cols="12" md="6">
-                <img
-                  :src="require(`@/assets/images/past/2019_4.webp`)"
-                  width="100%"
-                />
+                <img :src="require(`@/assets/images/past/2019_4.webp`)" width="100%" />
               </v-col>
               <v-col cols="12" md="6">
                 <div class="pl-5">
@@ -38,49 +32,26 @@
                 </div>
               </v-col>
             </v-row>
-            <v-row align="center" justify="center"
-              ><h3 class="text-h5 font-weight-black primary--text py-5">
-                LOCATION
-              </h3>
-            </v-row>
-            <v-divider></v-divider>
+            <div class="sponsor-header text-center">
+              Location
+            </div>
             <v-row class="max-center my-5">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.4731073509515!2d-83.01086034837715!3d39.997878588827895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388eb8c5837241%3A0x29e24cc55fefd423!2sOhio%20Union!5e0!3m2!1sen!2sus!4v1665514617425!5m2!1sen!2sus"
-                width="100%"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+                width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             </v-row>
-            <v-row align="center" justify="center"
-              ><h3 class="text-h5 font-weight-black primary--text py-5">
-                FLOOR PLAN
-              </h3>
-            </v-row>
-            <v-divider></v-divider>
+            <div class="sponsor-header text-center">
+              Floor Plan
+            </div>
             <v-row align="center" justify="center" class="mt-5">
-              <img
-                :src="require(`@/assets/images/rooms/greathall3.png`)"
-                width="60%"
-              />
-              <img
-                :src="require(`@/assets/images/rooms/secondfloor.png`)"
-                width="60%"
-              />
-              <img
-                :src="require(`@/assets/images/rooms/thirdfloor.png`)"
-                width="60%"
-              />
+              <img :src="require(`@/assets/images/rooms/greathall3.png`)" width="60%" />
+              <img :src="require(`@/assets/images/rooms/secondfloor.png`)" width="60%" />
+              <img :src="require(`@/assets/images/rooms/thirdfloor.png`)" width="60%" />
             </v-row>
-            <v-row align="center" justify="center"
-              ><h3 class="text-h5 font-weight-black primary--text py-5">
-                PARKING
-              </h3>
-            </v-row>
-            <v-divider></v-divider>
+            <div class="sponsor-header text-center mt-5">
+              Parking
+            </div>
             <v-row class="max-center my-5">
               <v-col cols="12" md="6">
                 <div class="py-5 font-weight-light">
@@ -103,27 +74,14 @@
               <v-col cols="12" md="6">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1640.443805156314!2d-83.00890542512437!3d39.997750204153256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x45c9ae82bfe978ce!2sOhio%20Union%20South%20Garage!5e0!3m2!1sen!2sus!4v1665515987150!5m2!1sen!2sus"
-                  width="100%"
-                  height="450"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+                  width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
               </v-col>
             </v-row>
-            <v-row align="center" justify="center"
-              ><h3 class="text-h5 font-weight-black primary--text py-5">
-                NEARBY HOTELS
-              </h3>
-            </v-row>
-            <v-divider></v-divider>
-            <v-row
-              v-for="(hotel, index) in hotels"
-              :key="index"
-              justify="center"
-              class="max-center my-5"
-            >
+            <div class="sponsor-header text-center mt-5">
+              Nearby Hotels
+            </div>
+            <v-row v-for="(hotel, index) in hotels" :key="index" justify="center" class="max-center my-5">
               <v-col cols="12" md="6">
                 <div class="py-5 font-weight-light">
                   <div class="font-weight-bold pb-5">{{ hotel.name }}</div>
@@ -131,15 +89,8 @@
                 </div>
               </v-col>
               <v-col cols="12" md="6">
-                <iframe
-                  :src="hotel.mapsUrl"
-                  width="100%"
-                  height="450"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+                <iframe :src="hotel.mapsUrl" width="100%" height="450" style="border: 0" allowfullscreen=""
+                  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </v-col>
             </v-row>
           </div>
@@ -161,7 +112,7 @@ export default {
       hotels: [
         {
           name: "SpringHill Suites by Marriott",
-            description: `
+          description: `
             Located 1.5 miles from the Ohio Union, this hotel is a great and safe walk through Ohio State's campus to the Ohio Union. 
             Also, it is conveniently located by The Ohio State University. Just minutes to Downtown Columbus and other Columbus attractions 
             such as the Nationwide Arena District, Short North, Huntington Park, COSI, and German Village.<br/><br/>
@@ -213,5 +164,18 @@ export default {
   max-width: 1200px;
   margin: 0 auto;
   float: none;
+}
+
+.sponsor-header {
+  background: var(--v-primary-base);
+  /* Adjust color as needed */
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px 6px 0 0;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-align: left;
 }
 </style>
