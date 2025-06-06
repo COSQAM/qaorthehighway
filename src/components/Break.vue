@@ -1,5 +1,5 @@
 <template>
-  <div class="title font-weight-bold py-3 background pl-2 white--text text-truncate">
+  <div class="title font-weight-bold py-3 background pl-2 white--text text-truncate header">
     <span>{{ time }}</span>
     <span class="pl-5">{{ activity }}</span>
     <span class="pl-5 font-weight-light text-subtitle-1">{{ loc }}</span>
@@ -19,5 +19,14 @@ export default {
 <style scoped>
 .background {
   background-color: var(--v-primary-base);
+}
+.header {
+  background: var(--v-primary-base);
+  /* Adjust color as needed */
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-align: left;
 }
 </style>

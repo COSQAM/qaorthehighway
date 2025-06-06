@@ -3,7 +3,7 @@
     <div class="sponsor-header text-center">
       {{ title.toUpperCase() }}
     </div>
-    <v-sheet class="sponsor-card" elevation="1">
+    <v-sheet class="sponsor-card" outlined>
       <v-row align="center" justify="center" class="flex-wrap">
         <v-col
           v-for="(sponsor, index) in sponsors"
