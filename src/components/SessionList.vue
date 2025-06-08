@@ -3,13 +3,15 @@
     <v-layout row wrap fluid>
       <v-flex>
         <v-list>
-          <v-subheader class="title font-weight-bold pa-0 pl-2 header">{{
-            sessions.edges[0].node.time
-            }}</v-subheader>
-          <div v-for="(session, index) in sessions.edges" :key="index">
+          <v-subheader class="title font-weight-bold pa-0 pl-2 header">
+            {{ sessions.edges[0].node.time }}
+          </v-subheader>
+          <div v-for="(session, index) in sortedSessions" :key="index">
             <v-list-item :class="[timeFiltered, 'px-2']" :href="session.node.path">
               <v-list-item-content>
-                <v-list-item-title class="font-weight-medium">{{ session.node.title }}</v-list-item-title>
+                <v-list-item-title class="font-weight-medium">
+                  {{ session.node.title }}
+                </v-list-item-title>
                 <v-list-item-subtitle>
                   <div class="two-line-clamp">
                     {{ session.node.summary }}
@@ -17,20 +19,28 @@
                   <v-layout align-center wrap class="pt-2">
                     <v-flex xs12 sm6 class="py-1">
                       <v-avatar size="32">
-                        <v-img :src="findImage(session.node.speaker)" :alt="session.node.speaker"></v-img>
+                        <v-img 
+                          :src="findImage(session.node.speaker)" 
+                          :alt="session.node.speaker"
+                        />
                       </v-avatar>
                       <span class="pl-2">{{ session.node.speaker }}</span>
                       <span v-if="session.node.speaker2" class="pl-4">
                         <v-avatar size="32">
-                          <v-img :src="findImage(session.node.speaker2)" :alt="session.node.speaker"></v-img>
+                          <v-img 
+                            :src="findImage(session.node.speaker2)" 
+                            :alt="session.node.speaker2"
+                          />
                         </v-avatar>
                         <span class="pl-2">{{ session.node.speaker2 }}</span>
                       </span>
                     </v-flex>
                     <v-flex xs12 sm6 class="py-1">
-                      <v-icon small :class="roomFiltered([index])">$circlesolid</v-icon>
+                      <v-icon small :class="getRoomClass(session.node.room)">
+                        $circlesolid
+                      </v-icon>
                       {{ session.node.room }}
-                      <span class="pl-2">({{ findFloor(index) }})</span>
+                      <span class="pl-2">({{ getFloorByRoom(session.node.room) }})</span>
                     </v-flex>
                   </v-layout>
                 </v-list-item-subtitle>
@@ -44,18 +54,33 @@
   </v-container>
 </template>
 
-
-
 <script>
 export default {
-  props: ["sessions"],
-  data: function () {
+  name: "SessionList",
+  
+  props: {
+    sessions: {
+      type: Object,
+      required: true,
+      validator(sessions) {
+        return sessions.edges && Array.isArray(sessions.edges);
+      }
+    }
+  },
+
+  data() {
     return {
-      timeFiltered: `t${this.sessions.edges[0].node.time.replace(
-        /:|-| /g,
-        ""
-      )}`,
+      timeFiltered: `t${this.sessions.edges[0].node.time.replace(/:|-| /g, "")}`,
       filter: false,
+      roomFloorMap: {
+        'greathall12': '1st Floor',
+        'greathall3': '1st Floor',
+        'eastballroom': '2nd Floor',
+        'studentalumniroom': '2nd Floor',
+        'westballroom': '2nd Floor',
+        'cartoonroom': '3rd Floor',
+        'interfaithroom': '3rd Floor'
+      }
     };
   },
 
@@ -70,41 +95,42 @@ export default {
   },
 
   methods: {
-    roomFiltered: function (index) {
+    getRoomClass(room) {
+      return room.replace(/:|-| |&/g, "").toLowerCase();
+    },
+
+    removeSpaces(text) {
+      return text.replace(/\s/g, "");
+    },
+
+    findImage(speaker) {
+      if (!speaker) return require("@/assets/images/generic-profile.png");
+      
+      try {
+        return require(`@/assets/images/speakers/${speaker.toLowerCase()}.webp`);
+      } catch (error) {
+        console.warn(`Speaker image not found for: ${speaker}`);
+        return require("@/assets/images/generic-profile.png");
+      }
+    },
+
+    getFloorByRoom(room) {
+      const roomKey = room.replace(/:|-| |&/g, "").toLowerCase();
+      return this.roomFloorMap[roomKey] || "Unknown Floor";
+    },
+
+    // Legacy method support (keeping for backwards compatibility)
+    roomFiltered(index) {
       return this.sessions.edges[index].node.room
         .replace(/:|-| |&/g, "")
         .toLowerCase();
     },
-    removeSpaces: function (text) {
-      return text.replace(/\s/g, "");
-    },
-    findImage: function (speaker) {
-      try {
-        return require(`@/assets/images/speakers/${speaker.toLowerCase()}.webp`);
-      } catch (error) {
-        return require("@/assets/images/generic-profile.png");
-      }
-    },
-    findFloor: function (room) {
-      var floorfilter = this.roomFiltered(room);
-      if (floorfilter == "greathall12" || floorfilter == "greathall3") {
-        return "1st Floor";
-      } else if (
-        floorfilter == "eastballroom" ||
-        floorfilter == "studentalumniroom" ||
-        floorfilter == "westballroom"
-      ) {
-        return "2nd Floor";
-      } else if (
-        floorfilter == "cartoonroom" ||
-        floorfilter == "interfaithroom"
-      ) {
-        return "3rd Floor";
-      } else {
-        return "Error";
-      }
-    },
-  },
+
+    findFloor(index) {
+      const room = this.sessions.edges[index].node.room;
+      return this.getFloorByRoom(room);
+    }
+  }
 };
 </script>
 
@@ -156,8 +182,6 @@ export default {
 
 .header {
   background: #e0e0e0;
-  /* Adjust color as needed */
-
   font-weight: bold;
   text-transform: uppercase;
   padding: 0.75rem 1.5rem;
