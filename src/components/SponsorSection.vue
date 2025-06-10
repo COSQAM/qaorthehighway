@@ -11,6 +11,11 @@
           sm="12"
           md="6"
           class="d-flex justify-center align-center"
+          :class="
+            $vuetify.breakpoint.smAndDown
+              ? 'd-flex justify-center align-center my-5'
+              : 'd-flex justify-center align-center my-2'
+          "
         >
           <a :href="sponsor.url" target="_blank" rel="noopener">
             <v-img
