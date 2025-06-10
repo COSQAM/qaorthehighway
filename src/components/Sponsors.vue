@@ -33,7 +33,8 @@ export default {
             { image: "lighthouse", url: "https://lighthousetechnologies.com/" },
             { image: "tricentis", url: "https://www.tricentis.com/" },
             { image: "narwal", url: "https://narwal.ai/" },
-            { image: "lambdatest", url: "https://www.lambdatest.com/" }
+            { image: "lambdatest", url: "https://www.lambdatest.com/" },
+            { image: "digy4", url: "https://www.digy4.com/" }
           ],
           maxHeight: 250,
           maxWidth: 250,
@@ -42,7 +43,6 @@ export default {
           title: "Silver Sponsors",
           sponsors: [
             { image: "mabl", url: "https://www.mabl.com/" },
-            { image: "digy4", url: "https://www.digy4.com/" },
             { image: "brooksource", url: "https://www.brooksource.com/" },
             { image: "qt", url: "https://www.qt.io/" },
           ],
