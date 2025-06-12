@@ -34,7 +34,8 @@ export default {
             { image: "tricentis", url: "https://www.tricentis.com/" },
             { image: "narwal", url: "https://narwal.ai/" },
             { image: "lambdatest", url: "https://www.lambdatest.com/" },
-            { image: "digy4", url: "https://www.digy4.com/" }
+            { image: "digy4", url: "https://www.digy4.com/" },
+            { image: "browserstack", url: "https://www.browserstack.com/" }
           ],
           maxHeight: 250,
           maxWidth: 250,
