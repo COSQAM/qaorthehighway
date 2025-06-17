@@ -34,6 +34,10 @@ export default function (Vue, { appOptions, head, isClient }) {
     async: true
   })
 
+  head.script.push({
+    src: '/sender.js'
+  })
+
   if (process.isClient) {
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
