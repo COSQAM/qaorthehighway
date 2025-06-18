@@ -188,7 +188,8 @@
             "linkedin": "",
             "twitter": "",
             "youtube": ""
-        },        {
+        },
+        {
             "speaker": "Caleb Crandall",
             "bio": "Caleb has been involved in software development and testing for over 13 years. He's a champion for critical thinking and software testing as a skilled profession that still makes sense as a specialization on par with other development specialization roles.",
             "shortbio": "Software Test Lead / Scrum Master",
@@ -282,7 +283,7 @@
             "speaker": "Jeff Van Fleet",
             "bio": "Co-author of The Coach and the Geek: Building a Kick Butt Culture. After spending over 20 years managing, developing, and deploying complex software/hardware systems for both commercial and Department of Defense (DoD) applications, Jeff founded Lighthouse in 2000 with the aim of establishing a company whose customer service was only eclipsed by the quality of its work. Armed with an encyclopedic knowledge of motivational leadership tactics and a wealth of expertise in software quality assurance (QA) processes and technical leadership, he’s both a hands-on company leader and the primary architect of Lighthouse’s celebrated workplace culture. When not at work, Jeff loves spending time with his family, baking bread, cheering for Penn State, and hiking.",
             "shortbio": "President & CEO | Lighthouse Technologies",
-            "title": "Focus on What Matters Most: How to Improve Software Quality AND Work-Life Balance",   
+            "title": "Focus on What Matters Most: How to Improve Software Quality AND Work-Life Balance",
             "summary": "Rescue runaway projects with a 5-step framework to deliver faster, reduce defects, and restore morale.",
             "abstract": "Imagine being five years into a software project that was only supposed to take two. You're constantly stuck in crunch mode and under pressure, overwhelmed by unexpected defects,missed deadlines, and escalating costs. Your team is burned out, morale is low, and every dayfeels like firefighting. If this sounds familiar, you’re not alone.\n\nIn this engaging and pragmatic session, we’ll share the story of one company that found itself inthis exact situation—a software project that was years behind schedule and millions overbudget, with no end in sight. The key to turning things around?\n\nThey committed to a proven 5-step process that enabled them to focus on what matters most.The company started by using five key performance indicators to gain visibility into their currentstate. With those insights, they then identified root causes, prioritized the most critical fixes, andmade data-driven improvements. By creating a culture of continuous measurement andfeedback, they shifted from chaos to control. The outcome: faster delivery, fewer defects, and ahealthier, more sustainable work environment. The team could finally breathe again—withoutsacrificing nights and weekends.\n\nAt the end of this session, you’ll walk away with practical tools, actionable insights, and a clearpath to improving your own software delivery process, so you too can focus on what mattersmost—both at work AND home.\n\nHere’s the 5-step approach we’ll cover:\n1. Understand the core principles of effective software development\n2. Measure where you are today\n3. Identify the root causes of your challenges\n4. Fix the most critical issues first\n5. Continuously measure, learn, and improve\n\nJoin us to discover how these steps can help you deliver better software faster—while reducing stress, improving team morale, and achieving a better work-life balance.",
             "time": "10:30 - 11:30",
@@ -388,8 +389,8 @@
             "title": "Driving Impactful 1:1 Meetings: Empowering QA/QE Professionals and their Managers for growth.",
             "summary": "Unlock the full potential of 1:1s to boost growth, clarity, and collaboration in QA/QE teams.",
             "abstract": "One-on-one meetings are a cornerstone of effective team management, yet their true potential is often untapped, especially within Software Quality Assurance/Quality Engineering (QA/QE) teams. This session explores how QA/QE professionals can proactively shape their 1:1 meetings to foster growth, clarity, and collaboration, while also equipping managers/supervisors with actionable strategies to lead these conversations for maximum impact.",
-            "time": "10:30 - 11:30",
-            "room": "Great Hall 1 & 2",
+            "time": "3:05 - 4:05",
+            "room": "Cartoon Room",
             "picture": "",
             "website": "",
             "linkedin": "https://www.linkedin.com/in/brianhamilton1/",
@@ -453,6 +454,21 @@
             "picture": "",
             "website": "https://digy4.com/",
             "linkedin": "https://www.linkedin.com/in/parasarsaha/",
+            "twitter": "",
+            "youtube": ""
+        },
+        {
+            "speaker": "Ganesh Mahalingam",
+            "bio": "Ganesh is a seasoned product leader with a deep passion for solving real-world problems faced by developers and testers. At BrowserStack, he has built flagship products for Cross Browser Testing, Real Device Testing, and Accessibility Testing, which are used by over 5 million people to test and ship quality software with confidence. Having worked with thousands of QA teams over the last decade, Ganesh brings a unique blend of technical insight and user empathy to everything he builds. He lives in New Jersey with his wife and enjoys reading and travelling, always looking for new stories and perspectives.",
+            "shortbio": "Director of Product at BrowserStack",
+            "title": "Beyond the Hype & Into Action: Accelerating Quality with AI Agents and Unified Test Stack",
+            "summary": "Turning AI hype into real testing value. See how top teams boost coverage, cut failures, and scale quality.",
+            "abstract": "While AI continues to dominate the conversation, most testing teams are still grappling with how to turn the hype into real, practical value. That’s the top concern we’ve heard from across our 50,000+ customers.\n\nOver the past two years, we’ve worked closely with thousands of them to solve the actual problems of AI adoption. The result? A 10x boost in productivity, a 50% jump in coverage, and a 40% reduction in build failures  —all through practical, targeted applications of AI where it matters most.\n\nIn this session, I’ll walk you through how leading teams at companies like GM, PayPal, and L’Oréal are using AI agents and BrowserStack’s Unified Test Stack to drive measurable results. You’ll see live demos across key use cases—like instant test generation, intelligent test selection, visual testing, and low-code automation—plus real benchmarks comparing AI-driven workflows with manual efforts and generic LLMs like ChatGPT.\n\nIf you’re a QA leader, developer, or tester looking to deliver quality at scale, this session will give you a clear, practical view into what’s working—and how to stay ahead as testing enters the AI era.",
+            "time": "10:30 - 11:30",
+            "room": "Great Hall 1 & 2",
+            "picture": "",
+            "website": "",
+            "linkedin": "https://www.linkedin.com/in/ganeshrammahalingam/",
             "twitter": "",
             "youtube": ""
         }
