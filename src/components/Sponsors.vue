@@ -32,8 +32,8 @@ export default {
           sponsors: [
             { image: "lighthouse", url: "https://lighthousetechnologies.com/" },
             { image: "tricentis", url: "https://www.tricentis.com/" },
-            { image: "narwal", url: "https://narwal.ai/" },
             { image: "lambdatest", url: "https://www.lambdatest.com/" },
+            { image: "narwal", url: "https://narwal.ai/" },
             { image: "digy4", url: "https://www.digy4.com/" },
             { image: "browserstack", url: "https://www.browserstack.com/" }
           ],
