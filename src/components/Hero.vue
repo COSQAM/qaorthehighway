@@ -76,7 +76,7 @@
         >
         -->
         <!-- feedback -->
-        <!--
+
         <div
           :class="
             $vuetify.breakpoint.smAndDown
@@ -86,10 +86,10 @@
         >
         We want to hear from you
         </div>
-        <v-btn block color="accent" class="black--text" href="https://docs.google.com/forms/d/e/1FAIpQLSdnQr50JlBFIJt5QM2nVAm7BYU-lADGdw3Fp4-HMYcLuzRRAA/viewform?usp=sf_link" target="_blank" x-large
+        <v-btn block color="accent" class="black--text" href="https://forms.gle/Y5oGwVWWB1eczg3YA" target="_blank" x-large
           >Leave Feedback</v-btn
         >
-      -->
+        <!--
         <div
           :class="
             $vuetify.breakpoint.smAndDown
@@ -108,6 +108,7 @@
           x-large
           >Buy Tickets</v-btn
         >
+      -->
       </v-col>
       <v-spacer></v-spacer>
       <v-col cols="4"></v-col>
