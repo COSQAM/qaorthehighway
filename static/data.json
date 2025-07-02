@@ -6,14 +6,14 @@
             "bio": "With over forty years of experience, Rex Black is a QA Architect at Epic Games. He is currently working on a long-term set of initiatives to: improve consistency of test tool use and underlying data quality; build a set of test results dashboards; implement a standard, flexible approach to risk-based testing; define process metrics for the QA team; and, create and deliver e-learning courses to support these initiatives. He has completed migration to a new test management system, developed training in the new test management system, testing best practices, test automation frameworks, and risk-based testing, defined metrics and dashboards, introduced risk-based testing, delivered SDET bootcamps to develop internal automation expertise, and contributed to the creation of a games industry testing certification.\n\nIn his consulting career, Rex worked with clients from small start-ups to Fortune 20 global enterprises.  He has experience helping clients apply software and systems engineering and testing best practices in a wide variety of development lifecycles, including Kanban, Scrum, DevOps, Waterfall, and Spiral. Rex has served as an expert witness for six cases, including one $180 million breach of contract case. He was the Senior DevSecOps/QA Consultant in a Software Quality Oversight Organization overseeing a multi-year corporate integrity agreement between the US Office of Inspector General and eClinicalWorks, a major electronic health records company.\n\nRex is the most prolific author in the field of software testing.  His fourteen books have sold hundreds of thousands of copies around the world and have been translated into over a dozen languages. In addition, Rex created more than twenty training courses, which have been used to train tens of thousands of people internationally, both through RBCS training and through a worldwide network of partners. Rex presented a monthly free webinar for over ten years; this series attracted over 50,000 registrations and now is popular podcast. Rex has written over fifty articles, presented hundreds of papers, workshops, and seminars, and given about a hundred keynotes and other speeches at conferences worldwide.\n\nRex is a Founder and past President of RBCS, the ISTQB, the ASTQB, and the TMMi America chapter.",
             "title": "Reflections on 40 Years in Software Quality",
             "abstract": "I've worked in software testing and quality assurance since 1987 (having been a professional programmer since 1983). Over the years, some things have changed for the better, some things haven't changed at all, and, unfortunately, some things have changed for the worse. In this talk, you’ll get my sometimes spicy—like ghost pepper spicy—takes on these things. Agree or disagree, I hope to get you re-thinking some things you might have taken for granted.",
-            "summary": "A veteran shares candid, provocative insights on decades of software testing. He'll cover what's improved, stagnated, or worsened—to challenge assumptions and spark fresh thinking.",
+            "summary": "A veteran shares candid, provocative insights on decades of software tesxting. He'll cover what's improved, stagnated, or worsened—to challenge assumptions and spark fresh thinking.",
             "time": "4:15 - 5:15",
             "room": "East Ballroom",
             "website": "",
             "linkedin": "https://www.linkedin.com/in/rex-black/",
             "twitter": "https://twitter.com/RBCS",
             "youtube": "",
-            "slidesLink": "https://docs.google.com/presentation/d/16F6VNphfX3FTpGmyL3_hDbkBBFPgI1PNUOiKYl0SXao/edit?usp=sharing"
+            "slidesLink": "https://drive.google.com/file/d/1Yj7VKue2220qMSAeyymNrA44W1P442Lu/view?usp=sharing"
         },
         {
             "speaker": "Tariq King",
@@ -118,7 +118,8 @@
             "website": "https://github.com/damianpereira86",
             "linkedin": "https://www.linkedin.com/in/damian-pereira/",
             "twitter": "@damianpereira86",
-            "youtube": ""
+            "youtube": "",
+            "slidesLink": "https://drive.google.com/file/d/1SrPPs9jdwVp9N1sT6EGuvTTavXBMXtO6/view?usp=sharing"
         },
         {
             "speaker": "Matt Eland",
@@ -160,7 +161,8 @@
             "website": "https://vitalyskadorva.com/",
             "linkedin": "https://www.linkedin.com/in/vitalyskadorva/",
             "twitter": "",
-            "youtube": ""
+            "youtube": "",
+            "slidesLink": "https://drive.google.com/file/d/1ZOCfuFvvMjv27oepm8nhLZ0WSREW9dgb/view?usp=sharing"
         },
         {
             "speaker": "David Leslie",
@@ -174,7 +176,8 @@
             "website": "https://sysintspec.com/",
             "linkedin": "https://www.linkedin.com/in/davidwleslie/",
             "twitter": "https://x.com/davidwleslie",
-            "youtube": ""
+            "youtube": "",
+            "slidesLink": "https://drive.google.com/file/d/1BYvKwhSWywY8uUVpEAy2wP3iD3mbCbpT/view?usp=sharing"
         },
         {
             "speaker": "Vineela Nalla",
@@ -218,7 +221,8 @@
             "website": "https://buczkomichal.ghost.io/",
             "linkedin": "https://www.linkedin.com/in/buczkomichal/",
             "twitter": "",
-            "youtube": ""
+            "youtube": "",
+            "slidesLink": "https://drive.google.com/file/d/1tVyYNDoiyISTlY-fTIiryD8OTVqpPrQM/view?usp=sharing"
         },
         {
             "speaker": "Eric Potter",
@@ -233,7 +237,8 @@
             "website": "https://humbletoolsmith.com/",
             "linkedin": "https://www.linkedin.com/in/ericbpotter/",
             "twitter": "https://x.com/pottereric",
-            "youtube": ""
+            "youtube": "",
+            "slidesLink": "https://drive.google.com/file/d/1dVHyBOAVT7RwMNABBbBRzElvoU7cDoIS/view?usp=sharing"
         },
         {
             "speaker": "Darrin Whitley",
@@ -293,7 +298,8 @@
             "website": "https://lighthousetechnologies.com/",
             "linkedin": "https://www.linkedin.com/in/jeff-van-fleet-381ba4/",
             "twitter": "",
-            "youtube": ""
+            "youtube": "",
+            "slidesLink": "https://drive.google.com/file/d/1uAlTwB4PgmsIIjF9uFguE2ZM9L2ZgQMA/view?usp=sharing"
         },
         {
             "speaker": "Igor Dorovskikh",
@@ -329,7 +335,8 @@
             "website": "https://www.mcanta.com",
             "linkedin": "https://www.linkedin.com/in/rogerlhayes/",
             "twitter": "",
-            "youtube": ""
+            "youtube": "",
+            "slidesLink": "https://drive.google.com/file/d/1FvzcwY01AuNmJofK-qsymsHHmkYFUOQ_/view?usp=sharing"
         },
         {
             "speaker": "Dan Belcher",
@@ -396,7 +403,8 @@
             "website": "",
             "linkedin": "https://www.linkedin.com/in/brianhamilton1/",
             "twitter": "",
-            "youtube": ""
+            "youtube": "",
+            "slidesLink": "https://drive.google.com/file/d/1pXbVi6QMkf6gVq6oHjkwgD75V2hlg6Ka/view?usp=sharing"
         },
         {
             "speaker": "Bob Fornal",
@@ -411,7 +419,8 @@
             "website": "https://code-squid.com",
             "linkedin": "https://www.linkedin.com/in/rfornal/",
             "twitter": "https://twitter.com/rfornal",
-            "youtube": "https://www.youtube.com/@bob-fornal"
+            "youtube": "https://www.youtube.com/@bob-fornal",
+            "slidesLink": "https://drive.google.com/file/d/1qoHzXSqH-gh6sroAwZ0AiMMzGTd5FYqc/view?usp=sharing"
         },
         {
             "speaker": "Stuart Minchington",
